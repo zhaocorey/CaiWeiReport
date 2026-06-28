@@ -1,0 +1,2612 @@
+{
+  "search_date": "2026-06-28",
+  "search_summary": "2026-06-28 增量更新：累计 145 个数据集。6/27 新增 8 个（BabyBabelLM、ECLeKTic、LiveCLKTBench、IndicSafe、Sakhi、TranslationTangles、MORPHOGEN、WILA-popQA），6/28 新增 6 个（XL-SafetyBench、AgriQA、GhanaNLP Emotion、ForMaT、ChiSafe-PAS、BRIDGE）。3 个已知数据集有版本更新。",
+  "sources": [
+    {
+      "name": "FineWeb-2",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-2",
+      "languages": [
+        "覆盖1000+语言，包括en, zh, ja, ko, de, fr, es, ru, ar, hi等"
+      ],
+      "size": "数万亿token级别，FineWeb的多语言扩展版",
+      "license": "ODC-By (Open Data Commons Attribution)",
+      "category": "预训练",
+      "description": "Hugging Face于2024年12月发布的大规模多语言网页预训练数据集，是FineWeb的多语言继承版本。使用统一的pipeline处理1000+语言，是当前最大规模的多语言开放网页语料之一。"
+    },
+    {
+      "name": "CulturaX",
+      "url": "https://huggingface.co/datasets/uonlp/CulturaX",
+      "languages": [
+        "167种语言"
+      ],
+      "size": "6.3万亿tokens",
+      "license": "开放获取（基于mC4和OSCAR清洗）",
+      "category": "预训练",
+      "description": "目前发布最大的多语言数据集之一，覆盖167种语言，6.3万亿tokens。通过合并和深度清洗mC4与OSCAR两个大型数据集创建，专为LLM开发设计。发表于LREC 2024。"
+    },
+    {
+      "name": "mC4 (Multilingual Colossal Clean Crawled Corpus)",
+      "url": "https://www.tensorflow.org/datasets/catalog/c4",
+      "languages": [
+        "101种语言"
+      ],
+      "size": "约38.5 TiB",
+      "license": "ODC-By",
+      "category": "预训练",
+      "description": "Google发布的mC4是C4的多语言版本，从86次Common Crawl网络抓取中提取，覆盖101种语言。是T5、mT5等经典多语言模型的预训练数据基础。"
+    },
+    {
+      "name": "OSCAR (Open Super-large Crawled Aggregated coRpus)",
+      "url": "https://oscar-project.org/",
+      "languages": [
+        "200+语言"
+      ],
+      "size": "数万亿tokens，持续更新",
+      "license": "开源（各版本许可不同，大部分ODC-By或CC-BY）",
+      "category": "预训练",
+      "description": "开源大规模网络爬取语料库项目，提供多语言网页数据用于ML和AI研究。有多个版本（OSCAR-2019, OSCAR-22.01等），持续更新。是许多多语言模型的重要数据来源。"
+    },
+    {
+      "name": "Common Corpus",
+      "url": "https://builders.mozilla.org/announcing-common-corpus/",
+      "languages": [
+        "多语言，40%+非英语内容，en/fr/nl/es/de/it为最大语种"
+      ],
+      "size": "5000亿words",
+      "license": "Public Domain (公共领域)",
+      "category": "预训练",
+      "description": "Mozilla发布的公共领域多语言数据集，是当时最大的公共领域LLM训练数据集。特色是包含文化遗产数据（书籍和报纸），非英语比例超过40%。2024年3月发布。"
+    },
+    {
+      "name": "HPLT (High Performance Language Technologies) v3.0",
+      "url": "https://huggingface.co/papers/2403.14009",
+      "languages": [
+        "~200种语言-脚本组合（ace, aeb, afr, als, amh, apc, arb, ars, ary, arz, asm, ast, awa, ayr, azb, azj, bak, bam, ban, bel, bem, ben, bho, bjn, bod, bos, bug, bul, cat, ceb, ces, cjk, ckb, cmn, crh, cym, dan, deu, dik, dyu, dzo等）"
+      ],
+      "size": "~30万亿tokens（当前最大开放获取多语言预训练语料之一）",
+      "license": "开放获取",
+      "category": "预训练",
+      "description": "【版本更新】HPLT（High Performance Language Technologies）3.0正式发布。相比基线中的HPLT描述，v3.0是独立的新HF数据集条目（HPLT/HPLT3.0），包含完整的开源pipeline：文档选择、HTML文本提取、语言识别、精确/近似去重、标注（register标签、质量估计、PII检测）。附带9种欧洲语言的综合基准评估集。2026年6月11日更新（2天前）。86次下载（新发布），20个赞。",
+      "last_updated": "2026-06-11",
+      "release_version": "v3.0 (arXiv:2511.01066v3)"
+    },
+    {
+      "name": "RedPajama-V2",
+      "url": "https://huggingface.co/datasets/togethercomputer/RedPajama-Data-V2",
+      "languages": [
+        "多语言（基于CommonCrawl，以英语为主但包含多语言内容）"
+      ],
+      "size": "100B+文本文档，约1.21T tokens（去重后）",
+      "license": "Apache-2.0",
+      "category": "预训练",
+      "description": "Together发布的开放预训练数据集，来自84次CommonCrawl快照，包含46个质量指标。原始未过滤数据，允许研究者自行进行数据筛选实验。发表于2024年。"
+    },
+    {
+      "name": "DCLM (DataComp for Language Models)",
+      "url": "https://arxiv.org/abs/2406.11794",
+      "languages": [
+        "多语言（基于Common Crawl）"
+      ],
+      "size": "240T tokens原始语料",
+      "license": "开放获取",
+      "category": "预训练",
+      "description": "NeurIPS 2024发布的数据集实验平台，提供来自Common Crawl的240T token标准化语料，配合53个下游评估套件。旨在推动下一代LLM训练数据集的研究。"
+    },
+    {
+      "name": "CCAligned",
+      "url": "https://huggingface.co/datasets/ahelk/ccaligned_multilingual",
+      "languages": [
+        "137种语言（与英语对齐）"
+      ],
+      "size": "大规模平行/可比文档对",
+      "license": "ODC-By",
+      "category": "预训练",
+      "description": "由137种语言与英语对齐的平行或可比网页文档对组成。通过语言识别和URL匹配构建，适用于跨语言预训练和机器翻译研究。"
+    },
+    {
+      "name": "Aya Dataset (Aya Collection)",
+      "url": "https://huggingface.co/collections/CohereLabs/aya-datasets",
+      "languages": [
+        "114种语言（核心65种人工标注）"
+      ],
+      "size": "204K人工标注 + 513M实例",
+      "license": "Apache-2.0",
+      "category": "微调",
+      "description": "Cohere发布的开放获取多语言指令微调数据集，包含人工标注的指令跟随数据覆盖65种语言（Aya Dataset），加上模板化和翻译数据扩展到114种语言（Aya Collection）。ACL 2024最佳论文。"
+    },
+    {
+      "name": "M³IT (Multi-Modal Multilingual Instruction Tuning)",
+      "url": "https://huggingface.co/datasets/MMInstruction/M3IT",
+      "languages": [
+        "80种语言"
+      ],
+      "size": "240万实例，400条手工任务指令，40个数据集",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "大规模多模态多语言指令微调数据集，将40个精心挑选的数据集重新格式化为vision-to-text结构，关键任务翻译为80种语言。适用于视觉语言模型的指令对齐。"
+    },
+    {
+      "name": "MURI (Multilingual Reverse Instructions)",
+      "url": "https://github.com/akoksal/muri",
+      "languages": [
+        "200种语言"
+      ],
+      "size": "大规模指令微调数据",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "通过多语言反向指令方法为200种语言生成高质量指令微调数据。保留文化和语言细微差别，避免翻译伪影。配套MURI-101模型。2024/2025年发布。"
+    },
+    {
+      "name": "Nemotron-SFT-Multilingual-v2",
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-SFT-Multilingual-v2",
+      "languages": [
+        "en, hi (印地语), ko (韩语), pt-br (巴西葡萄牙语), ja (日语)"
+      ],
+      "size": "100K-1M样本",
+      "license": "CC-BY-4.0 / CC-BY-SA-4.0",
+      "category": "微调",
+      "description": "NVIDIA于2026年5月发布的多语言SFT数据集，从Nemotron数学/编程/科学种子数据翻译生成。涵盖数学、代码、科学、推理领域，2026年最新数据。"
+    },
+    {
+      "name": "PALO Multilingual Dataset",
+      "url": "https://huggingface.co/datasets/MBZUAI/palo_multilingual_dataset",
+      "languages": [
+        "en, zh, fr, es, ru, ja, ar, hi, bn, ur (10种语言)"
+      ],
+      "size": "约210万指令",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "MBZUAI发布的多语言多模态训练数据集，包含665K英语指令和LLaVA-Instruct-150K的9种语言翻译版本，总计约210万指令。适用于多语言视觉语言模型训练。"
+    },
+    {
+      "name": "Multilingual Instructional Dialogues",
+      "url": "https://huggingface.co/datasets/Raftico/instructional-dialogues-multilingual",
+      "languages": [
+        "10种主要世界语言"
+      ],
+      "size": "100条结构化目标导向对话 × 10种语言",
+      "license": "CC-BY",
+      "category": "微调",
+      "description": "高质量多语言指令对话数据集，包含100条结构化、目标导向对话，覆盖10种主要世界语言。适用于AI助手、聊天机器人和指令微调LLM的训练。"
+    },
+    {
+      "name": "XGLUE",
+      "url": "https://huggingface.co/datasets/microsoft/xglue",
+      "languages": [
+        "19种语言"
+      ],
+      "size": "11个任务",
+      "license": "MIT",
+      "category": "评估",
+      "description": "微软发布的跨语言评估基准，包含11个任务覆盖19种语言。训练数据仅提供英语，测试模型的零样本跨语言迁移能力。涵盖NLU和NLG任务。EMNLP 2020。"
+    },
+    {
+      "name": "SeaEval",
+      "url": "https://seaeval.github.io/",
+      "languages": [
+        "en, zh, ms (马来语), es, id (印尼语), vi (越南语), fil (菲律宾语)"
+      ],
+      "size": "28个数据集",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "多语言基础模型评估基准，由28个数据集组成。重点关注东南亚语言和文化理解，包含4个全新的文化理解数据集。评估模型对自然语言的理解和推理能力。"
+    },
+    {
+      "name": "MGSM (Multilingual Grade School Math)",
+      "url": "https://huggingface.co/datasets/juletxara/mgsm",
+      "languages": [
+        "11种语言（en, bn, de, es, fr, ja, ru, sw, te, th, zh）"
+      ],
+      "size": "250道数学题 × 11种语言",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "Google Research发布的多语言数学推理基准，将GSM8K中的250道小学数学题人工翻译为10种类型多样的语言。MGSM-Rev2为修订版本，修正了翻译错误。ICLR 2023。"
+    },
+    {
+      "name": "BenchMAX",
+      "url": "https://arxiv.org/html/2502.07346v1",
+      "languages": [
+        "多语言覆盖"
+      ],
+      "size": "综合评估套件",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "综合性多语言LLM评估套件，为多语言语言模型发展提供测试平台。2025年发布。"
+    },
+    {
+      "name": "Kaleidoscope",
+      "url": "https://kaleidoscope-dataset.github.io/",
+      "languages": [
+        "多语言（最大多语言多模态MCQA基准）"
+      ],
+      "size": "大规模MCQA，55%需图像理解",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "多模态多语言基准，55%的题目需要图像理解。是目前最大的多语言多模态多选问答基准。"
+    },
+    {
+      "name": "MLMM Evaluation",
+      "url": "https://github.com/nlp-uoregon/mlmm-evaluation",
+      "languages": [
+        "26种语言"
+      ],
+      "size": "3个任务（ARC, HellaSwag, MMLU）",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "多语言LLM评估框架，包含26种语言上的ARC、HellaSwag和MMLU三个基准任务。提供完整评估脚本。"
+    },
+    {
+      "name": "MIRACL (Multilingual Information Retrieval)",
+      "url": "https://github.com/project-miracl/miracl",
+      "languages": [
+        "18种语言"
+      ],
+      "size": "大规模人工标注信息检索数据集",
+      "license": "Apache-2.0",
+      "category": "评估",
+      "description": "大规模多语言信息检索数据集，跨18种语言进行彻底的人工标注。适用于多语言检索系统评估。"
+    },
+    {
+      "name": "XNLI (Cross-lingual NLI)",
+      "url": "https://huggingface.co/datasets/MoritzLaurer/multilingual-NLI-26lang-2mil7",
+      "languages": [
+        "15种语言（XNLI原始）+ 26种语言（扩展版）"
+      ],
+      "size": "270万+ NLI样本",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "经典跨语言自然语言推理基准。扩展版（multilingual-NLI-26lang-2mil7）基于MultiNLI等英语数据集机器翻译到26种语言，包含270万+样本。"
+    },
+    {
+      "name": "SWE-bench Multilingual",
+      "url": "https://www.swebench.com/multilingual.html",
+      "languages": [
+        "9种编程语言（C, C++, Go, Java, JavaScript, TypeScript, PHP, Ruby, Rust）"
+      ],
+      "size": "300个任务，42个代码仓库",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "SWE-bench的多语言编程版本，提供跨9种编程语言的300个软件工程任务。评估LLM的代码理解和修复能力。"
+    },
+    {
+      "name": "MULTITuDE",
+      "url": "https://aclanthology.org/2023.emnlp-main.616/",
+      "languages": [
+        "11种语言（ar, ca, cs, de, en, es, nl, pt, ru, uk, zh）"
+      ],
+      "size": "74,081条真实和机器生成文本",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "大规模多语言机器生成文本检测基准数据集，包含8种多语言LLM生成的文本。适用于AI生成内容检测研究。EMNLP 2023。"
+    },
+    {
+      "name": "X-Fact",
+      "url": "https://aclanthology.org/2021.acl-short.86/",
+      "languages": [
+        "25种语言"
+      ],
+      "size": "多语言事实核查数据集",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "多语言事实核查基准数据集，包含25种语言的短声明，由专家事实核查者标注真实性。评估模型的零样本跨语言能力。ACL 2021。"
+    },
+    {
+      "name": "HuggingFaceH4/Multilingual-Thinking",
+      "url": "https://huggingface.co/datasets/HuggingFaceH4/Multilingual-Thinking",
+      "languages": [
+        "多语言"
+      ],
+      "size": "多语言思维链数据集",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "Hugging Face H4团队发布的多语言思维数据集，用于训练多语言推理能力。2026年更新。"
+    },
+    {
+      "name": "Tagengo",
+      "url": "https://arxiv.org/pdf/2405.12612",
+      "languages": [
+        "多语言聊天对话"
+      ],
+      "size": "大规模多语言对话数据",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "多语言聊天数据集，包含丰富的多语言用户-助手对话。2024年发布，适用于多语言对话模型训练。"
+    },
+    {
+      "name": "Multilingual Safety Classification Dataset",
+      "url": "https://huggingface.co/datasets/lumees/multilingual-safety-classification-dataset",
+      "languages": [
+        "60种语言"
+      ],
+      "size": "大规模安全分类数据",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "Lumees AI创建的多语言安全分类数据集，覆盖60种语言。通过NLLB-200-3.3B翻译英语安全提示构建，用于多语言内容安全模型训练。"
+    },
+    {
+      "name": "SlimPajama",
+      "url": "https://www.cerebras.ai/blog/slimpajama-a-627b-token-cleaned-and-deduplicated-version-of-redpajama",
+      "languages": [
+        "多语言（基于RedPajama）"
+      ],
+      "size": "627B tokens（去重清洗后）",
+      "license": "Apache-2.0",
+      "category": "预训练",
+      "description": "Cerebras发布的大规模去重多语料预训练数据集。从RedPajama 1.21T tokens清洗去重至627B tokens，去除49.6%的低质量和重复数据。"
+    },
+    {
+      "name": "Community OSCAR",
+      "url": "https://occiglot.eu/posts/community-oscar/",
+      "languages": [
+        "大规模多语言"
+      ],
+      "size": "大规模网页语料",
+      "license": "开放获取",
+      "category": "预训练",
+      "description": "社区驱动的大规模多语言网络数据集，是OSCAR Corpus的非官方社区版本。旨在为多语言AI研究提供更多开放数据。"
+    },
+    {
+      "name": "Dolci-Think-SFT-32B-Multilingual",
+      "url": "https://huggingface.co/datasets/lightonai/Dolci-Think-SFT-32B-Multilingual",
+      "languages": [
+        "en",
+        "fr",
+        "de",
+        "es",
+        "zh",
+        "sw"
+      ],
+      "size": "1M-10M样本（大规模链式思维推理数据）",
+      "license": "ODC-By",
+      "category": "微调",
+      "description": "LightOn AI发布的多语言链式思维(CoT)推理SFT数据集。覆盖6种语言（英/法/德/西/中/斯瓦希里语），包含数学、编程、科学等领域的深度推理数据。配套论文提出Layer Swap方法，发现多语言推理核心是语言无关的，仅外层为语言特异性。使用Qwen3-8B-Base作为基础模型。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-05-27",
+      "release_version": "v1 (arXiv:2605.26735)",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual reasoning SFT chain-of-thought",
+      "source": "HuggingFace API扫描 + arXiv论文发现"
+    },
+    {
+      "name": "Multilingual-Reasoning-Gym-SFT",
+      "url": "https://huggingface.co/datasets/MauroPello/multilingual-reasoning-gym-sft",
+      "languages": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "hi"
+      ],
+      "size": "775 下载",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "多语言推理体操 SFT 数据集。基线记录 last_updated=2026-06-09，本次检查发现已更新至 2026-06-18（9 天后有更新）。数据集可能包含新增语言或样本更新。",
+      "discovered_date": "2026-06-18",
+      "last_updated": "2026-06-18",
+      "release_version": "v1（更新）",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual reasoning gym SFT",
+      "source": "HuggingFace 已知数据集更新检查",
+      "update_note": "last_updated 从 2026-06-09 更新至 2026-06-18"
+    },
+    {
+      "name": "Nemotron-Post-Training-Dataset-v2 (6M Multilingual Reasoning)",
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2",
+      "languages": [
+        "fr",
+        "de",
+        "it",
+        "ja",
+        "es"
+      ],
+      "size": "600万样本（5种语言 × 120万）",
+      "license": "NVIDIA Open Model License",
+      "category": "微调",
+      "description": "NVIDIA发布的600万多语言推理数据集，将英语推理数据翻译为5种目标语言（法语、德语、意大利语、日语、西班牙语）。保留原始英语推理链，翻译用户提示和模型回答。配套Nemotron Nano 2 9B模型（混合Transformer-Mamba架构）。7,174次下载。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2025-08-21",
+      "release_version": "v2",
+      "timeliness_score": "中",
+      "search_keywords": "NVIDIA multilingual reasoning post-training",
+      "source": "HuggingFace Blog + HF API发现"
+    },
+    {
+      "name": "MAPS (Multilingual Agent Performance & Security Benchmark)",
+      "url": "https://huggingface.co/datasets/Fujitsu-FRE/MAPS",
+      "languages": [
+        "en + 11种语言"
+      ],
+      "size": "805个任务，9,660个语言特定实例",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "富士通发布的多语言Agent性能与安全评估基准。将GAIA（真实任务）、SWE-Bench（代码生成）、MATH（数学推理）和Agent Security Benchmark翻译为11种语言。EACL 2026 Findings收录。发现从英语切换到其他语言时，Agent性能和安全均会下降。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-05-22",
+      "release_version": "v3 (arXiv:2505.15935v3)",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual agent benchmark security evaluation",
+      "source": "SearXNG科学搜索 + arXiv论文发现"
+    },
+    {
+      "name": "MDPBench (Multilingual Document Parsing Benchmark)",
+      "url": "https://github.com/Yuliang-Liu/MultimodalOCR",
+      "languages": [
+        "17种语言"
+      ],
+      "size": "3,400张文档图像",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "首个多语言数字和拍照文档解析基准。覆盖17种语言、多种文字系统和拍照条件。发现开源模型在非拉丁文字和拍照文档上性能急剧下降（平均下降17.8%）。ICML 2026收录（MORE扩展版）。包含公开和私有评估分割。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-03-30",
+      "release_version": "v1 (arXiv:2603.28130)",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual document parsing benchmark OCR",
+      "source": "SearXNG科学搜索 + arXiv论文发现"
+    },
+    {
+      "name": "EuraGovExam",
+      "url": "https://arxiv.org/abs/2603.27223",
+      "languages": [
+        "韩语",
+        "日语",
+        "中文(台湾)",
+        "印地语",
+        "欧盟语言"
+      ],
+      "size": "8,000+高分辨率扫描多选题",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "来自5个欧亚地区（韩国、日本、台湾、印度、欧盟）真实公务员考试的多语言多模态基准。包含17个学术和行政领域的高分辨率扫描题目。要求模型进行布局感知的跨语言视觉推理。SOTA VLM仅达86%准确率。ACM MM 2025/2026收录。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-03-28",
+      "release_version": "v2 (arXiv:2603.27223v2)",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual multimodal benchmark civil service exam",
+      "source": "SearXNG科学搜索 + arXiv论文发现"
+    },
+    {
+      "name": "MMLU-ProX",
+      "url": "https://arxiv.org/abs/2503.10497",
+      "languages": [
+        "多语言（MMLU-Pro的多语言扩展）"
+      ],
+      "size": "专业级学术评估，多语言覆盖",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "MMLU-Pro的多语言扩展版本，用于评估高级大语言模型的跨语言能力。将专业级学术评估任务扩展到多种语言，解决现有多语言基准过于简单的问题。2026年3月发布。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-03-13",
+      "release_version": "v2 (arXiv:2503.10497v2)",
+      "timeliness_score": "高",
+      "search_keywords": "MMLU-Pro multilingual benchmark advanced evaluation",
+      "source": "DuckDuckGo搜索 + SearXNG确认"
+    },
+    {
+      "name": "WebFAQ 2.0",
+      "url": "https://arxiv.org/abs/2602.17327",
+      "languages": [
+        "108种语言"
+      ],
+      "size": "1.98亿FAQ问答对 + 14.3M双语对齐QA对 + 1.25M硬负例（20种语言）",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "大规模多语言FAQ问答数据集2.0版本。覆盖108种语言，包含1.98亿自然问答对。新增硬负例数据集（1.25M查询 × 20种语言），支持对比学习和知识蒸馏训练密集检索器。通过Open Web Index持续更新。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-02-19",
+      "release_version": "2.0 (arXiv:2602.17327)",
+      "timeliness_score": "高",
+      "search_keywords": "WebFAQ multilingual QA dense retrieval",
+      "source": "SearXNG科学搜索 + arXiv论文发现"
+    },
+    {
+      "name": "GlobalMedQA",
+      "url": "https://www.ncbi.nlm.nih.gov/pubmed/42174864",
+      "languages": [
+        "多语言"
+      ],
+      "size": "标准化多语言医学知识评估数据集",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "标准化多语言数据集，用于评估大语言模型的医学知识能力。覆盖多种语言的医疗健康领域问答，评估LLM在医疗环境中的实际应用能力。2026年发表于NCBI/PMC。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-06-01",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "GlobalMedQA multilingual medical knowledge LLM",
+      "source": "SearXNG科学搜索 + NCBI发现"
+    },
+    {
+      "name": "FinMMEval",
+      "url": "https://clef2026.clef-initiative.eu/labs/finmmeval/",
+      "languages": [
+        "多语言"
+      ],
+      "size": "多语言多模态金融评估框架",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "CLEF 2026推出的首个多语言多模态金融大模型评估框架。评估模型在金融领域的理解、推理和决策能力，覆盖多种语言和模态。旨在推动稳健、透明、全球包容的金融AI系统。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-03-01",
+      "release_version": "CLEF 2026 Lab",
+      "timeliness_score": "高",
+      "search_keywords": "FinMMEval multilingual financial evaluation CLEF",
+      "source": "DuckDuckGo搜索结果"
+    },
+    {
+      "name": "CAMEO8 (Cultural Dialog and Safety Evaluation Multilingual Dataset)",
+      "url": "https://doi.org/10.1109/ieeedata.2025.3638721",
+      "languages": [
+        "多语言"
+      ],
+      "size": "文化对话与安全评估多语言数据集",
+      "license": "IEEE Data",
+      "category": "微调",
+      "description": "文化对话与安全评估多语言数据集（CAMEO8）。专注于跨文化对话AI的安全性和文化适应性评估。发表于IEEE Data，支持多语言内容安全和文化理解研究。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-01-01",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "CAMEO8 cultural dialog safety multilingual",
+      "source": "SearXNG科学搜索发现"
+    },
+    {
+      "name": "MITRA (Parallel Corpus for Buddhist Languages)",
+      "url": "https://arxiv.org/abs/2601.06400",
+      "languages": [
+        "巴利语",
+        "梵语",
+        "佛教汉语",
+        "藏语"
+      ],
+      "size": "大规模平行语料 + 多语言预训练模型",
+      "license": "开放获取",
+      "category": "预训练",
+      "description": "面向古代佛教文献的大规模平行语料库和多语言预训练语言模型。覆盖巴利语、梵语、佛教汉语和藏语四种古典语言，支持机器翻译和语义检索。填补了古典低资源语言的空白。2026年1月发布。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-01-10",
+      "release_version": "v1 (arXiv:2601.06400)",
+      "timeliness_score": "高",
+      "search_keywords": "MITRA parallel corpus Pali Sanskrit Buddhist",
+      "source": "SearXNG科学搜索 + arXiv论文发现"
+    },
+    {
+      "name": "LughaGen Multilingual African Corpus",
+      "url": "https://huggingface.co/datasets/LughaGen-Organization/LughaGen-Multilingual-African-Corpus",
+      "languages": [
+        "sw (斯瓦希里语)",
+        "ki (基库尤语)",
+        "kam (坎巴语)",
+        "luo (卢奥语/多卢奥语)"
+      ],
+      "size": "多源聚合清洗语料（含合成增强数据）",
+      "license": "需签署数据使用协议",
+      "category": "预训练",
+      "description": "JHUB Africa研究计划下的多语言语料库，NVIDIA资助。聚焦4种肯尼亚和东非语言（斯瓦希里语、基库尤语、坎巴语、卢奥语）。聚合、清洗和文档化多源文本数据，并辅以合成生成数据。旨在为低资源非洲语言构建LLM。2026年6月更新。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-06-07",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "low-resource African language corpus LughaGen",
+      "source": "HuggingFace API扫描发现"
+    },
+    {
+      "name": "VoiceNet/multilingual-in-the-wild-thinking",
+      "url": "https://huggingface.co/datasets/VoiceNet/multilingual-in-the-wild-thinking",
+      "languages": [
+        "多语言（含普通话、捷克语、孟加拉语等）"
+      ],
+      "size": "100K-1M样本（音频+文本）",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "多语言野外思维数据集，包含多种语言的语音和文本思维数据。数据来自真实场景录音，带有详细的语音特征标注（语速、音调、情感等）。适用于多语言语音推理和思维链训练。1,226次下载。2026年5月发布。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-05-06",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual thinking audio speech wild",
+      "source": "HuggingFace API扫描发现"
+    },
+    {
+      "name": "multilingual-retrieval-corpus-v1",
+      "url": "https://huggingface.co/datasets/n24q02m/multilingual-retrieval-corpus-v1",
+      "languages": [
+        "多语言"
+      ],
+      "size": "100M-1B样本（大规模检索语料）",
+      "license": "开放获取",
+      "category": "预训练",
+      "description": "大规模多语言检索语料库v1版本，包含1亿至10亿级样本。专为多语言信息检索系统训练设计。3,361次下载，社区活跃度高。2026年5月发布。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-05-14",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual retrieval corpus large-scale",
+      "source": "HuggingFace API扫描发现"
+    },
+    {
+      "name": "Multitask-Multilingual-Refusal",
+      "url": "https://huggingface.co/datasets/Sakonii/Multitask-Multilingual-Refusal",
+      "languages": [
+        "多语言"
+      ],
+      "size": "100K-1M样本",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "多任务多语言拒绝数据集，用于训练模型在多语言环境下的安全拒绝行为。覆盖多种安全场景，支持多任务学习。2026年6月11日发布（昨日新上线）。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-06-11",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual refusal safety alignment",
+      "source": "HuggingFace API扫描发现"
+    },
+    {
+      "name": "MathNet",
+      "url": "https://huggingface.co/datasets/archya/MathNet",
+      "languages": [
+        "en",
+        "pt",
+        "es",
+        "fr",
+        "it",
+        "sr",
+        "sl",
+        "de",
+        "zh",
+        "ro",
+        "ko",
+        "nl",
+        "ru",
+        "mn",
+        "mk",
+        "pl",
+        "hu"
+      ],
+      "size": "30000+ Olympiad-level math problems",
+      "license": "CC-BY-4.0",
+      "category": "评估",
+      "description": "ICLR 2026发布的多模态多语言数学推理基准。17种语言的奥林匹克级数学问题，支持数学推理生成评估和数学检索评估。含文本和图像(几何图形等)。MIT团队发布，918次下载。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-05-01",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual math reasoning benchmark ICLR MathNet",
+      "source": "DuckDuckGo搜索 + HuggingFace API验证"
+    },
+    {
+      "name": "multilingual-reasoning-v2-9.8k",
+      "url": "https://huggingface.co/datasets/Pinkstack/multilingual-reasoning-v2-9.8k",
+      "languages": [
+        "es",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "nl",
+        "pl",
+        "ru",
+        "uk",
+        "ro",
+        "cs",
+        "sv",
+        "el",
+        "tr",
+        "ar",
+        "he",
+        "fa",
+        "hi",
+        "bn",
+        "ur",
+        "gu",
+        "ta",
+        "te",
+        "mr",
+        "id",
+        "ms",
+        "vi",
+        "th",
+        "ko",
+        "ja",
+        "zh",
+        "sr",
+        "sw",
+        "yo",
+        "am",
+        "ha",
+        "fi",
+        "hu",
+        "da"
+      ],
+      "size": "9800 samples (40 languages)",
+      "license": "Not specified",
+      "category": "微调",
+      "description": "覆盖40种语言的多语言推理训练数据，含数学/逻辑/代码推理。包含约鲁巴语(yo)、阿姆哈拉语(am)、豪萨语(ha)等低资源语言。SFT格式，v2版本。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-05-07",
+      "release_version": "v2",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual reasoning SFT 40 languages low-resource",
+      "source": "HuggingFace API搜索发现"
+    },
+    {
+      "name": "MathMist",
+      "url": "https://huggingface.co/datasets/mahbubhimel/MathMist",
+      "languages": [
+        "bn",
+        "en",
+        "fr",
+        "kk",
+        "fi",
+        "lt",
+        "tr",
+        "fa",
+        "ar",
+        "sw",
+        "ha",
+        "gu",
+        "am"
+      ],
+      "size": "21000 samples (~30K aligned QA pairs)",
+      "license": "Apache-2.0",
+      "category": "评估",
+      "description": "EACL 2026 Findings发表的多语言数学推理并行基准。13种语言含低资源(哈萨克/立陶宛/斯瓦希里/豪萨/古吉拉特/阿姆哈拉语)。支持CoT、扰动推理和代码切换三种评估范式。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2025-11-13",
+      "release_version": "v1",
+      "timeliness_score": "中",
+      "search_keywords": "MathMist multilingual math reasoning EACL benchmark",
+      "source": "DuckDuckGo搜索发现"
+    },
+    {
+      "name": "mCoT-MATH",
+      "url": "https://huggingface.co/datasets/laihuiyuan/mCoT-MATH",
+      "languages": [
+        "sw",
+        "bn",
+        "te",
+        "th",
+        "ja",
+        "zh",
+        "ru",
+        "es",
+        "fr",
+        "de",
+        "en"
+      ],
+      "size": "~6.3M samples across 11 languages",
+      "license": "Apache-2.0",
+      "category": "微调",
+      "description": "首个大规模多语言数学CoT推理数据集。基于MetaMathQA和MathInstruct机器翻译生成11种语言版本。每语言约57万样本。2026-04更新。372次下载。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-04-17",
+      "release_version": "updated",
+      "timeliness_score": "中",
+      "search_keywords": "multilingual math CoT reasoning training dataset",
+      "source": "DuckDuckGo搜索发现"
+    },
+    {
+      "name": "multilingual-vlm-reasoning",
+      "url": "https://huggingface.co/datasets/Swastikr/multilingual-vlm-reasoning",
+      "languages": [
+        "en",
+        "hi",
+        "ta",
+        "te",
+        "bn",
+        "kn",
+        "mr"
+      ],
+      "size": "~1000 visual reasoning questions (2.26K rows with translations)",
+      "license": "CC-BY-4.0",
+      "category": "评估",
+      "description": "多语言VLM视觉推理基准。~1000道题翻译为6种印度语言(印地/泰米尔/泰卢固/孟加拉/卡纳达/马拉地语)。源自MathVista/ScienceQA/MMMU，用IndicTrans2翻译并经GPT-4o验证。234次下载。",
+      "discovered_date": "2026-06-12",
+      "last_updated": "2026-03-14",
+      "release_version": "v1",
+      "timeliness_score": "中",
+      "search_keywords": "multilingual VLM visual reasoning Indian languages benchmark",
+      "source": "DuckDuckGo site:huggingface.co搜索发现"
+    },
+    {
+      "name": "EuroBlocks-SFT-2512",
+      "url": "https://huggingface.co/datasets/utter-project/EuroBlocks-SFT-2512",
+      "languages": [
+        "24种欧盟官方语言 + 11种额外欧洲语言，共35种语言"
+      ],
+      "size": "1,094,265条指令对话样本（~4GB）",
+      "license": "开放获取（随EuroLLM-22B发布）",
+      "category": "微调",
+      "description": "EuroLLM-22B配套多语言指令微调数据集。覆盖35种欧洲语言的高质量SFT对话数据，包含conversations（多轮对话）和language标签。由utter-project（葡萄牙AI实验室）发布，用于训练EuroLLM-22B指令跟随模型。ICLR 2026收录。548次下载，18个赞。",
+      "discovered_date": "2026-06-13",
+      "last_updated": "2026-02-06",
+      "release_version": "v1 (arXiv:2602.05879)",
+      "timeliness_score": "高",
+      "search_keywords": "EuroBlocks EuroLLM multilingual instruction dataset",
+      "source": "HuggingFace API扫描 + SearXNG论文交叉验证"
+    },
+    {
+      "name": "EuroWeb-2512",
+      "url": "https://huggingface.co/datasets/utter-project/EuroWeb-2512",
+      "languages": [
+        "24种欧盟官方语言 + 11种额外语言（ar, bg, ca, cs, da, de, el, en, es, et, eu, fi, fr, ga, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, sk, sl, sv, uk等）"
+      ],
+      "size": "1B-10B样本规模（大规模网页预训练语料），205,385次下载",
+      "license": "开放获取（随EuroLLM-22B发布）",
+      "category": "预训练",
+      "description": "EuroLLM-22B配套多语言网页预训练数据集。从多种来源收集的多语言网页数据，经EuroFilter-v1质量分类器处理，分为high/medium_high/medium/medium_low/low五个质量层级。覆盖35种欧洲语言，是当前最大规模的开放欧洲多语言预训练语料之一。",
+      "discovered_date": "2026-06-13",
+      "last_updated": "2026-02-09",
+      "release_version": "v1 (arXiv:2602.05879)",
+      "timeliness_score": "高",
+      "search_keywords": "EuroWeb EuroLLM multilingual pretraining web corpus",
+      "source": "HuggingFace API扫描发现"
+    },
+    {
+      "name": "F2LLM-v2",
+      "url": "https://huggingface.co/datasets/codefuse-ai/F2LLM-v2",
+      "languages": [
+        "90+语言：en, zh, ru, es, fr, de, ar, nl, vi, hi, ko, ja, it, id, pt, pl, tr, da, th, sv, fa, uk, cs, no, el, ca, ro, fi, bg, tl, gl, my, hy, km, ne, hu, eu, he, lo, sw, az, lv, si, sk, tg, et, lt, ms, hr, is, sl, sr, ur, bn, af, ta, ka, te, ml, mn, nn, kk, cy, mr, sq, nb, mk, jv, kn, eo, la, gu, uz, am, oc, be, mg, vo, pa, lb, ht, br, ga, xh, tt, bs, yo等"
+      ],
+      "size": "6000万高质量样本（10M-100M级别），Apache-2.0",
+      "license": "Apache-2.0",
+      "category": "预训练",
+      "description": "F2LLM-v2多语言嵌入模型的训练数据集。覆盖90+语言，特别强调中低资源语言。在MTEB的11个基准上达到SOTA。配套8种模型尺寸（80M-14B参数）。采用两阶段LLM嵌入训练pipeline + Matryoshka学习。2,624次下载。2026年6月9日更新（4天前）。",
+      "discovered_date": "2026-06-13",
+      "last_updated": "2026-06-09",
+      "release_version": "v2 (arXiv:2603.19223)",
+      "timeliness_score": "高",
+      "search_keywords": "F2LLM multilingual embedding MTEB dataset",
+      "source": "HuggingFace API扫描 + SearXNG论文发现"
+    },
+    {
+      "name": "AyaVisionBench",
+      "url": "https://huggingface.co/datasets/CohereLabs/AyaVisionBench",
+      "languages": [
+        "23种语言：en, fr, de, es, it, pt, ja, ko, zh, ar, el, fa, pl, id, cs, he, hi, nl, ro, ru, tr, uk, vi"
+      ],
+      "size": "23语言 × 9任务类别 × 15样本 = 3,105个图文对（1K-10K级别）",
+      "license": "Apache-2.0",
+      "category": "评估",
+      "description": "CohereLabs发布的多语言视觉-语言模型评估基准。覆盖23种语言（全球一半人口使用的语言），9个任务类别，每语言135个图文对。每个问题都需要视觉上下文才能回答，评估真实世界多语言多模态场景。916次下载，37个赞。2026年3月更新。",
+      "discovered_date": "2026-06-13",
+      "last_updated": "2026-03-06",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "AyaVisionBench CohereLabs multilingual vision benchmark",
+      "source": "HuggingFace API扫描（CohereLabs生态搜索）"
+    },
+    {
+      "name": "ReasonXL (Soofi-Think-SFT-10B-multilingual)",
+      "url": "https://huggingface.co/datasets/toroe/Soofi-Think-SFT-10B-multilingual",
+      "languages": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "it"
+      ],
+      "size": "~44B tokens，5种语言（10M-100M样本级别），Apache-2.0",
+      "license": "Apache-2.0",
+      "category": "微调",
+      "description": "大规模多语言推理语料库，覆盖5种语言（英/德/法/西/意），约440亿tokens。设计用于推理模型的SFT训练，包含跨技术领域的语言内思维链（CoT）推理轨迹。英语源数据来自10个现有推理数据集，经质量过滤后翻译生成多语言版本。1,216次下载。",
+      "discovered_date": "2026-06-13",
+      "last_updated": "2026-03-27",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "Soofi-Think ReasonXL multilingual reasoning CoT",
+      "source": "HuggingFace API扫描"
+    },
+    {
+      "name": "PleIAs Common Corpus",
+      "url": "https://huggingface.co/datasets/PleIAs/common_corpus",
+      "languages": [
+        "13种语言：en, fr, de, zh, it, es, ja, pl, la, nl, ru, ar, ko"
+      ],
+      "size": "2.27万亿tokens（2,267,302,720,836），当前最大开放许可文本数据集",
+      "license": "开放许可（ICLR 2026 oral论文配套）",
+      "category": "预训练",
+      "description": "PleIAs（非Mozilla）发布的最大开放许可文本数据集。2.27万亿tokens，包含书籍、报纸、科学论文、政府文件、法律文档、代码等多种来源。ICLR 2026 oral论文配套。注意：与基线中的Mozilla Common Corpus（5000亿words, Public Domain）是不同数据集。128,481次下载，401个赞。2026年5月更新。",
+      "discovered_date": "2026-06-13",
+      "last_updated": "2026-05-06",
+      "release_version": "ICLR 2026 oral (arXiv:2410.22587)",
+      "timeliness_score": "高",
+      "search_keywords": "Common Corpus PleIAs ICRL 2026 multilingual pretraining",
+      "source": "HuggingFace API扫描 + SearXNG论文交叉验证"
+    },
+    {
+      "name": "OpenSeal CPT Data (SEA-PILE-v2)",
+      "url": "https://huggingface.co/datasets/tsangb34/openseal-cpt-data-SEA-PILE-v2-new_tokens_262K-id-ta-vi-tar",
+      "languages": [
+        "id (印尼语)",
+        "ta (泰米尔语)",
+        "vi (越南语)",
+        "th (泰语)",
+        "其他东南亚语言"
+      ],
+      "size": "34.7B tokens平行数据（首个真正开源东南亚LLM训练数据）",
+      "license": "开放获取（论文声明全开源）",
+      "category": "预训练",
+      "description": "OpenSeal项目的持续预训练数据，首个真正开源的东南亚LLM训练数据集。使用34.7B tokens平行数据在8×H200 GPU上180小时训练，构建了与同规模模型性能相当的东南亚LLM。包含多个子集：SEA-PILE-v2（多语言混合）、SEA-Parallel（平行语料）、MapCC（网络爬取）等。2026年6月初更新。",
+      "discovered_date": "2026-06-13",
+      "last_updated": "2026-06-05",
+      "release_version": "v2 (arXiv:2602.02266)",
+      "timeliness_score": "高",
+      "search_keywords": "OpenSeal Southeast Asian parallel corpus LLM",
+      "source": "HuggingFace API扫描 + SearXNG论文发现"
+    },
+    {
+      "name": "Ultra-FineWeb-L3",
+      "url": "https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "size": "600B+ tokens (400B+ English + 200B+ Chinese), 1B-10B行级数据",
+      "license": "Apache-2.0",
+      "category": "预训练",
+      "description": "OpenBMB与清华联合发布的Ultra-FineWeb-L3，是UltraData L0-L4分级数据治理框架下的L3精炼数据。通过Q&A Pair生成和多风格改写，从高质量网页数据中提炼而来。是目前已知最大的开源中文预训练合成语料，已用于MiniCPM5-1B的预训练。HuggingFace下载量69,778次，289个赞。",
+      "discovered_date": "2026-06-14",
+      "last_updated": "2026-05-28",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "Ultra-FineWeb-L3 openbmb dataset 600B tokens",
+      "source": "HuggingFace API搜索 + SearXNG科学搜索 + DuckDuckGo搜索多路验证"
+    },
+    {
+      "name": "UltraData-Math",
+      "url": "https://huggingface.co/datasets/openbmb/UltraData-Math",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "size": "290B+ tokens (L1: 170.5B web语料 + L2: 33.7B 质量筛选 + L3: 88B 多格式精炼)",
+      "license": "Apache-2.0",
+      "category": "预训练",
+      "description": "OpenBMB发布的大规模高质量数学预训练数据集，包含三个渐进层级(L1/L2/L3)，系统性增强LLM的数学推理能力。已用于MiniCPM系列的数学预训练。HuggingFace下载量32,021次，315个赞。",
+      "discovered_date": "2026-06-14",
+      "last_updated": "2026-04-15",
+      "release_version": "v1.0",
+      "timeliness_score": "中",
+      "search_keywords": "openbmb UltraData-Math",
+      "source": "HuggingFace API搜索 (openbmb UltraData关键词)"
+    },
+    {
+      "name": "BENI Global 10",
+      "url": "https://arxiv.org/abs/2606.10225",
+      "languages": [
+        "en, es, pt, fr, ar, hi, zh, sw, id, tr (10 languages across 7 language families)"
+      ],
+      "size": "Multilingual economic news corpus",
+      "license": "Not specified (research use)",
+      "category": "评估",
+      "description": "First multilingual economic news corpus spanning 10 languages across 7 language families for the Global South. Addresses the English-centric bias (84%) in sentiment-based economic forecasting research. Covers economic narrative indices for developing economies.",
+      "discovered_date": "2026-06-15",
+      "last_updated": "2026-06-12",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual economic news corpus Global South 2026",
+      "source": "SearXNG arXiv search (arXiv:2606.10225, June 2026)"
+    },
+    {
+      "name": "MixtureVitae",
+      "url": "https://mlanthology.org/tmlr/2026/nguyen2026tmlr-mixturevitae/",
+      "languages": [
+        "Multilingual (multiple languages including low-resource)"
+      ],
+      "size": "Web-scale pretraining corpus",
+      "license": "Permissive-first, risk-mitigated (CC-BY/Apache + public domain)",
+      "category": "预训练",
+      "description": "Open-access pretraining corpus built to minimize legal risk while providing strong downstream performance. Follows a permissive-first, risk-mitigated sourcing strategy combining public-domain and permissively licensed text with carefully justified low-risk additions. Published in TMLR 2026.",
+      "discovered_date": "2026-06-15",
+      "last_updated": "2026-06-01",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "MixtureVitae pretraining dataset TMLR 2026",
+      "source": "DuckDuckGo web search (TMLR publication)"
+    },
+    {
+      "name": "AfriMMT-EA",
+      "url": "https://aclanthology.org/2026.findings-eacl.179/",
+      "languages": [
+        "53 East African languages (66 translation directions, including 23 new Kenyan/Tanzanian language pairs)"
+      ],
+      "size": "Large-scale multi-domain MT benchmark",
+      "license": "Not specified (academic use)",
+      "category": "评估",
+      "description": "First highly multilingual benchmark and MT dataset for East African languages. Covers 53 languages across 66 translation directions with multi-domain parallel data. Many languages had no prior digital presence. Used to fine-tune GEMMA 3 models (Safari-270M and Safari-1B). EACL 2026 Findings.",
+      "discovered_date": "2026-06-15",
+      "last_updated": "2026-05-20",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "AfriMMT-EA 53 East African languages EACL 2026",
+      "source": "DuckDuckGo web search (EACL 2026 Findings)"
+    },
+    {
+      "name": "Nemotron-CC-Math",
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-CC-Math-v1",
+      "languages": [
+        "Primarily English (math/code content, some multilingual)"
+      ],
+      "size": "133B tokens (Nemotron-CC-Math-3+ and 4+ subsets)",
+      "license": "NVIDIA Open",
+      "category": "预训练",
+      "description": "133 billion-token high-quality math pretraining dataset from Common Crawl. Uses novel Lynx + LLM pipeline that preserves equations and code, standardizes to LaTeX, and removes noise. 4+ subset contains 5.5× more tokens than FineMath-4+. Outperforms all prior open math datasets including MegaMath, FineMath, and OpenWebMath. ICLR 2026.",
+      "discovered_date": "2026-06-15",
+      "last_updated": "2026-05-01",
+      "release_version": "v1",
+      "timeliness_score": "中",
+      "search_keywords": "Nemotron-CC-Math 133B tokens ICLR 2026",
+      "source": "DuckDuckGo web search (ICLR 2026)"
+    },
+    {
+      "name": "Nemotron-Safety-Guard-Dataset-v3",
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-Safety-Guard-Dataset-v3",
+      "languages": [
+        "en, ar, de, es, fr, hi, ja, th, zh, nl, it, ko (12 languages)"
+      ],
+      "size": "514,617 samples",
+      "license": "NVIDIA Open",
+      "category": "对齐",
+      "description": "Large high-quality safety dataset for training multilingual LLM safety guard models. ~514K samples across 12 languages. Formerly known as Nemotron-Content-Safety-Dataset-Multilingual-v1. Designed for content safety classification across diverse linguistic contexts.",
+      "discovered_date": "2026-06-15",
+      "last_updated": "2025-12-30",
+      "release_version": "v3",
+      "timeliness_score": "中",
+      "search_keywords": "Nemotron-Safety-Guard-Dataset-v3 multilingual safety",
+      "source": "DuckDuckGo web search (NVIDIA Nemotron ecosystem)"
+    },
+    {
+      "name": "M4-RAG",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Anugraha_M4-RAG_A_Massive-Scale_Multilingual_Multi-Cultural_Multimodal_RAG_CVPR_2026_paper.html",
+      "languages": [
+        "42 languages with 56 regional dialects and registers"
+      ],
+      "size": "Massive-scale multimodal RAG dataset",
+      "license": "Not specified (academic use)",
+      "category": "评估",
+      "description": "Massive-scale multilingual multi-cultural multimodal RAG dataset. Covers 42 languages with 56 regional dialects and registers across two cultural VQA datasets. First of its kind for multilingual multimodal RAG evaluation. CVPR 2026.",
+      "discovered_date": "2026-06-15",
+      "last_updated": "2026-05-01",
+      "release_version": "v1",
+      "timeliness_score": "中",
+      "search_keywords": "M4-RAG multilingual multimodal RAG CVPR 2026",
+      "source": "SearXNG CVPR 2026 search"
+    },
+    {
+      "name": "propella-annotations",
+      "url": "https://arxiv.org/abs/2602.12414",
+      "languages": [
+        "Multilingual (covers major pretraining corpora languages)"
+      ],
+      "size": "3B+ document annotations (covering FineWeb-2, FinePDFs, HPLT 3.0)",
+      "license": "Not specified (research use)",
+      "category": "预训练",
+      "description": "Multi-Property Document Annotation dataset for LLM data curation at scale. Over 3 billion document annotations covering major pretraining corpora including FineWeb-2, FinePDFs, and HPLT 3.0. Enables quality filtering and data selection for pretraining pipelines.",
+      "discovered_date": "2026-06-15",
+      "last_updated": "2026-02-19",
+      "release_version": "v1",
+      "timeliness_score": "中",
+      "search_keywords": "propella document annotation pretraining data curation",
+      "source": "SearXNG pretraining dataset search (arXiv:2602.12414)"
+    },
+    {
+      "name": "Chitrakshara",
+      "url": "https://arxiv.org/abs/2603.23521",
+      "languages": [
+        "Indian languages (multilingual multimodal interleaved)"
+      ],
+      "size": "Large-scale multimodal dataset",
+      "license": "Not specified (academic use)",
+      "category": "评估",
+      "description": "Large multilingual multimodal dataset for Indian languages. Contains interleaved image-text data. Compared against other multilingual interleaved datasets covering 163 languages. Addresses the underrepresentation of Indian languages in multimodal AI.",
+      "discovered_date": "2026-06-15",
+      "last_updated": "2026-03-30",
+      "release_version": "v1",
+      "timeliness_score": "中",
+      "search_keywords": "Chitrakshara multilingual multimodal Indian languages",
+      "source": "SearXNG arXiv search (arXiv:2603.23521)"
+    },
+    {
+      "name": "SemEval-2026 Task 7 (Everyday Knowledge)",
+      "url": "https://arxiv.org/abs/2605.02601",
+      "languages": [
+        "Multiple languages and cultures"
+      ],
+      "size": "Cultural knowledge evaluation dataset",
+      "license": "Not specified (shared task)",
+      "category": "评估",
+      "description": "SemEval-2026 shared task on evaluating LLM adaptability across diverse languages and cultures. Tests everyday cultural knowledge that varies across linguistic communities. Includes newly constructed datasets for culturally grounded reasoning.",
+      "discovered_date": "2026-06-15",
+      "last_updated": "2026-05-03",
+      "release_version": "2026",
+      "timeliness_score": "高",
+      "search_keywords": "SemEval 2026 task 7 everyday knowledge multilingual",
+      "source": "SearXNG SemEval 2026 search (arXiv:2605.02601)"
+    },
+    {
+      "name": "SemEval-2026 Task 9 (Multilingual Polarization)",
+      "url": "https://arxiv.org/abs/2604.06817",
+      "languages": [
+        "Multilingual, multicultural, multi-event"
+      ],
+      "size": "Pilot datasets released for shared task",
+      "license": "Not specified (shared task)",
+      "category": "评估",
+      "description": "SemEval-2026 task on detecting multilingual, multicultural and multi-event online polarization. Large-scale dataset for cross-cultural polarization detection across social media platforms (X and Telegram). Pilot datasets released before the shared task.",
+      "discovered_date": "2026-06-15",
+      "last_updated": "2026-04-09",
+      "release_version": "2026",
+      "timeliness_score": "中",
+      "search_keywords": "SemEval 2026 task 9 multilingual polarization",
+      "source": "SearXNG SemEval 2026 search (arXiv:2604.06817)"
+    },
+    {
+      "name": "CMHG (Chinese Minority Headline Generation)",
+      "url": "https://arxiv.org/abs/2509.09990",
+      "languages": [
+        "Tibetan, Uyghur, Traditional Mongolian + Chinese"
+      ],
+      "size": "Headline generation benchmark",
+      "license": "Not specified (academic use)",
+      "category": "评估",
+      "description": "Dataset and benchmark for headline generation of minority languages in China. Addresses challenges from unique writing systems of Tibetan, Uyghur, and Traditional Mongolian that differ from international standards. First benchmark for Chinese minority language headline generation.",
+      "discovered_date": "2026-06-15",
+      "last_updated": "2025-09-12",
+      "release_version": "v1",
+      "timeliness_score": "低",
+      "search_keywords": "CMHG Chinese minority language headline generation Tibetan Uyghur",
+      "source": "SearXNG Chinese minority language dataset search (arXiv:2509.09990)"
+    },
+    {
+      "name": "GitHub Multilingual Repositories Dataset",
+      "url": "https://github.com/github/multilingual-repositories",
+      "languages": [
+        "多语言（覆盖40M+公开仓库的非英语内容，README/Issue/PR语言分类）"
+      ],
+      "size": "40M+仓库元数据，80M+语言分类行",
+      "license": "CC0-1.0",
+      "category": "预训练",
+      "description": "GitHub于2026年6月15日正式发布的仓库级多语言元数据集。包含超过4000万个公开仓库的元数据，以及超过8000万行语言分类信号（来自README文件、Issue讨论和Pull Request内容）。旨在帮助研究人员和开发者发现非英语的多语言开发者内容，填补非英语代码协作语境的数据空白。CC0-1.0公共领域许可，可自由用于LLM训练和评测。Microsoft 2025年开源AI多语言数据承诺的落地项目。",
+      "discovered_date": "2026-06-17",
+      "last_updated": "2026-06-15",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "GitHub multilingual repositories dataset June 2026 CC0",
+      "source": "DuckDuckGo搜索 + GitHub官方博客 + HelpNetSecurity等多家报道验证"
+    },
+    {
+      "name": "DetectRL-X",
+      "url": "https://github.com/AIDC-AI/Marco-LLM/tree/main/DetectRL-X",
+      "languages": [
+        "8种语言（覆盖多个语系）"
+      ],
+      "size": "3.46M样本（346万），6个领域，4种商业LLM生成器，8种攻击策略，4种文本长度粒度",
+      "license": "开放获取（ACL 2026）",
+      "category": "评估",
+      "description": "ACL 2026收录的最大规模多语言LLM生成文本检测基准。覆盖8种常用商业语言、6个高风险领域（学术/新闻/小说/SEO/Wiki/WebText）、4种商业LLM生成器、8种攻击策略（含改写和扰动攻击）、3种文本精炼操作。支持并行二元/三元检测任务，包含8个评估维度并比较12种检测器。首次系统性评估检测器在多语言真实场景下的可靠性。AIDC-AI/Marco-LLM项目发布。",
+      "discovered_date": "2026-06-17",
+      "last_updated": "2026-05-18",
+      "release_version": "v2 (arXiv:2605.15518v2)",
+      "timeliness_score": "高",
+      "search_keywords": "DetectRL-X multilingual LLM generated text detection ACL 2026",
+      "source": "DuckDuckGo搜索 + SearXNG论文交叉验证 + GitHub代码验证"
+    },
+    {
+      "name": "multilingual-gsm-symbolic",
+      "url": "https://huggingface.co/datasets/danish-foundation-models/multilingual-gsm-symbolic",
+      "languages": [
+        "en",
+        "da",
+        "de",
+        "is",
+        "nb",
+        "ru",
+        "zh"
+      ],
+      "size": "10K-100K样本（7种语言 × 符号化数学推理）",
+      "license": "MIT",
+      "category": "评估",
+      "description": "Danish Foundation Models项目发布的多语言符号化数学推理数据集。基于GSM-Symbolic基准扩展到7种语言（英语/丹麦语/德语/冰岛语/挪威语/俄语/中文），评估LLM的数学推理和符号操作能力。MIT许可，Parquet格式。540次下载，2026年6月15日更新（2天前）。",
+      "discovered_date": "2026-06-17",
+      "last_updated": "2026-06-24",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual gsm symbolic math reasoning benchmark 7 languages",
+      "source": "HuggingFace API扫描（multilingual搜索，lastModified排序）",
+      "update_note": "last_updated 从 2026-06-15 更新至 2026-06-24"
+    },
+    {
+      "name": "multilingual-tts/open-bible",
+      "url": "https://huggingface.co/datasets/multilingual-tts/open-bible",
+      "languages": [
+        "arb",
+        "asm",
+        "ben",
+        "ckb",
+        "hne",
+        "nya",
+        "dwr",
+        "luo",
+        "ewe",
+        "gmv",
+        "gof",
+        "guj",
+        "hat",
+        "hau",
+        "hil",
+        "hin",
+        "ibo",
+        "kan",
+        "kik",
+        "lin",
+        "lug",
+        "mal",
+        "mar",
+        "nde",
+        "nep",
+        "orm",
+        "pan",
+        "sna",
+        "swh",
+        "tam",
+        "tel",
+        "tur",
+        "twi",
+        "urd",
+        "vie",
+        "yor"
+      ],
+      "size": "1M-10M样本（35+语言，含大量非洲及南亚低资源语言）",
+      "license": "CC-BY-SA-4.0",
+      "category": "预训练",
+      "description": "大规模多语言圣经语音合成数据集，覆盖35+种语言，以非洲和南亚低资源语言为主（含斯瓦希里/约鲁巴/伊博/豪萨/卢奥/基库尤/卢干达等）。包含Parquet格式音频+文本对，附带强制对齐(forced-alignment)标注。配套论文arXiv:2606.09553。2,143次下载（社区活跃度高），2026年6月12日更新。适用于多语言TTS/ASR训练。",
+      "discovered_date": "2026-06-17",
+      "last_updated": "2026-06-25",
+      "release_version": "v1 (arXiv:2606.09553)",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual TTS bible African low-resource speech dataset",
+      "source": "HuggingFace API扫描（multilingual搜索，按更新时间排序）",
+      "update_note": "last_updated 从 2026-06-12 更新至 2026-06-25"
+    },
+    {
+      "name": "FineTranslations",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/finetranslations",
+      "languages": [
+        "500+语言（与英语平行）"
+      ],
+      "size": "1万亿+tokens平行文本",
+      "license": "ODC-By",
+      "category": "预训练",
+      "description": "【前期遗漏补录】HuggingFace FineWeb团队发布的万亿级多语言→英语平行数据集。基于FineWeb-2语料库，使用Gemma3 27B将非英语内容翻译为英语创建。覆盖500+种语言，是当前最大规模的多语言平行文本数据集之一。2026年1月发布，17,521次下载，294个赞。填补了大规模多语言翻译训练数据的空白。",
+      "discovered_date": "2026-06-17",
+      "last_updated": "2026-01-09",
+      "release_version": "v1",
+      "timeliness_score": "中",
+      "search_keywords": "FineTranslations huggingface trillion token parallel 500 languages",
+      "source": "DuckDuckGo搜索 + InfoQ报道 + 网易报道（前期搜索遗漏，本次补录）"
+    },
+    {
+      "name": "LEMAS Dataset",
+      "url": "https://huggingface.co/LEMAS-Project",
+      "languages": [
+        "zh",
+        "en",
+        "de",
+        "fr",
+        "es",
+        "pt",
+        "it",
+        "ru",
+        "id",
+        "vi"
+      ],
+      "size": "150,000+小时语音数据，10种主要语言",
+      "license": "开放获取",
+      "category": "预训练",
+      "description": "【前期遗漏补录】当前最大规模的开源多语言语音语料库，带有词级时间戳标注。覆盖15万+小时、10种主要语言（中/英/德/法/西/葡/意/俄/印尼/越南语）。通过高效数据处理pipeline构建，确保高质量数据和标注。配套两个基准模型：LEMAS-TTS（流匹配）和LEMAS-Edit（自回归语音编辑）。Idea研究院发布。arXiv:2601.04233。",
+      "discovered_date": "2026-06-17",
+      "last_updated": "2026-01-07",
+      "release_version": "v1 (arXiv:2601.04233)",
+      "timeliness_score": "中",
+      "search_keywords": "LEMAS 150K hours multilingual speech corpus word-level timestamps",
+      "source": "DuckDuckGo中文搜索（知乎报道）+ arXiv论文（前期搜索遗漏，本次补录）"
+    },
+    {
+      "name": "WAXAL",
+      "url": "https://research.google/blog/waxal-a-large-scale-open-resource-for-african-language-speech-technology/",
+      "languages": [
+        "27种撒哈拉以南非洲语言（覆盖1亿+使用者，26+国家）"
+      ],
+      "size": "2,411小时语音数据（1,846小时自然语音 + 565小时录音棚录音）",
+      "license": "高度开放许可（CC-BY类）",
+      "category": "预训练",
+      "description": "【前期遗漏补录】Google Research发布的大规模开放非洲语言语音数据集。覆盖27种撒哈拉以南非洲语言，代表超过1亿使用者。包含ASR组件（转录自然语音）和TTS组件（录音棚质量单说话人录音）。与非洲大学和研究机构合作构建。arXiv:2602.02734。已有近10,000次下载，正被用于ASR和TTS模型训练。",
+      "discovered_date": "2026-06-17",
+      "last_updated": "2026-03-06",
+      "release_version": "v1 (arXiv:2602.02734)",
+      "timeliness_score": "高",
+      "search_keywords": "WAXAL Google African speech dataset 27 languages open resource",
+      "source": "DuckDuckGo搜索 + Google Research Blog + MarkTechPost报道（前期搜索遗漏，本次补录）"
+    },
+    {
+      "name": "Omnilingual ASR Corpus",
+      "url": "https://huggingface.co/datasets/facebook/omnilingual-asr-corpus",
+      "languages": [
+        "1,600+语言（含350+未被ASR技术覆盖的低资源语言）"
+      ],
+      "size": "大规模多语言语音数据集（覆盖1600+语言的训练/评估数据）",
+      "license": "CC-BY-4.0",
+      "category": "预训练",
+      "description": "【前期遗漏补录】Meta发布的超大规模多语言ASR语料库，是Omnilingual ASR系统的数据基础。覆盖1600+种语言，包括500+从未被ASR技术服务过的语言。结合公开数据集和社区合作采集的语音录制数据。7B参数自监督预训练(w2v-BERT 2.0)的数据基础。CC-BY-4.0开放许可。4,803次下载，206个赞。配套模型从300M到7B参数多种尺寸。arXiv:2511.09690。",
+      "discovered_date": "2026-06-17",
+      "last_updated": "2025-11-14",
+      "release_version": "v1 (arXiv:2511.09690)",
+      "timeliness_score": "中",
+      "search_keywords": "Omnilingual ASR corpus facebook 1600 languages speech dataset",
+      "source": "DuckDuckGo搜索 + GitHub验证 + HuggingFace API确认（前期搜索遗漏，本次补录）"
+    },
+    {
+      "name": "LingualX64",
+      "url": "https://www.nature.com/articles/s41598-026-49738-y",
+      "languages": [
+        "64种语言（覆盖多个语系，设计最小化与LLM训练数据重叠）"
+      ],
+      "size": "64语言 × 翻译评估样本（BLEU + COMET双指标评估）",
+      "license": "CC-BY-NC-ND-4.0 (Open Access)",
+      "category": "评估",
+      "description": "Nature Scientific Reports 2026年4月26日发表的多语言翻译对称性评估基准。覆盖64种语言，专为评估LLM翻译性能中的对称性/非对称性设计。特别关注零样本翻译条件下训练数据稀缺和语言复杂性对翻译质量的影响。发现跨语言性能差异显著，揭示了训练数据和模型架构中的潜在非对称性。郑州轻工业大学发布。",
+      "discovered_date": "2026-06-18",
+      "last_updated": "2026-04-26",
+      "release_version": "v1",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "SALT-31",
+      "url": "https://aclanthology.org/2026.africanlp-main.21/",
+      "languages": [
+        "31种乌干达语言"
+      ],
+      "size": "31语言机器翻译评估数据集（短文本级别评估，非句子级别）",
+      "license": "开放获取（ACL Anthology）",
+      "category": "评估",
+      "description": "AfricaNLP 2026 Workshop发布的乌干达语言机器翻译基准。覆盖31种乌干达语言，是首个针对该地区语言的大规模MT评估数据集。与sentence-level评估集不同，SALT-31采用短文本评估方式，更贴近实际应用场景。填补了东非低资源语言MT评估的空白。",
+      "discovered_date": "2026-06-18",
+      "last_updated": "2026-06-01",
+      "release_version": "AfricaNLP 2026",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "APARSIN",
+      "url": "https://aclanthology.org/2026.silkroadnlp-1.9/",
+      "languages": [
+        "14种伊朗语族语言、方言和口音（含多种濒危语言）"
+      ],
+      "size": "情感分析 + 机器翻译双语任务基准",
+      "license": "开放获取（ACL Anthology）",
+      "category": "评估",
+      "description": "SilkRoadNLP 2026发布的伊朗语族多品种基准。覆盖14种伊朗语族语言、方言和口音，包括多种濒危语言。同时支持情感分析和机器翻译两项任务。评估了多种指令微调LLM，发现标准波斯语与其他伊朗语言/方言之间存在显著性能差距。推动了NLP基准对语族内部方言多样性的关注。",
+      "discovered_date": "2026-06-18",
+      "last_updated": "2026-06-01",
+      "release_version": "SilkRoadNLP 2026",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "Multilingual-BFCL",
+      "url": "https://huggingface.co/datasets/qualgo-technologies/Multilingual-BFCL",
+      "languages": [
+        "en",
+        "vi",
+        "th"
+      ],
+      "size": "BFCL风格评估数据（英语 + 越南语 + 泰语），含函数调用评估和意图拒绝评估",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "SIGIR 2026收录的多语言函数调用与工具拒绝评估基准。扩展Berkeley Function-Calling Leaderboard (BFCL) 到越南语和泰语，评估小模型在低资源语言下的函数调用能力和工具拒绝行为。包含标准BFCL AST检查 + 意图拒绝指标。Qualgo Technologies发布，18次下载。2026年6月14日更新。",
+      "discovered_date": "2026-06-18",
+      "last_updated": "2026-06-14",
+      "release_version": "v1 (SIGIR 2026 Short Paper, DOI:10.1145/3805712.3809979)",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "SpeechJBB",
+      "url": "https://arxiv.org/abs/2606.06037",
+      "languages": [
+        "多语言（含代码切换场景：英语 + 多种非英语语言的code-switched组合）"
+      ],
+      "size": "音频越狱攻击数据集（覆盖多种SOTA大型音频语言模型LALM）",
+      "license": "开放获取（arXiv论文）",
+      "category": "评估",
+      "description": "首个针对大型音频语言模型(LALM)在代码切换语音场景下的安全评估基准。arXiv 2026年6月发布。发现：(1) 代码切换的有害音频产生显著高的越狱成功率(JSR)；(2) 非英语单语和非英语代码切换对具有最高攻击成功率；(3) 伪词插入可进一步降低拒绝率。揭示了当前多语言LALM安全对齐的重大盲区。",
+      "discovered_date": "2026-06-18",
+      "last_updated": "2026-06-10",
+      "release_version": "v1 (arXiv:2606.06037)",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "BOUQuET",
+      "url": "https://arxiv.org/abs/2502.04314",
+      "languages": [
+        "8种非英语语言（代表全球最广泛使用的语言，可作为pivot语言）"
+      ],
+      "size": "多方平行语料 + 翻译质量评估基准（段落级别，多领域多注册域）",
+      "license": "开放获取（伴随Omnilingual MT项目动态扩展）",
+      "category": "评估",
+      "description": "多方、多中心、多注册域/领域的翻译数据集和基准。手工构建8种非英语语言，每种源语言代表全球最广泛使用的语言之一，具有作为pivot语言推动更准确翻译的潜力。数据集组织为段落级（超越句子级），覆盖多个领域。已作为Omnilingual MT (arXiv:2603.16309) 的核心评估集，正朝向1600+语言的全语言覆盖方向动态扩展。",
+      "discovered_date": "2026-06-18",
+      "last_updated": "2026-03-22",
+      "release_version": "v1 (arXiv:2502.04314, 随OMT项目持续扩展)",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "M3Kang",
+      "url": "https://huggingface.co/datasets/qualcomm/M3Kang",
+      "languages": [
+        "多语言（含英语及多种语言的数学问题翻译版本）"
+      ],
+      "size": "109K行数据（2个split：standard + 多语言翻译），含图像（几何图形等）",
+      "license": "开放获取（Qualcomm发布）",
+      "category": "评估",
+      "description": "Qualcomm发布的多语言多模态数学推理评估基准。评估VLM在多语言环境下的数学推理能力，包含图像（几何图形等）和文本问题。采用新的翻译pipeline将多模态问题翻译为多种语言。配套论文(arXiv:2601.16218)分析了问题难度与VLM性能之间的关系。109K行数据规模。",
+      "discovered_date": "2026-06-18",
+      "last_updated": "2026-01-23",
+      "release_version": "v1 (arXiv:2601.16218)",
+      "timeliness_score": "中"
+    },
+    {
+      "name": "CohereLabs/Global-MMLU-Lite",
+      "url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU-Lite",
+      "languages": [
+        "ar",
+        "bn",
+        "cs",
+        "cy",
+        "de",
+        "en",
+        "es",
+        "fr",
+        "hi",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "ko",
+        "my",
+        "or",
+        "pt",
+        "sk",
+        "sq",
+        "sw",
+        "tg",
+        "yo",
+        "zh"
+      ],
+      "size": "10K-100K 样本（23 语言 × 615 行/语言，含 test 400 + dev 215 splits）",
+      "license": "Apache-2.0",
+      "category": "评估",
+      "description": "Cohere Labs 发布的多语言多文化 MMLU 评估基准的轻量版。覆盖 23 种语言（含低资源语言缅甸语、约鲁巴语、斯瓦希里语、塔吉克语等），每个语言子集包含 43 个学科领域。数据集特别关注文化偏见和地域覆盖，包含 culture/region/country/cultural_sensitivity_label 等元数据字段。配套论文 Global MMLU (ACL 2025) 已被广泛引用，被 BYOL (Microsoft)、TinyAya、ReasonXL 等多个项目用作评估基准。8,221 下载，41 赞。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-06-08",
+      "release_version": "v1.0 (arXiv:2412.03304)",
+      "timeliness_score": "高",
+      "search_keywords": "CohereLabs Global-MMLU-Lite multilingual benchmark",
+      "source": "HuggingFace CohereLabs 生态搜索"
+    },
+    {
+      "name": "CohereLabs/CultureMarkers",
+      "url": "https://huggingface.co/datasets/CohereLabs/CultureMarkers",
+      "languages": [
+        "ar",
+        "en",
+        "zh",
+        "fr",
+        "de",
+        "es",
+        "多语言（覆盖多种语言和文化区域）"
+      ],
+      "size": "5.6M 样本（文化标注数据集）",
+      "license": "开放获取（参见 CohereLabs 仓库）",
+      "category": "对齐",
+      "description": "Cohere Labs 发布的文化对齐标注数据集，配套论文 'The Culture Funnel: You Can't Align What isn't in the Data'（arXiv:2606.13808，2026年6月）。数据集包含 5.6M 样本，每个样本标注了文化维度标签（CultureAsKnowledge/GeneralCulture/NoCulture）、主题类别（Medical/General/Technology）、任务类型（ExplanationLearning/InformationExtraction/PracticalGuidance）和地理区域（Egypt/Unknown 等）。研究发现 LLM 训练 pipeline 中存在文化数据漏斗现象：显式文化信号在后训练阶段急剧下降。286 下载，4 赞。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-06-15",
+      "release_version": "v1.0 (arXiv:2606.13808)",
+      "timeliness_score": "高",
+      "search_keywords": "CohereLabs CultureMarkers cultural alignment dataset",
+      "source": "SearXNG + arXiv 论文发现"
+    },
+    {
+      "name": "OpenBMB/MA-ProofBench",
+      "url": "https://huggingface.co/datasets/openbmb/MA-ProofBench",
+      "languages": [
+        "en（数学形式化语言，基于 Lean 4 / Mathlib）"
+      ],
+      "size": "200 道形式化定理（Level I 100 道本科级 + Level II 100 道博士级）",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "OpenBMB 发布的数学分析领域首个形式化定理证明评估基准（arXiv:2606.13782，2026年6月）。覆盖 6 个核心主题、27 个子类别，包括测度与积分理论、复分析、泛函分析。采用两级难度设计：Level I（本科级）和 Level II（博士资格级）。通过人类主导、LLM 辅助的形式化 pipeline 构建，并经独立专家审核。最优模型 GPT-5.5 在 Level I 仅达 16% Pass@8，Level II 接近 0%，揭示了形式化数学推理的巨大挑战。242 下载，6 赞。注：虽非传统多语言数据集，但作为形式推理评估基准对多语言 LLM 能力评估有重要参考价值。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-06-15",
+      "release_version": "v1.0 (arXiv:2606.13782)",
+      "timeliness_score": "高",
+      "search_keywords": "openbmb MA-ProofBench mathematical proof benchmark",
+      "source": "HuggingFace OpenBMB 生态搜索 + SearXNG"
+    },
+    {
+      "name": "VityaVitalich/multilingual-safety-data",
+      "url": "https://huggingface.co/datasets/VityaVitalich/multilingual-safety-data",
+      "languages": [
+        "de",
+        "es",
+        "ru",
+        "ja",
+        "zh",
+        "fr",
+        "it"
+      ],
+      "size": "272,608 行（7 语言 × ~38.9K 文档），clean 配置 272,343 行",
+      "license": "Apache-2.0（推测，基于源数据集 locuslab/safety_data_annotated）",
+      "category": "对齐",
+      "description": "7 语言机器翻译安全分类数据集，基于 Safety Pretraining（Maini et al., 2025, arXiv:2504.16980）的 0-5 安全评分标准。英文源数据来自 locuslab/safety_data_annotated，使用 google/gemma-4-31B-it 翻译为德语、西班牙语、俄语、日语、中文、法语、意大利语。提供两个配置：clean（过滤低质量翻译）和 annotated（保留所有行 + 质量过滤标记）。训练/验证/测试基于英文源 uid 分割，确保跨语言无泄漏。val/test 各 ~1,500 文档/语言。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-06-05",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual safety data classifier 7 languages",
+      "source": "HuggingFace multilingual safety 搜索"
+    },
+    {
+      "name": "iNLP-Lab/multilingual-safety",
+      "url": "https://huggingface.co/datasets/iNLP-Lab/multilingual-safety",
+      "languages": [
+        "en",
+        "zh",
+        "it",
+        "bn",
+        "ko"
+      ],
+      "size": "多语言安全数据集（具体规模待确认）",
+      "license": "开放获取",
+      "category": "对齐",
+      "description": "5 语言（英语、中文、意大利语、孟加拉语、韩语）多语言安全数据集，包含有害提示（harmful prompts）和模型响应。覆盖安全对齐场景中的拒绝行为、有害内容识别等任务。数据示例显示包含阿拉伯语等其他语言内容，实际语言覆盖可能更广。128 下载。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-05-14",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "iNLP-Lab multilingual safety dataset",
+      "source": "HuggingFace multilingual safety 搜索"
+    },
+    {
+      "name": "CohereLabs/m-ArenaHard-v2.0",
+      "url": "https://huggingface.co/datasets/CohereLabs/m-ArenaHard-v2.0",
+      "languages": [
+        "ar",
+        "en",
+        "fr",
+        "de",
+        "es",
+        "it",
+        "ja",
+        "ko",
+        "zh",
+        "pt",
+        "多语言"
+      ],
+      "size": "多语言困难对话评估数据集（具体样本数待确认）",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "Cohere Labs 发布的 m-ArenaHard 多语言困难对话评估基准 v2.0 版本。包含多语言（含阿拉伯语编码任务、中文、法语等）的困难提示（hard prompts），覆盖编码、推理、创意写作等多个类别。用于评估 LLM 在高难度多语言场景下的对话能力。924 下载，7 赞。v2.1 版本（866 下载）也已发布。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-05-05",
+      "release_version": "v2.0",
+      "timeliness_score": "中",
+      "search_keywords": "CohereLabs m-ArenaHard multilingual evaluation",
+      "source": "HuggingFace CohereLabs 生态搜索"
+    },
+    {
+      "name": "cs-552-2026-kth/multilingual_sft_full",
+      "url": "https://huggingface.co/datasets/cs-552-2026-kth/multilingual_sft_full",
+      "languages": [
+        "hi",
+        "ru",
+        "en",
+        "多语言（包含印地语、俄语等）"
+      ],
+      "size": "多语言 SFT 完整数据集（配套 base 版本）",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "KTH（瑞典皇家理工学院）CS-552 2026 课程项目发布的多语言指令微调数据集完整版。数据包含多语言法律推理、知识问答等场景的 SFT 样本，可见语言包括印地语、俄语、英语等。配套有 base 版本（multilingual_sft_base）。29 下载。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-06-06",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual SFT KTH course dataset",
+      "source": "HuggingFace multilingual SFT 搜索"
+    },
+    {
+      "name": "chaurAr/Cross-lingual-entity-dataset",
+      "url": "https://huggingface.co/datasets/chaurAr/Cross-lingual-entity-dataset",
+      "languages": [
+        "多语言（跨语言实体数据集）"
+      ],
+      "size": "2,659 下载（具体样本数待确认）",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "跨语言实体数据集，用于评估跨语言命名实体识别和实体链接任务。2,659 下载表明有一定的社区使用基础。发布于 2026 年 6 月。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-06-09",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "cross-lingual entity dataset NER",
+      "source": "HuggingFace cross-lingual 搜索"
+    },
+    {
+      "name": "nur-dev/farabi-crosslingual-tool-argnorm",
+      "url": "https://huggingface.co/datasets/nur-dev/farabi-crosslingual-tool-argnorm",
+      "languages": [
+        "kk",
+        "ru",
+        "en"
+      ],
+      "size": "跨语言论辩规范化数据集（具体规模待确认）",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "哈萨克语-俄语-英语跨语言论辩规范化（Argumentation Normalization）数据集，基于 Farabi 跨语言工具构建。用于跨语言论辩挖掘和文本规范化任务。13 下载。填补了中亚语言（哈萨克语）在论辩分析领域的空白。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-06-18",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "farabi crosslingual Kazakh Russian English",
+      "source": "HuggingFace cross-lingual 搜索"
+    },
+    {
+      "name": "African-Languages-Lab/all-lab-text-multi",
+      "url": "https://huggingface.co/datasets/African-Languages-Lab/all-lab-text-multi",
+      "languages": [
+        "多种非洲语言（具体语言列表需授权后查看）"
+      ],
+      "size": "72.3 GB（多语言文本语料）",
+      "license": "需授权访问（Gated Dataset）",
+      "category": "预训练",
+      "description": "African Languages Lab 发布的大规模多语言非洲语言文本语料库（多语言混合版本）。72.3 GB 规模，是当前最大的非洲语言开放语料之一（需申请访问）。配套有单语版本（all-lab-text-mono，同日发布）。51 下载。为非洲语言 LLM 预训练和微调提供重要数据基础。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-06-17",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "African Languages Lab multilingual text corpus",
+      "source": "HuggingFace African language 搜索"
+    },
+    {
+      "name": "African-Languages-Lab/kasagadi",
+      "url": "https://huggingface.co/datasets/African-Languages-Lab/kasagadi",
+      "languages": [
+        "tw（契维语）",
+        "ha（豪萨语）",
+        "en（英语）"
+      ],
+      "size": "文本分类 + 语音识别多模态数据集（具体规模待确认）",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "African Languages Lab 发布的 Kasagadi 数据集，覆盖契维语（Twi，加纳主要语言）、豪萨语（Hausa，西非广泛使用）和英语。同时支持文本分类和自动语音识别两个任务，是多模态多任务非洲语言数据集。31 下载，1 赞。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-06-11",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "kasagadi African language Twi Hausa ASR",
+      "source": "HuggingFace African language 搜索"
+    },
+    {
+      "name": "mramazan/nvidia-nemotron-model-reasoning-dataset-turkish",
+      "url": "https://huggingface.co/datasets/mramazan/nvidia-nemotron-model-reasoning-dataset-turkish",
+      "languages": [
+        "tr（土耳其语）",
+        "en（英语）"
+      ],
+      "size": "土耳其语推理数据集（具体规模待确认）",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "基于 NVIDIA Nemotron 模型构建的土耳其语-英语双语推理数据集。用于训练和评估土耳其语推理能力。33 下载。填补了土耳其语在推理 SFT 数据方面的空白。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-06-18",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "Nemotron Turkish reasoning dataset",
+      "source": "HuggingFace Nemotron 生态搜索"
+    },
+    {
+      "name": "jescy525/aether-sft-v2-multilingual",
+      "url": "https://huggingface.co/datasets/jescy525/aether-sft-v2-multilingual",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "size": "多语言 SFT 数据集 v2 版本（具体规模待确认）",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "Aether SFT v2 多语言版本，覆盖英语和法语的指令微调数据。66 下载。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-05-25",
+      "release_version": "v2",
+      "timeliness_score": "中",
+      "search_keywords": "aether SFT multilingual v2",
+      "source": "HuggingFace multilingual SFT 搜索"
+    },
+    {
+      "name": "GaoYao Benchmark",
+      "url": "https://github.com/lunyiliu/GaoYao",
+      "languages": [
+        "en",
+        "zh",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es",
+        "ru",
+        "ar",
+        "hi",
+        "pt",
+        "it",
+        "nl",
+        "pl",
+        "tr",
+        "vi",
+        "th",
+        "id",
+        "ms",
+        "fil",
+        "bn",
+        "ta",
+        "sw",
+        "am",
+        "yo",
+        "ha"
+      ],
+      "size": "182,300 samples",
+      "license": "未明确标注（论文associated code开源）",
+      "category": "评估",
+      "description": "ACL 2026 收录的多语言多文化评测基准。覆盖26种语言、51个国家/地区，构建三维度九子项评估框架（通用多语言能力、跨文化能力、单一文化能力）。指令遵循与多轮对话测试集由语言专家人工精译扩展至19种语言，语言覆盖较现有工作提升111%。文化能力采用专家参与的数据合成方法覆盖34种文化，文化代表性提升88%。已封装为标准化Agent Skill，支持一键部署。",
+      "discovered_date": "2026-06-20",
+      "last_updated": "2026-04-28",
+      "release_version": "ACL 2026 (arXiv:2604.20225)",
+      "timeliness_score": "高",
+      "search_keywords": "GaoYao benchmark multilingual ACL 2026",
+      "source": "DuckDuckGo搜索发现（ACL 2026论文笔记引用）"
+    },
+    {
+      "name": "CCFQA (Cross-lingual Cross-modal Factuality QA)",
+      "url": "https://github.com/yxduir/ccfqa",
+      "languages": [
+        "en",
+        "zh",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es",
+        "ru"
+      ],
+      "size": "14,400 parallel speech-text factual QA samples",
+      "license": "未明确标注（AAAI 2026论文关联）",
+      "category": "评估",
+      "description": "AAAI 2026 收录的跨语言跨模态事实性评估基准。首个覆盖8种语言的平行语音-文本事实QA数据集，系统评估多模态大模型的跨语言和跨模态事实性能力。包含短事实问答和跨语言/跨模态一致性评估。",
+      "discovered_date": "2026-06-20",
+      "last_updated": "2025-08-12",
+      "release_version": "AAAI 2026 (arXiv:2508.07295)",
+      "timeliness_score": "中",
+      "search_keywords": "CCFQA cross-lingual cross-modal benchmark AAAI 2026",
+      "source": "DuckDuckGo搜索发现（AAAI 2026论文）"
+    },
+    {
+      "name": "MM-JudgeBench",
+      "url": "https://arxiv.org/abs/2605.xxxxx（ACL 2026 Findings，具体arxiv ID待确认）",
+      "languages": [
+        "覆盖25种语言"
+      ],
+      "size": "60,000+ preference instances",
+      "license": "待确认（论文刚发表）",
+      "category": "评估",
+      "description": "ACL 2026 Findings 收录。首个大规模多语言多模态评判模型基准，评估22个LVLM评判器的跨语言性能差异。发现模型大小和架构不能预测多语言鲁棒性，揭示了当前LVLM评判器在跨语言场景下的显著性能差距。",
+      "discovered_date": "2026-06-20",
+      "last_updated": "2026-06-20",
+      "release_version": "ACL 2026 Findings",
+      "timeliness_score": "高",
+      "search_keywords": "MM-JudgeBench multilingual multimodal evaluation ACL 2026",
+      "source": "DuckDuckGo搜索发现（ACL 2026 Findings论文引用）"
+    },
+    {
+      "name": "ChinaHeritaQA",
+      "url": "https://huggingface.co/datasets/Multilingual-NLP/ChinaHeritaQA",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "size": "2,279 images + 14,133 bilingual QA pairs",
+      "license": "CC-BY-NC-ND-4.0",
+      "category": "评估",
+      "description": "2026年6月11日发布的多模态文化遗产评测基准。评估视觉语言模型对中国UNESCO世界遗产地的文化推理能力，涵盖7个认知维度（从基础识别到历史断代）。包含2,279张真实场景图片（来自51个中国世界遗产地）和133张非中国世界遗产地干扰图片。双语QA对覆盖中英两种语言。arXiv:2606.08959。",
+      "discovered_date": "2026-06-20",
+      "last_updated": "2026-06-19",
+      "release_version": "v1.0 (arXiv:2606.08959)",
+      "timeliness_score": "高",
+      "search_keywords": "ChinaHeritaQA multilingual cultural heritage benchmark",
+      "source": "HuggingFace API搜索发现（最近更新排序）"
+    },
+    {
+      "name": "JiraiBench",
+      "url": "https://github.com/zhe-wang0018/JiraiBench",
+      "languages": [
+        "zh",
+        "ja"
+      ],
+      "size": "15,000+ annotated social media posts",
+      "license": "未明确标注（EACL 2026论文关联）",
+      "category": "评估",
+      "description": "EACL 2026 收录的跨语言文化基准。首个聚焦中日'地雷'（Jirai）亚文化及其与高风险健康行为关联的跨语言数据集。涵盖药物过量、饮食障碍、自伤等多种自毁行为，评估LLM对文化特定内容的检测能力。数据集包含超过15,000条标注社交媒体帖子。arXiv:2503.21679。",
+      "discovered_date": "2026-06-20",
+      "last_updated": "2026-03-28",
+      "release_version": "EACL 2026 (arXiv:2503.21679)",
+      "timeliness_score": "中",
+      "search_keywords": "JiraiBench cross-lingual benchmark EACL 2026",
+      "source": "DuckDuckGo搜索发现（EACL 2026论文集）"
+    },
+    {
+      "name": "Thiomi Dataset",
+      "url": "https://arxiv.org/abs/2603.29244",
+      "languages": [
+        "sw",
+        "ki",
+        "kam",
+        "ki Meru",
+        "luo",
+        "maa",
+        "kipsigis",
+        "so",
+        "wo",
+        "ff"
+      ],
+      "size": "601,000+ sentence-level text annotations + 385,000+ audio recordings",
+      "license": "未明确标注（arXiv论文）",
+      "category": "预训练/微调",
+      "description": "大规模非洲语言多模态语料库。覆盖10种非洲语言、4个语系：斯瓦希里语、基库尤语、坎巴语、基梅鲁语、卢奥语、马赛语、基普西吉斯语、索马里语（东非）；沃洛夫语（西非）；富拉尼语（西/中非）。通过专用移动平台收集，包含超过60.1万条审核通过的句子级文本标注和38.5万条音频录音。填补了非洲低资源语言数据的重大空白。",
+      "discovered_date": "2026-06-20",
+      "last_updated": "2026-04-01",
+      "release_version": "v1.0 (arXiv:2603.29244)",
+      "timeliness_score": "中",
+      "search_keywords": "Thiomi dataset African languages multimodal",
+      "source": "DuckDuckGo搜索发现（低资源语言数据集搜索）"
+    },
+    {
+      "name": "DimABSA",
+      "url": "https://arxiv.org/abs/2601.23022",
+      "languages": [
+        "en",
+        "zh",
+        "ja",
+        "ko",
+        "de",
+        "es"
+      ],
+      "size": "76,958 aspect instances across 42,590 sentences",
+      "license": "未明确标注（SemEval-2026 Task 3数据集）",
+      "category": "评估",
+      "description": "SemEval-2026 Task 3 数据集。首个多语言多维度方面级情感分析（ABSA）资源，同时标注传统ABSA元素（方面词、方面类别、意见词）和连续效价-唤醒（VA）情感分数。覆盖6种语言、4个领域、76,958个方面实例。引入新的连续F1（cF1）指标，统一评估分类和连续输出。吸引了超过300名参赛者。",
+      "discovered_date": "2026-06-20",
+      "last_updated": "2026-01-30",
+      "release_version": "SemEval-2026 Task 3 (arXiv:2601.23022)",
+      "timeliness_score": "中",
+      "search_keywords": "DimABSA multilingual sentiment SemEval 2026",
+      "source": "SearXNG搜索发现（SemEval-2026多语言数据集）"
+    },
+    {
+      "name": "CohereLabs/Global-MMLU-Lite (v3.0 版本更新)",
+      "url": "https://huggingface.co/datasets/CohereForAI/Global-MMLU-Lite",
+      "languages": [
+        "en",
+        "zh",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "es",
+        "ru",
+        "ar",
+        "hi",
+        "pt",
+        "it",
+        "nl",
+        "pl",
+        "tr",
+        "vi",
+        "th",
+        "id",
+        "bn",
+        "cs",
+        "hu",
+        "or",
+        "sk",
+        "tg",
+        "sq",
+        "my",
+        "cy"
+      ],
+      "size": "23 languages (新增5种语言)",
+      "license": "待确认",
+      "category": "评估",
+      "description": "【版本更新】Global-MMLU-Lite v3.0 于2026年5月发布，新增5种语言：捷克语(cs)、匈牙利语(hu)、意大利语(it, 更新)、奥里亚语(or)、斯洛伐克语(sk)和塔吉克语(tg)。从v2.0的18种语言扩展至23种语言。该数据集是全球多语言MMLU评估的轻量版本，专为低资源语言评估设计。v2.0（2025年12月）曾新增阿尔巴尼亚语、缅甸语和威尔士语。",
+      "discovered_date": "2026-06-19",
+      "last_updated": "2026-05-01",
+      "release_version": "v3.0 (May 2026)",
+      "timeliness_score": "高",
+      "search_keywords": "Global-MMLU-Lite CohereLabs multilingual evaluation",
+      "source": "CohereLabs生态搜索发现（版本更新）"
+    },
+    {
+      "name": "MMTEB-Multilingual-v2",
+      "url": "https://huggingface.co/datasets/mteb/MMTEB-Multilingual-v2",
+      "languages": [
+        "覆盖数十种语言，包括 en, zh, fr, de, es, da, no, hi 等（基于 MTEB 框架扩展）"
+      ],
+      "size": "包含多个子任务数据集（bitext mining, semantic similarity 等），规模从数千到数十万样本",
+      "license": "Apache-2.0（MTEB 框架许可）",
+      "category": "评估",
+      "description": "MTEB（Massive Text Embedding Benchmark）的多语言 v2 版本。2026-06-20 刚更新。涵盖 bitext mining（BornholmBitextMining、BibleNLP 829语言、BUCC.v2、DiaBla、Flores、IN22Gen 22种印度语言、NTREX 128语言等）、semantic similarity 等多个评估任务。是当前最全面的多语言文本嵌入评估基准之一。",
+      "discovered_date": "2026-06-21",
+      "last_updated": "2026-06-20",
+      "release_version": "v2",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "TableEval",
+      "url": "https://github.com/wenge-research/TableEval",
+      "languages": [
+        "zh-CN",
+        "zh-TW",
+        "en"
+      ],
+      "size": "多种表格结构（简洁/层级/嵌套），4个领域（政府/金融/学术/行业报告），附带 SEAT 评估框架",
+      "license": "开源（GitHub 仓库）",
+      "category": "评估",
+      "description": "EMNLP 2025 收录（arXiv 于 2026-06 更新至 v3）。面向真实世界复杂表格的多语言 QA 基准。特色：(1) 多种表格结构（简洁、层级、嵌套）；(2) 跨语言场景（简体中文、繁体中文、英文）；(3) 4 个领域覆盖；(4) 从近期真实文档采集以最小化数据泄露风险；(5) 提出 SEAT 子问题级评估框架，与人类判断高度一致。SOTA LLM 在此基准上仍有显著差距。",
+      "discovered_date": "2026-06-21",
+      "last_updated": "2026-06-18",
+      "release_version": "v3 (arXiv:2506.03949v3)",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "MMTIT-Bench",
+      "url": "https://arxiv.org/abs/2603.23896",
+      "languages": [
+        "覆盖 14 种非英语非中文语言（含低资源语言）"
+      ],
+      "size": "1,400 images，涵盖文档/场景/网页图片等多种场景",
+      "license": "待发布（论文声明 upon acceptance 后开源）",
+      "category": "评估",
+      "description": "CVPR 2026 收录。首个大规模多语言多场景端到端图文机器翻译（TIMT）基准。人工验证的 1,400 张图片覆盖 14 种非英语非中文语言和多种场景（文档、场景、网页图片）。同时提出 CPR-Trans（Cognition-Perception-Reasoning for Translation）数据范式，将场景认知、文本感知和翻译推理整合到统一推理过程中。在 3B 和 7B 模型上实验显示准确性和可解释性均有提升。",
+      "discovered_date": "2026-06-21",
+      "last_updated": "2026-03-31",
+      "release_version": "CVPR 2026 (arXiv:2603.23896)",
+      "timeliness_score": "中"
+    },
+    {
+      "name": "IMTBench",
+      "url": "https://arxiv.org/abs/2603.10495",
+      "languages": [
+        "覆盖 9 种语言"
+      ],
+      "size": "2,500 image translation samples，4 种实用场景",
+      "license": "待确认（论文关联）",
+      "category": "评估",
+      "description": "多场景跨模态图片内机器翻译评估基准。2,500 个真实图片翻译样本覆盖 4 种实用场景和 9 种语言。支持多维度评估：翻译质量、背景保持、整体图像质量、跨模态对齐分数。对强商业级联系统和开源统一多模态模型进行基准测试，发现在自然场景和低资源语言上仍有显著差距。",
+      "discovered_date": "2026-06-21",
+      "last_updated": "2026-03-14",
+      "release_version": "v1.0 (arXiv:2603.10495)",
+      "timeliness_score": "中"
+    },
+    {
+      "name": "M3TQA (Massively Multilingual Multitask Table QA)",
+      "url": "https://arxiv.org/abs/2508.16265",
+      "languages": [
+        "97 种语言，覆盖多个语系，包括低资源和underrepresented语言"
+      ],
+      "size": "2,916 professionally annotated QA pairs，50 张真实表格，4 个任务类型",
+      "license": "开放获取（论文关联）",
+      "category": "评估",
+      "description": "大规模多语言多任务表格问答基准。覆盖 97 种语言（通过 DeepSeek + GPT-4o 六步翻译管线，中位 BLEU 60.19）。包含 50 张中英文真实表格和 2,916 个专业标注 QA 对，涵盖 4 种表格推理任务。实验发现合成未标注 QA 数据可显著提升低资源语言性能。是当前语言覆盖最广的表格 QA 基准。",
+      "discovered_date": "2026-06-21",
+      "last_updated": "2025-08-21",
+      "release_version": "v1.0 (arXiv:2508.16265)",
+      "timeliness_score": "中"
+    },
+    {
+      "name": "MultiNRC (Multilingual Native Reasoning Challenge)",
+      "url": "https://arxiv.org/abs/2507.17476",
+      "languages": [
+        "fr",
+        "es",
+        "zh（含英语等价翻译对照集）"
+      ],
+      "size": "1,000+ native reasoning questions",
+      "license": "开放获取（arXiv 论文）",
+      "category": "评估",
+      "description": "首个聚焦原生多语言推理能力的评估基准。由母语者在法语、西班牙语和中文中原创编写（非翻译），覆盖 4 类推理：语言特异性语言推理、文字游戏/谜语、文化/传统推理、文化相关数学推理。提供英语等价翻译集用于跨语言对比。14 个领先 LLM 评测显示无一超过 50%，且大多数模型在英语数学推理上比原语言高 10%+。",
+      "discovered_date": "2026-06-21",
+      "last_updated": "2025-07-23",
+      "release_version": "v1.0 (arXiv:2507.17476)",
+      "timeliness_score": "中"
+    },
+    {
+      "name": "Macaron",
+      "url": "https://huggingface.co/datasets/AlaaAhmed2444/Macaron",
+      "languages": [
+        "覆盖 20 种语言和方言，包括 am, yo, zu, ky, 多种阿拉伯语方言等低资源语言"
+      ],
+      "size": "11,862 instances，100 语言无关模板，7 种推理类型，22 种文化方面",
+      "license": "开放获取（HuggingFace 数据集）",
+      "category": "评估",
+      "description": "模板优先的多语言多文化推理基准。创新点：将推理类型和文化方面解耦，通过 100 个语言无关模板覆盖 7 种推理类型和 22 种文化方面。由母语标注者创建场景对齐的英语和本地语言多选题及判断题。覆盖 20 个国家/文化背景和 10 种文字。21 个多语言 LLM 评测显示推理模式模型最强（80.8%），但开源模型在本地语言上显著退化，常接近随机水平。",
+      "discovered_date": "2026-06-21",
+      "last_updated": "2026-02-13",
+      "release_version": "v1.0 (arXiv:2602.10732)",
+      "timeliness_score": "中"
+    },
+    {
+      "name": "malaysia-ai/Multilingual-TTS",
+      "url": "https://huggingface.co/datasets/malaysia-ai/Multilingual-TTS",
+      "languages": [
+        "zh",
+        "en",
+        "ms",
+        "ta",
+        "bn",
+        "tr",
+        "ha",
+        "ig",
+        "yo",
+        "pcm（尼日利亚皮钦语）",
+        "等 14 种语言"
+      ],
+      "size": "10M-100M 样本规模（744 个子集，含多个 TTS 数据源）",
+      "license": "CC-BY-NC-4.0",
+      "category": "预训练/微调",
+      "description": "马来西亚 AI 社区维护的多语言 TTS 数据集集合。2026-06-20 更新。包含 744 个子集，覆盖中文、英语、马来语、泰米尔语、孟加拉语、土耳其语，以及多种非洲语言（豪萨语 89K 行、伊博语 47.5K 行、约鲁巴语 44.8K 行、尼日利亚皮钦语 52.4K 行）等。10M-100M 级别规模，2,778 次下载，20 个赞。",
+      "discovered_date": "2026-06-21",
+      "last_updated": "2026-06-28",
+      "release_version": "持续更新",
+      "timeliness_score": "高",
+      "update_note": "last_updated 从 2026-06-20 更新至 2026-06-28"
+    },
+    {
+      "name": "GlobeAudio",
+      "url": "https://huggingface.co/datasets/iNLP-Lab/GlobeAudio",
+      "languages": [
+        "en",
+        "zh",
+        "ru",
+        "th",
+        "bn",
+        "tl"
+      ],
+      "size": "5,637 多选题，6 种语言",
+      "license": "待确认",
+      "category": "评估基准",
+      "description": "多语言多文化自然音频理解评估基准，针对大型音频-语言模型(LALMs)。由母语专家基于自然音频构建，涵盖6种类型学多样化语言。要求模型具备高阶听觉推理能力和文化解读能力。配套论文 arXiv:2606.08194。",
+      "discovered_date": "2026-06-24",
+      "last_updated": "2026-06-10",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "GlobeAudio multilingual audio benchmark",
+      "source": "HuggingFace API + arXiv (2606.08194)"
+    },
+    {
+      "name": "REDACT",
+      "url": "https://arxiv.org/abs/2606.19881",
+      "languages": [
+        "multilingual (25 languages, 9 scripts)"
+      ],
+      "size": "13,427 条记录，324,078 实体标注，51 种实体类型，4,127 表面形式模式",
+      "license": "待确认（论文声明将发布 benchmark + schema + prompts + evaluation harness）",
+      "category": "评估基准",
+      "description": "系统性控制的多语言PII（个人身份信息）检测基准。覆盖25种语言9种文字，采用强度2覆盖阵列采样器控制9个生成轴（领域、格式、难度、长度、密度、代码切换、语言、邻接、共现）。含GDPR对齐的敏感度分级。评估了5个检测器（Presidio、GLiNER、OpenAI Privacy Filter、GPT-4.1、Claude Sonnet 4.6）。",
+      "discovered_date": "2026-06-24",
+      "last_updated": "2026-06-18",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "REDACT multilingual PII benchmark",
+      "source": "arXiv (2606.19881)"
+    },
+    {
+      "name": "IdiomX",
+      "url": "https://huggingface.co/datasets/aymansharara/IdiomX",
+      "languages": [
+        "en",
+        "ar",
+        "fr"
+      ],
+      "size": "190K+ 语境化示例，12K+ 习语",
+      "license": "待确认",
+      "category": "评估基准",
+      "description": "大规模多语言习语理解、检索和解释基准。通过可复现的多阶段流水线构建（词汇资源提取→大规模标准化→受控LLM增强→结构化验证）。定义统一四任务基准：习语检测、语境到习语检索、阿拉伯语到英语习语检索、习语解释。配套论文 arXiv:2606.02584。",
+      "discovered_date": "2026-06-24",
+      "last_updated": "2026-06-05",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "IdiomX multilingual idiom benchmark",
+      "source": "HuggingFace API + arXiv (2606.02584)"
+    },
+    {
+      "name": "MADE (Multilingual Agentic Diagnosing Engine)",
+      "url": "https://arxiv.org/abs/2606.07020",
+      "languages": [
+        "multilingual (15 languages, 26 languages评估基底)"
+      ],
+      "size": "54 查询诊断集，33 模型族 × 11 基准 × 26 语言 × 34 文化 × 866 万评估记录",
+      "license": "待确认",
+      "category": "评估基准",
+      "description": "多语言智能诊断引擎，将评估后分析分解为规划、聚合分析、实例级案例检查、多语言和文化反思、有据报告合成。在大规模多语言评估基底上运行，诊断报告质量比最强基线高47%，人类多语言专家在87.9%的成对比较中偏好MADE。",
+      "discovered_date": "2026-06-24",
+      "last_updated": "2026-06-06",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "MADE multilingual agentic diagnosing benchmark",
+      "source": "arXiv (2606.07020)"
+    },
+    {
+      "name": "METATR v1.0",
+      "url": "https://arxiv.org/abs/2605.26712",
+      "languages": [
+        "multilingual (29 languages, multiple scripts)"
+      ],
+      "size": "多源公开文档集合，29种语言",
+      "license": "待确认",
+      "category": "评估基准",
+      "description": "多语言、可演进的自动文本识别(ATR)基准，面向视觉大语言模型(vLLMs)评估。覆盖29种语言，包含多脚本和多布局文本。定义标准化提示和规范化方法论，建立动态评估框架。评估了开源和闭源SOTA系统。",
+      "discovered_date": "2026-06-24",
+      "last_updated": "2026-05-28",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "METATR multilingual text recognition benchmark",
+      "source": "arXiv (2605.26712)"
+    },
+    {
+      "name": "PowerBench-Multilingual",
+      "url": "https://huggingface.co/datasets/PowerBench/PowerBench-Multilingual",
+      "languages": [
+        "es",
+        "en",
+        "de",
+        "fr",
+        "hi"
+      ],
+      "size": "待确认（含多领域场景：Rank, Wealth, Health, Legal, Physical, Epistemic, Status）",
+      "license": "待确认",
+      "category": "评估基准",
+      "description": "多语言LLM权力行为评估基准，覆盖权力寻求(power_seeking)、权力攫取(power_grabbing)和去权(disempowerment)三大维度，涉及个人、群体和社会层面。涵盖5种语言（西班牙语、英语、德语、法语、印地语），多领域场景设计。",
+      "discovered_date": "2026-06-24",
+      "last_updated": "2026-06-22",
+      "release_version": "",
+      "timeliness_score": "高",
+      "search_keywords": "PowerBench Multilingual LLM evaluation",
+      "source": "HuggingFace API (lastModified search)"
+    },
+    {
+      "name": "Beyond Pass Rate (Multilingual Code LLM Evaluation)",
+      "url": "https://arxiv.org/abs/2606.08840",
+      "languages": [
+        "multilingual (12 programming languages)"
+      ],
+      "size": "2,707 LeetCode 问题，325,343 problem-model-language jobs，9 个开源代码LLM",
+      "license": "待确认",
+      "category": "评估基准",
+      "description": "大规模、执行落地的开源代码LLM多语言评估。覆盖12种编程语言的2,707道LeetCode问题，评估9个开源代码专用LLM。发现最佳模型Yi-Coder-9B-Chat仅达23.64%平均正确率（人类基线57.2%）。编译错误占未通过最佳提交的63.25%。揭示了多语言工件保留评估中被单一指标排行榜隐藏的权衡。",
+      "discovered_date": "2026-06-24",
+      "last_updated": "2026-06-07",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "Beyond Pass Rate multilingual code evaluation",
+      "source": "arXiv (2606.08840)"
+    },
+    {
+      "name": "NyayaSetu Legal Dialogues Multilingual",
+      "url": "https://huggingface.co/datasets/Ananya80/nyayasetu-legal-dialogues-multilingual",
+      "languages": [
+        "multilingual (Indian languages)"
+      ],
+      "size": "含专家法律问答、自适应纠正信号、文档生成记录",
+      "license": "待确认",
+      "category": "微调",
+      "description": "多语言法律援助对话数据集，面向服务不足的印度公民。将WhatsApp风格法律求助消息转化为结构化意图、实体、反馈、纠正和文档生成记录。涵盖保释、案件状态、法律权利、担保书、FIR副本、开庭日期和免费法律援助等场景。含自适应学习循环和置信度追踪。",
+      "discovered_date": "2026-06-24",
+      "last_updated": "2026-06-23",
+      "release_version": "",
+      "timeliness_score": "高",
+      "search_keywords": "nyayasetu legal multilingual dataset",
+      "source": "HuggingFace API (lastModified search, updated 2026-06-23)"
+    },
+    {
+      "name": "YATAV-ENT/aegis-multilingual-guard-dataset-v0.1-samples",
+      "url": "https://huggingface.co/datasets/YATAV-ENT/aegis-multilingual-guard-dataset-v0.1-samples",
+      "languages": [
+        "en",
+        "zh",
+        "es",
+        "ja",
+        "ko"
+      ],
+      "size": "未公布（v0.1 samples 版本）",
+      "license": "未标注",
+      "category": "安全对齐",
+      "description": "多语言安全护栏数据集（v0.1 samples），覆盖5种主要语言（en/zh/es/ja/ko），用于训练和评估AI安全分类器和护栏模型。支持text-classification和text-generation任务。",
+      "discovered_date": "2026-06-26",
+      "last_updated": "2026-06-25",
+      "release_version": "v0.1-samples",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual safety guard aegis",
+      "source": "HuggingFace lastModified搜索"
+    },
+    {
+      "name": "tiny-aya-math-edition/fusion-aya-math-bench",
+      "url": "https://huggingface.co/datasets/tiny-aya-math-edition/fusion-aya-math-bench",
+      "languages": [
+        "en",
+        "de",
+        "fr",
+        "uk"
+      ],
+      "size": "未公布（评估基准）",
+      "license": "未标注",
+      "category": "评估基准",
+      "description": "多语言数学推理评估基准，覆盖英语、德语、法语和乌克兰语4种语言。支持text-generation和question-answering任务，用于评估LLM在非英语语种上的数学推理能力。",
+      "discovered_date": "2026-06-26",
+      "last_updated": "2026-06-22",
+      "release_version": "",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual math benchmark aya",
+      "source": "HuggingFace Aya关键词搜索"
+    },
+    {
+      "name": "forms-legal/legal-templates-multilingual",
+      "url": "https://huggingface.co/datasets/forms-legal/legal-templates-multilingual",
+      "languages": [
+        "en",
+        "es",
+        "pt",
+        "de",
+        "fr"
+      ],
+      "size": "未公布",
+      "license": "未标注",
+      "category": "微调",
+      "description": "多语言法律模板数据集，覆盖5种主要西方法律语言（en/es/pt/de/fr）。支持text-generation、question-answering和summarization任务，可用于法律领域LLM的微调。",
+      "discovered_date": "2026-06-26",
+      "last_updated": "2026-06-24",
+      "release_version": "",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual legal template dataset",
+      "source": "HuggingFace lastModified搜索"
+    },
+    {
+      "name": "jacekduszenko/coedit-multilingual",
+      "url": "https://huggingface.co/datasets/jacekduszenko/coedit-multilingual",
+      "languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it"
+      ],
+      "size": "未公布",
+      "license": "未标注",
+      "category": "微调",
+      "description": "多语言协同编辑数据集，覆盖5种欧洲语言（en/de/es/fr/it）。可用于训练多语言文本编辑和校对模型。",
+      "discovered_date": "2026-06-26",
+      "last_updated": "2026-06-24",
+      "release_version": "",
+      "timeliness_score": "高",
+      "search_keywords": "coedit multilingual european languages",
+      "source": "HuggingFace lastModified搜索"
+    },
+    {
+      "name": "apart-global-south-hack/remote_sensing_VQA_multilingual",
+      "url": "https://huggingface.co/datasets/apart-global-south-hack/remote_sensing_VQA_multilingual",
+      "languages": [
+        "en",
+        "hi",
+        "te",
+        "ur",
+        "id"
+      ],
+      "size": "未公布",
+      "license": "未标注",
+      "category": "评估基准",
+      "description": "多语言遥感视觉问答数据集，覆盖英语、印地语、泰卢固语、乌尔都语和印尼语。来自Global South Hackathon，支持question-answering和multiple-choice任务。",
+      "discovered_date": "2026-06-26",
+      "last_updated": "2026-06-22",
+      "release_version": "",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual VQA remote sensing global south",
+      "source": "HuggingFace lastModified搜索"
+    },
+    {
+      "name": "apart-global-south-hack/counterfactual-pendulum-multilingual",
+      "url": "https://huggingface.co/datasets/apart-global-south-hack/counterfactual-pendulum-multilingual",
+      "languages": [
+        "en",
+        "hi",
+        "id",
+        "te"
+      ],
+      "size": "未公布",
+      "license": "未标注",
+      "category": "评估基准",
+      "description": "多语言反事实推理数据集（钟摆问题），覆盖英语、印地语、印尼语和泰卢固语。来自Global South Hackathon，用于评估LLM在非英语语境下的反事实推理能力。",
+      "discovered_date": "2026-06-26",
+      "last_updated": "2026-06-22",
+      "release_version": "",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual counterfactual reasoning global south",
+      "source": "HuggingFace lastModified搜索"
+    },
+    {
+      "name": "Tralalabs/multilingual-news",
+      "url": "https://huggingface.co/datasets/Tralalabs/multilingual-news",
+      "languages": [
+        "es",
+        "en",
+        "pt",
+        "fr",
+        "de"
+      ],
+      "size": "未公布",
+      "license": "未标注",
+      "category": "预训练",
+      "description": "多语言新闻数据集，覆盖5种语言（es/en/pt/fr/de）。支持text-classification、text-generation和token-classification任务。可用于多语言新闻分类、摘要生成和NER等应用。",
+      "discovered_date": "2026-06-26",
+      "last_updated": "2026-06-25",
+      "release_version": "",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual news dataset",
+      "source": "HuggingFace lastModified搜索"
+    },
+    {
+      "name": "BabyBabelLM",
+      "url": "https://aclanthology.org/2026.eacl-long.152/",
+      "languages": [
+        "45种语言（含 en, zh, ja, ko, de, fr, es, ru, ar, hi, sw, tr, vi, th 等）"
+      ],
+      "size": "每种语言约100M英语等效词内容（分3个层级：100M/10M/1M）",
+      "license": "各数据源许可不同，均允许学术研究使用",
+      "category": "预训练",
+      "description": "EACL 2026 长文论文。多语言发展合理性预训练数据基准，模拟人从出生到习得母语所接触的语言环境。覆盖45种语言，优先收集儿童导向语料、教育材料、儿童读物和转录对话。",
+      "discovered_date": "2026-06-27",
+      "last_updated": "2026-03-01",
+      "release_version": "EACL 2026 (arXiv:2510.10159)",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "ECLeKTic",
+      "url": "https://arxiv.org/abs/2502.21228",
+      "languages": [
+        "12种语言"
+      ],
+      "size": "闭卷QA数据集，基于12种语言 Wikipedia 文章有无差异构建",
+      "license": "开放获取（Google Research）",
+      "category": "评估",
+      "description": "Google Research 发布的跨语言知识迁移评估基准。通过控制 Wikipedia 文章在12种语言中的存在/缺失，构建事实寻求类闭卷QA问题。论文 v3 于2026年6月更新。",
+      "discovered_date": "2026-06-27",
+      "last_updated": "2026-06-01",
+      "release_version": "v3 (arXiv:2502.21228v3)",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "LiveCLKTBench",
+      "url": "https://arxiv.org/abs/2511.14774",
+      "languages": [
+        "5种语言"
+      ],
+      "size": "自动生成管线，基于实时领域知识实体构建",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "ACL 2026 主会论文。自动化生成管线，专门用于隔离和测量跨语言知识迁移。v4 版本于2026年4月更新。",
+      "discovered_date": "2026-06-27",
+      "last_updated": "2026-04-18",
+      "release_version": "v4 (arXiv:2511.14774v4, ACL 2026)",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "IndicSafe",
+      "url": "https://arxiv.org/abs/2603.17915",
+      "languages": [
+        "12种南亚语言"
+      ],
+      "size": "6,000条文化根植性安全提示",
+      "license": "CC BY-NC 4.0（数据集），MIT（代码）",
+      "category": "评估",
+      "description": "首个系统性评估多语言LLM在12种南亚语言中安全性的基准。覆盖种姓、宗教、性别、健康、政治等文化敏感领域。GitHub: ppattnayak/indicsafe。",
+      "discovered_date": "2026-06-27",
+      "last_updated": "2026-05-15",
+      "release_version": "v2 (arXiv:2603.17915v2)",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "Sakhi",
+      "url": "https://huggingface.co/datasets/SimPPL/sakhi",
+      "languages": [
+        "en",
+        "hi",
+        "mr"
+      ],
+      "size": "380个QA对（149个专家级 + 231个社区级），含2,103条医生评级",
+      "license": "CC BY 4.0",
+      "category": "评估",
+      "description": "NeurIPS 2026 Evaluations and Datasets track 论文。多语言母婴健康LLM基准，由医生和社区志愿者共同构建。",
+      "discovered_date": "2026-06-27",
+      "last_updated": "2026-06-15",
+      "release_version": "v1 (NeurIPS 2026 E&D)",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "TranslationTangles",
+      "url": "https://github.com/faiyazabdullah/TranslationTangles",
+      "languages": [
+        "24个双向语言对"
+      ],
+      "size": "1,439个人工标注翻译-参考对 + 多领域评估数据集",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "ACL 2026 Findings 论文。统一框架和数据集，用于评估开源LLM的翻译质量和公平性。覆盖24个双向语言对，跨多个领域。",
+      "discovered_date": "2026-06-27",
+      "last_updated": "2026-05-30",
+      "release_version": "ACL 2026 Findings (arXiv:2510.07877)",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "MORPHOGEN",
+      "url": "https://2026.aclweb.org/program/accepted_papers/",
+      "languages": [
+        "多语言（形态丰富的语言为主）"
+      ],
+      "size": "性别感知形态生成评估基准",
+      "license": "待确认",
+      "category": "评估",
+      "description": "ACL 2026 主会论文。多语言性别感知形态生成评估基准，专门评估LLM在不同语言中处理性别相关的形态生成能力。",
+      "discovered_date": "2026-06-27",
+      "last_updated": "2026-06-27",
+      "release_version": "ACL 2026 Main",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "WILA-popQA",
+      "url": "https://github.com/duo0301/WILA-popQA",
+      "languages": [
+        "多语言（基于 Wikidata 知识图谱）"
+      ],
+      "size": "多语言数据集 + 评估脚本 + 推理结果",
+      "license": "开放获取（Zenodo存档: 19249706）",
+      "category": "评估",
+      "description": "LREC 2026 Workshop 论文。基于 Wikidata 知识图谱的框架，用于测量多语言LLM中的跨语言偏见。",
+      "discovered_date": "2026-06-27",
+      "last_updated": "2026-05-19",
+      "release_version": "LREC 2026 Workshop",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "XL-SafetyBench",
+      "url": "https://huggingface.co/datasets/AIM-Intelligence/XL-SafetyBench",
+      "languages": [
+        "en",
+        "fr",
+        "de",
+        "es",
+        "ko",
+        "ja",
+        "zh",
+        "ar",
+        "hi",
+        "pt"
+      ],
+      "size": "5,500 测试用例（10 个国家-语言对）",
+      "license": "开放获取（见 HF 数据集卡）",
+      "category": "评估",
+      "description": "KT（韩国电信）开发的跨文化安全评估基准。包含 Jailbreak Benchmark（国家级对抗提示）和 Cultural Benchmark（文化敏感性嵌入无害请求）。双独立母语标注员标注。引入 Neutral-Safe Rate (NSR) 和 Cultural Sensitivity Rate (CSR) 两个新指标。评估 10 个前沿模型和 27 个本地模型。论文 arXiv:2605.05662。448 下载，6 赞。",
+      "discovered_date": "2026-06-28",
+      "last_updated": "2026-05-26",
+      "release_version": "v1 (arXiv:2605.05662)",
+      "timeliness_score": "高",
+      "search_keywords": "XL-SafetyBench cross-cultural safety benchmark",
+      "source": "SearXNG + HuggingFace API"
+    },
+    {
+      "name": "AgriQA Multilingual Dataset",
+      "url": "https://huggingface.co/datasets/rokayon/AgriQA_Multilingual_Dataset",
+      "languages": [
+        "bn",
+        "en",
+        "es",
+        "zh"
+      ],
+      "size": "数千条农业问答对（含孟加拉语、英语、西班牙语、中文）",
+      "license": "开放获取",
+      "category": "微调",
+      "description": "多语言农业知识问答数据集，覆盖作物疾病、肥料使用、收获技术等农业领域。以 chat 格式（<|im_start|>user/assistant）组织，可直接用于 SFT 训练。覆盖 4 种语言，特别关注发展中国家农业场景。14 下载（新发布）。",
+      "discovered_date": "2026-06-28",
+      "last_updated": "2026-06-26",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "AgriQA multilingual agricultural QA",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "GhanaNLP Multilingual Emotion",
+      "url": "https://huggingface.co/datasets/ghananlpcommunity/multilingual-emotion-ghana",
+      "languages": [
+        "twi",
+        "dagbani",
+        "ewe",
+        "en"
+      ],
+      "size": "2,476 条情感标注样本（4 种语言 × 23 种情感类别）",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "加纳语言情感分类数据集，覆盖 Twi（609）、Dagbani（628）、Ewe（607）、English（632）四种语言。标注 23 种细粒度情感（Curious, Frustrated, Anxious, Afraid 等）。以指令格式组织，可直接用于评估或微调。对非洲低资源语言情感分析有重要价值。26 下载（新发布）。",
+      "discovered_date": "2026-06-28",
+      "last_updated": "2026-06-26",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual emotion Ghana African language",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "ForMaT (Format-Preserving Multilingual Translation)",
+      "url": "https://arxiv.org/abs/2605.15794",
+      "languages": [
+        "15 种语言对（含 en, zh, ja, ko, de, fr, es 等）"
+      ],
+      "size": "3,956 份 PDF 文档，含布局元数据",
+      "license": "开放获取（论文配套数据）",
+      "category": "评估",
+      "description": "格式保持的多语言翻译平行语料库。使用 K-Medoids 采样 45 个几何特征确保结构多样性（嵌套表格、公式等复杂元素）。评估揭示当前 MT 系统在空间定位和几何同步方面的不足。为布局感知翻译模型开发提供基准。论文 arXiv:2605.15794（2026 年 5 月）。",
+      "discovered_date": "2026-06-28",
+      "last_updated": "2026-05-20",
+      "release_version": "v1 (arXiv:2605.15794)",
+      "timeliness_score": "高",
+      "search_keywords": "ForMaT format preserving multilingual translation PDF",
+      "source": "SearXNG (arxiv paper)"
+    },
+    {
+      "name": "ChiSafe-PAS (Chinese Safety Pilot Annotation Set)",
+      "url": "https://arxiv.org/abs/2605.29667",
+      "languages": [
+        "zh（中文）"
+      ],
+      "size": "1,897 条对抗性中文提示（1,544 条完整标注）",
+      "license": "开放获取",
+      "category": "评估",
+      "description": "人工标注的中文安全评估基准。覆盖 4 个高风险领域（自我伤害与暴力、毒品与非法贸易、欺诈、讽刺）。标注包含 3 类响应标签（REFUSE/SAFE-REDIRECT/RESPOND）、9 类混淆策略分类（拼音、拆字、网络用语、委婉语气等中文特有规避手段）、风险等级和标注理由。揭示英语安全系统在中文场景下的失效模式。论文 arXiv:2605.29667（2026 年 5 月）。",
+      "discovered_date": "2026-06-28",
+      "last_updated": "2026-05-28",
+      "release_version": "v1 (arXiv:2605.29667)",
+      "timeliness_score": "高",
+      "search_keywords": "ChiSafe Chinese safety adversarial benchmark",
+      "source": "SearXNG (arxiv paper)"
+    },
+    {
+      "name": "BRIDGE (Multilingual Clinical Text Benchmark)",
+      "url": "https://www.nature.com/articles/s41551-026-01719-2",
+      "languages": [
+        "多语言（含真实临床文本的多语言数据）"
+      ],
+      "size": "真实临床场景文本数据集",
+      "license": "见论文补充材料",
+      "category": "评估",
+      "description": "Mass General Brigham 开发的多语言临床文本理解基准，发表于 Nature Biomedical Engineering。评估 LLM 对真实世界临床实践文本的理解能力，包含多语言临床记录。是首个大规模多语言临床文本评估基准之一。发表于 2026 年 6 月。",
+      "discovered_date": "2026-06-28",
+      "last_updated": "2026-06-01",
+      "release_version": "v1 (Nature BME 2026)",
+      "timeliness_score": "高",
+      "search_keywords": "BRIDGE multilingual clinical benchmark Nature BME",
+      "source": "SearXNG (medicalxpress report)"
+    }
+  ],
+  "total_datasets": 131
+}
