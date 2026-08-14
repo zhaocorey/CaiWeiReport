@@ -1,6 +1,6 @@
 {
-  "search_date": "2026-07-15",
-  "search_summary": "增量更新 2026-06-25 至 2026-07-15，新增 5 个，基线达 312 个",
+  "search_date": "2026-08-05",
+  "search_summary": "Round 15 incremental: +12 new, 3 updated",
   "sources": [
     {
       "name": "FineWeb-2",
@@ -493,7 +493,7 @@
       "category": "评估",
       "description": "大规模多语言FAQ问答数据集2.0版本。覆盖108种语言，包含1.98亿自然问答对。新增硬负例数据集（1.25M查询 × 20种语言），支持对比学习和知识蒸馏训练密集检索器。通过Open Web Index持续更新。",
       "discovered_date": "2026-06-12",
-      "last_updated": "2026-02-19",
+      "last_updated": "2026-08-11",
       "release_version": "2.0 (arXiv:2602.17327)",
       "timeliness_score": "高",
       "search_keywords": "WebFAQ multilingual QA dense retrieval",
@@ -982,7 +982,7 @@
       "category": "评估",
       "description": "First multilingual economic news corpus spanning 10 languages across 7 language families for the Global South. Addresses the English-centric bias (84%) in sentiment-based economic forecasting research. Covers economic narrative indices for developing economies.",
       "discovered_date": "2026-06-15",
-      "last_updated": "2026-06-12",
+      "last_updated": "2026-08-11",
       "release_version": "v1",
       "timeliness_score": "高",
       "search_keywords": "multilingual economic news corpus Global South 2026",
@@ -1204,18 +1204,19 @@
         "ru",
         "zh"
       ],
-      "size": "10K-100K样本（7种语言 × 符号化数学推理）",
+      "size": "多语言数学推理题目集，Parquet格式",
       "license": "MIT",
       "category": "评估",
       "description": "Danish Foundation Models项目发布的多语言符号化数学推理数据集。基于GSM-Symbolic基准扩展到7种语言（英语/丹麦语/德语/冰岛语/挪威语/俄语/中文），评估LLM的数学推理和符号操作能力。MIT许可，Parquet格式。540次下载，2026年6月15日更新（2天前）。",
       "discovered_date": "2026-06-17",
-      "last_updated": "2026-07-02",
+      "last_updated": "2026-07-20",
       "release_version": "v1",
       "timeliness_score": "高",
       "search_keywords": "multilingual gsm symbolic math reasoning benchmark 7 languages",
       "source": "HuggingFace API扫描（multilingual搜索，lastModified排序）",
       "update_note": "last_updated 从 2026-06-15 更新至 2026-06-24",
-      "version_note": "SHA更新 — 数据集内容更新"
+      "version_note": "SHA更新 — 数据集内容更新",
+      "latest_change": "2026-07-20更新：数据集内容刷新，下载量从540增至781"
     },
     {
       "name": "multilingual-tts/open-bible",
@@ -1897,7 +1898,7 @@
       "category": "评估",
       "description": "SemEval-2026 Task 3 数据集。首个多语言多维度方面级情感分析（ABSA）资源，同时标注传统ABSA元素（方面词、方面类别、意见词）和连续效价-唤醒（VA）情感分数。覆盖6种语言、4个领域、76,958个方面实例。引入新的连续F1（cF1）指标，统一评估分类和连续输出。吸引了超过300名参赛者。",
       "discovered_date": "2026-06-20",
-      "last_updated": "2026-01-30",
+      "last_updated": "2026-08-11",
       "release_version": "SemEval-2026 Task 3 (arXiv:2601.23022)",
       "timeliness_score": "中",
       "search_keywords": "DimABSA multilingual sentiment SemEval 2026",
@@ -2051,7 +2052,7 @@
       "category": "评估",
       "description": "模板优先的多语言多文化推理基准。创新点：将推理类型和文化方面解耦，通过 100 个语言无关模板覆盖 7 种推理类型和 22 种文化方面。由母语标注者创建场景对齐的英语和本地语言多选题及判断题。覆盖 20 个国家/文化背景和 10 种文字。21 个多语言 LLM 评测显示推理模式模型最强（80.8%），但开源模型在本地语言上显著退化，常接近随机水平。",
       "discovered_date": "2026-06-21",
-      "last_updated": "2026-02-13",
+      "last_updated": "2026-08-11",
       "release_version": "v1.0 (arXiv:2602.10732)",
       "timeliness_score": "中"
     },
@@ -2945,8 +2946,8 @@
       "category": "微调",
       "description": "ACL 2026 主会论文。面向13种印度语言的文化背景指令微调数据集，采用自底向上的文化感知合成pipeline生成9.5M高质量IFT样本。评估涵盖数据生成、质量评估和模型性能，弥补了现有印度语言指令数据的不足。",
       "discovered_date": "2026-06-30",
-      "last_updated": "2026-06-20",
-      "release_version": "ACL 2026 Main",
+      "last_updated": "2026-07-15",
+      "release_version": "v1",
       "timeliness_score": "高",
       "search_keywords": "multilingual SFT dataset + ACL 2026",
       "source": "SearXNG搜索发现"
@@ -3170,16 +3171,17 @@
         "sn",
         "ny"
       ],
-      "size": "~30 trillion subword tokens total, ~half non-English. Monolingual + bilingual data for hundreds of languages.",
+      "size": "~50TB压缩数据，~13.5万亿tokens（非英语部分），~11.5 billion文档",
       "license": "Not specified (HPLT project license)",
       "category": "预训练",
       "description": "HPLT 3.0 是 HPLT 项目的最新版本，提供超大规模多语言单语和双语语料。相比 v2（193 种语言、8T tokens），v3 扩展到约 30 万亿子词 token，其中近半数为非英语语言。包含单语语料、平行语料、预训练模型和多语言评估基准。LREC-COLING 2026 论文。更新: 2026-06-11。",
       "discovered_date": "2026-07-01",
-      "last_updated": "2026-06-11",
+      "last_updated": "2026-07-08",
       "release_version": "v3.0",
       "timeliness_score": "高",
       "search_keywords": "HPLT 3.0 massive multilingual pretraining 30 trillion tokens",
-      "source": "HuggingFace API (HPLT keyword) + SearXNG (LREC-COLING 2026 paper)"
+      "source": "HuggingFace API (HPLT keyword) + SearXNG (LREC-COLING 2026 paper)",
+      "latest_change": "2026-07-08更新：数据集页面刷新，规模描述更精确（50TB/13.5T tokens/11.5B docs），数据处理pipeline有改进"
     },
     {
       "name": "HPLT 2.0 Cleaned",
@@ -3225,7 +3227,7 @@
         "amh",
         "and 100+ more"
       ],
-      "size": "370 downloads, multilingual language identification model/dataset",
+      "size": "137M行训练数据",
       "license": "Not specified",
       "category": "评估",
       "description": "HPLT 项目发布的开放语言识别数据集/模型 v3，支持 100+ 种语言的自动语言检测。为多语言预训练数据的语言标注提供基础工具。更新: 2026-06-18。",
@@ -3234,7 +3236,8 @@
       "release_version": "v3",
       "timeliness_score": "高",
       "search_keywords": "HPLT OpenLID language identification multilingual",
-      "source": "HuggingFace API (HPLT keyword)"
+      "source": "HuggingFace API (HPLT keyword)",
+      "latest_change": "2026-06-18更新：训练数据扩展至137M行"
     },
     {
       "name": "Faruna01/Cross-lingual-Multi-Agent-Safety",
@@ -4576,7 +4579,8 @@
       "discovered_date": "2026-07-08",
       "last_updated": "2026-06-18",
       "release_version": "N/A",
-      "timeliness_score": "高"
+      "timeliness_score": "高",
+      "update_note": "Updated Jun 18 (within window edge). Baseline already tracked. Downloads: 156, 5 languages (en, de, fr, es, hi)."
     },
     {
       "name": "Wismut/nym-pii-multilingual-data",
@@ -4685,7 +4689,7 @@
       "category": "评估",
       "description": "多语言安全基准与 steering 实验结果，覆盖约鲁巴语、豪萨语、伊博语、斯瓦希里语、阿拉伯语和英语，测试多语言越狱漏洞和安全引导效果",
       "discovered_date": "2026-07-08",
-      "last_updated": "2026-07-04",
+      "last_updated": "2026-08-11",
       "release_version": "Phase 2",
       "timeliness_score": "高"
     },
@@ -5345,7 +5349,7 @@
       "category": "微调/评估基准",
       "description": "High-quality multilingual math problems ready for RLVR (Reinforcement Learning with Verifiable Rewards). Translated from AceReason-Math corpus with careful cleaning. Designed for GRPO training and multilingual RLVR benchmarking. Addresses gap of English-centric RLVR datasets.",
       "discovered_date": "2026-07-11",
-      "last_updated": "2026-03-14",
+      "last_updated": "2026-08-11",
       "release_version": "v1",
       "timeliness_score": "高",
       "search_keywords": "multilingual math RLVR GRPO training",
@@ -5990,7 +5994,7 @@
       "category": "评估基准/微调",
       "description": "Multilingual prompt-and-dialogue dataset for evaluating and training culturally aware conversational AI. Covers cultural dialog, code-switching, sentiment/emotion, and bias/safety. IEEE DataPort release with implementation scripts and validation tools.",
       "discovered_date": "2026-07-13",
-      "last_updated": "2026-07-01",
+      "last_updated": "2026-08-11",
       "release_version": "v1",
       "timeliness_score": "高",
       "search_keywords": "CAMEO8 cultural dialog safety multilingual IEEE",
@@ -6202,10 +6206,1796 @@
       "last_updated": "2025-11-19",
       "release_version": "N/A",
       "timeliness_score": "中"
+    },
+    {
+      "name": "ScaleAI/MultiNRC",
+      "url": "https://huggingface.co/datasets/ScaleAI/MultiNRC",
+      "languages": [
+        "fr",
+        "es",
+        "zh"
+      ],
+      "description": "Multilingual Native Reasoning Challenge benchmark designed to assess LLM reasoning ability in French, Spanish, and Chinese. Unlike translated benchmarks, consists of native-authored reasoning questions crafted by native speakers capturing linguistic reasoning, wordplay & riddles, cultural/tradition reasoning, and math reasoning with cultural relevance. Provides English equivalent translations for direct comparison. Evaluation of 14 leading LLMs shows none scoring above 50%, most perform substantially better in math reasoning in English (+10%). Scale AI Labs active leaderboard. 93 downloads on HF.",
+      "source": "DuckDuckGo web_search (multilingual reasoning benchmark dataset 2026)",
+      "discovered_date": "2026-07-16",
+      "last_updated": "2025-07-23",
+      "timeliness_score": "中",
+      "tags": []
+    },
+    {
+      "name": "MultiZebraLogic",
+      "url": "https://arxiv.org/abs/2511.03553",
+      "languages": [
+        "9 languages (manually verified by fluent speakers)"
+      ],
+      "description": "Multilingual logical reasoning benchmark consisting of zebra puzzles in 9 languages, manually checked by fluent speakers. Analyzes different ways of tuning puzzle difficulty to fit modern LLMs. Generate zebra puzzles in multiple languages, themes, and clue types. LREC 2026 Resourceful Workshop paper. Puzzle generation code adaptable to more languages and themes. 91 downloads on HF papers page.",
+      "source": "DuckDuckGo web_search (multilingual reasoning benchmark dataset 2026)",
+      "discovered_date": "2026-07-16",
+      "last_updated": "2025-11-05",
+      "timeliness_score": "中",
+      "tags": []
+    },
+    {
+      "name": "Sakonii/Attack-Multilingual-Refusal",
+      "url": "https://huggingface.co/datasets/Sakonii/Attack-Multilingual-Refusal",
+      "languages": [
+        "ar",
+        "+ multiple languages (multilingual jailbreak attack patterns)"
+      ],
+      "description": "Multilingual jailbreak attack and refusal dataset covering multiple languages (including Arabic and others). Contains various attack types: baseline, DAN (persona), developer mode, Wikipedia-style, roleplay reframe, prefix injection, Base64 encoding, ROT13 encoding, and more. Categorizes attacks by type (mono/cross-lingual), severity (high), and attack method. Useful for evaluating and improving LLM safety refusal capabilities across languages. Updated 2026-07-14.",
+      "source": "HuggingFace Datasets API (multilingual search sorted by lastModified)",
+      "discovered_date": "2026-07-16",
+      "last_updated": "2026-07-14",
+      "timeliness_score": "高",
+      "tags": []
+    },
+    {
+      "name": "MRL 2026 Shared Task (Global PIQA successor)",
+      "url": "https://mrlbenchmarks.github.io/",
+      "languages": [
+        "100+ language varieties (target)"
+      ],
+      "description": "MRL 2026 Shared Task: community-led benchmark for culturally specific commonsense reasoning across 100+ language varieties. Successor to Global PIQA v0.1 (Oct 2025, 350+ contributors). Contributors create text QA pairs for language- and culture-specific knowledge, then record audio. Especially encourages low-resource and non-standard language varieties. Based on ECLeKTic dataset format. Call for participation opened June 8, 2026. Information session July 10. Submission deadline August 1, 2026. All accepted authors included on benchmark paper.",
+      "source": "DuckDuckGo web_search (multilingual reasoning benchmark dataset 2026)",
+      "discovered_date": "2026-07-16",
+      "last_updated": "2026-07-10",
+      "timeliness_score": "高",
+      "tags": []
+    },
+    {
+      "name": "NVIDIA Nemotron Post-Training Dataset v2",
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2",
+      "blog_url": "https://huggingface.co/blog/nvidia/multilingual-reasoning-v1",
+      "languages": [
+        "en",
+        "fr",
+        "es",
+        "de",
+        "it",
+        "ja"
+      ],
+      "size": "~6M total samples: math (239,467), code (175,000), STEM (355,000), chat (627,720), multilingual_ja (975,202), multilingual_de (1,015,314), multilingual_it (1,016,503), multilingual_es (935,704), multilingual_fr (1,001,504)",
+      "license": "nvidia-open-model-license (gated access required)",
+      "category": "微调/推理",
+      "description": "NVIDIA发布的6M多语言后训练数据集，是Nemotron Post-Training Dataset v1的继承者。将英语推理数据翻译为5种目标语言（法语、西班牙语、德语、意大利语、日语），同时保留原始英语推理链以利用预训练阶段的英语知识。涵盖数学、代码、STEM、聊天和多语言五个类别。采用逐行翻译+特殊括号提取+fastText语言ID的多重质量保障机制。支持NVIDIA Nemotron Nano 9B v2模型的训练。翻译过程中丢弃了约1.1%的离目标数据。NVIDIA开放模型许可。",
+      "discovered_date": "2026-07-18",
+      "last_updated": "2026-07-17",
+      "release_version": "v2 (Nemotron Nano 9B v2 release)",
+      "timeliness_score": "高",
+      "search_keywords": "NVIDIA Nemotron multilingual reasoning dataset 6 million",
+      "source": "DuckDuckGo web_search + web_fetch verification"
+    },
+    {
+      "name": "MuBench (Multilingual Benchmark)",
+      "url": "https://aclanthology.org/2026.findings-acl.794/",
+      "languages": [
+        "61 languages"
+      ],
+      "size": "3.9M samples across 61 languages (100K<n<1M), human evaluation of 34K samples across 17 languages",
+      "license": "not specified (ACL 2026 Findings)",
+      "category": "评估基准",
+      "description": "ACL 2026 Findings发表的大规模多语言LLM能力评估基准。覆盖61种语言、3.9M样本，评估广泛的LLM能力。关键发现：(1) 声称的语言覆盖与实际能力存在显著差距，英语与低资源语言间存在持续性能差异；(2) 提出Multilingual Consistency (MLC)作为准确率的补充指标，用于分析性能瓶颈和指导模型改进；(3) 提供灵活的评估格式，包括混合语言测试；(4) 增加模型规模并不能改善处理混合语言语境的能力。招募人类专家评估34K样本跨17语言的翻译质量和文化敏感性，并结合LLM-as-Judge方法确保低资源语言的数据质量。",
+      "discovered_date": "2026-07-18",
+      "last_updated": "2026-07-01",
+      "release_version": "v1 (ACL 2026 Findings)",
+      "timeliness_score": "高",
+      "search_keywords": "MuBench multilingual 61 languages ACL 2026",
+      "source": "SearXNG search (multilingual dataset new release July 2026)"
+    },
+    {
+      "name": "jml2026/multilingual-accent-speech",
+      "url": "https://huggingface.co/datasets/jml2026/multilingual-accent-speech",
+      "languages": [
+        "en",
+        "de",
+        "es",
+        "+ 24 accent varieties including African languages (Amharic, Nigerian English, Kenyan English, South African English)"
+      ],
+      "size": "1K - 10K samples, 44 subsets covering diverse accent varieties",
+      "license": "CC-BY-NC-4.0",
+      "category": "微调/语音",
+      "description": "多语言口音语音数据集，覆盖24+种口音变体。支持ASR、音频分类和TTS三种任务。包含audio+text两种模态，采用soundfolder格式。44个子集包括：amharic_ethiopia, english_algeria, english_australia, english_belarus, english_china, english_egypt, english_french_speaking, english_haiti, english_ireland, english_jamaica, english_kenya, english_mandarin, english_nigeria, english_pakistan, english_poland, english_russia, english_south_africa等。特别关注非洲语言和少数族裔口音。CC-BY-NC-4.0许可。1个like。",
+      "discovered_date": "2026-07-18",
+      "last_updated": "2026-07-12",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual accent speech dataset african languages",
+      "source": "DuckDuckGo web_search (HuggingFace multilingual dataset)"
+    },
+    {
+      "name": "bhavyagoyal-lexsi/SLAAB (Medical + Finance Multilingual Instruction)",
+      "url_medical": "https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits",
+      "url_finance": "https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits",
+      "languages": [
+        "en",
+        "hi",
+        "mr",
+        "pa",
+        "te",
+        "ta",
+        "bn",
+        "gu",
+        "kn",
+        "ml",
+        "or"
+      ],
+      "size": "Medical: 155 downloads; Finance: 62 downloads. Multilingual instruction-tuning splits with conversation format.",
+      "license": "not specified",
+      "category": "微调/指令数据",
+      "description": "SLAAB（Structured Language-Adaptive Aligned Benchmark）多领域多语言指令微调数据集，包含医疗和金融两个专业领域。医疗版涵盖多种语言的医学问答对话，金融版覆盖印地语、马拉地语等南亚语言的金融知识对话。采用标准user/assistant对话格式，支持多语言instruction tuning。特别关注印度语言（印地语、旁遮普语、马拉地语、泰卢固语、泰米尔语、孟加拉语、古吉拉特语、卡纳达语、马拉雅拉姆语、奥里亚语）。",
+      "discovered_date": "2026-07-18",
+      "last_updated": "2026-07-01",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "SLAAB multilingual instruction medical finance Indian languages",
+      "source": "HuggingFace Datasets API (multilingual instruction search)"
+    },
+    {
+      "name": "hf-audio/open-asr-leaderboard-multilingual-datasets",
+      "url": "https://huggingface.co/datasets/hf-audio/open-asr-leaderboard-multilingual-datasets",
+      "languages": [
+        "bg",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "+ more European languages"
+      ],
+      "size": "Large-scale ASR evaluation dataset with audio+transcript pairs (100K<n<1M)",
+      "license": "not specified",
+      "category": "评估基准/语音",
+      "description": "HuggingFace Audio团队维护的开放ASR排行榜多语言评估数据集集合。包含多种欧洲语言的ASR测试集（保加利亚语、捷克语、丹麦语、德语、希腊语等），每条数据包含音频文件和对应文本转录。用于标准化评估ASR模型在多语言场景下的性能。2026年7月17日更新。0下载（可能为内部评估用）。",
+      "discovered_date": "2026-07-18",
+      "last_updated": "2026-07-17",
+      "release_version": "latest",
+      "timeliness_score": "高",
+      "search_keywords": "open ASR leaderboard multilingual evaluation",
+      "source": "HuggingFace Datasets API (multilingual search sorted by lastModified)"
+    },
+    {
+      "name": "Manusagents/Multilingual-Medical-Corpus",
+      "url": "https://huggingface.co/datasets/Manusagents/Multilingual-Medical-Corpus",
+      "languages": [
+        "en",
+        "es",
+        "fr",
+        "it"
+      ],
+      "size": "Medical research abstracts and papers (n<1K visible samples, likely larger)",
+      "license": "not specified",
+      "category": "预训练语料/微调",
+      "description": "多语言医疗语料集，覆盖英语、西班牙语、法语、意大利语四种语言。包含医学研究摘要和论文片段，涉及药理学、外科学、军事医学等多个子领域。用于多语言医疗NLP研究和LLM医疗领域微调。7下载。2026年7月15日更新。",
+      "discovered_date": "2026-07-18",
+      "last_updated": "2026-07-15",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual medical corpus English Spanish French Italian",
+      "source": "HuggingFace Datasets API (multilingual search sorted by lastModified)"
+    },
+    {
+      "name": "jamesdborin/Nemotron-Multilingual-prompt-only",
+      "url": "https://huggingface.co/datasets/jamesdborin/Nemotron-Multilingual-prompt-only",
+      "languages": [
+        "fr",
+        "es",
+        "de",
+        "it",
+        "ja"
+      ],
+      "size": "prompt-only subset of NVIDIA Nemotron Post-Training Dataset v2 multilingual portion",
+      "license": "derived from nvidia-open-model-license",
+      "category": "微调/指令数据",
+      "description": "从NVIDIA Nemotron Post-Training Dataset v2中提取的多语言prompt-only子集。仅包含用户提示（不含模型回复），方便研究者独立研究多语言prompt生成和指令跟随能力。覆盖法语、西班牙语、德语、意大利语、日语五种语言。2026年7月17日发布。",
+      "discovered_date": "2026-07-18",
+      "last_updated": "2026-07-17",
+      "release_version": "v1 (derived from NVIDIA Nemotron v2)",
+      "timeliness_score": "高",
+      "search_keywords": "Nemotron Multilingual prompt only",
+      "source": "HuggingFace Datasets API (Nemotron search)"
+    },
+    {
+      "name": "malaysia-ai/Multilingual-TTS (版本追踪)",
+      "url": "https://huggingface.co/datasets/malaysia-ai/Multilingual-TTS",
+      "languages": [
+        "zh",
+        "en",
+        "ms",
+        "ta",
+        "bn",
+        "150+ languages"
+      ],
+      "size": "141,718+ audio hours, 23.26B speech tokens",
+      "license": "CC-BY-NC-4.0",
+      "category": "预训练语料/微调",
+      "description": "下载量15,367（round3为15,377，微降10次，可能与数据清理有关）。22 likes。最后修改2026-07-14。持续作为最大规模多语言TTS开源资源。",
+      "discovered_date": "2026-07-16",
+      "last_updated": "2026-07-14",
+      "release_version": "latest (stable)",
+      "timeliness_score": "高",
+      "status": "下载量微降但仍稳定，高价值多语言TTS资源"
+    },
+    {
+      "name": "hf-audio/multilingual_evals (版本追踪)",
+      "url": "https://huggingface.co/datasets/hf-audio/multilingual_evals",
+      "languages": [
+        "de",
+        "fr",
+        "it",
+        "es",
+        "pt",
+        "+ more"
+      ],
+      "size": "ASR evaluation results across 13 language-dataset combinations",
+      "license": "not specified",
+      "category": "评估基准/语音",
+      "description": "HF Audio多语言ASR评估结果集，覆盖13种语言-数据集组合（de_covost, de_fleurs, fr_covost, fr_mls, fr_fleurs, it_covost, it_mls, it_fleurs, es_covost, es_mls, es_fleurs, pt_mls, pt_fleurs）。包含多个SOTA ASR模型性能数据：CohereLabs/cohere-transcribe-03-2026（RTFx 491.36）、facebook/omniASR系列（300M/1B/3B/7B + v2变体）、assemblyai/universal-3-pro、elevenlabs/scribe_v2等。120下载。2026-07-16更新。",
+      "discovered_date": "2026-07-18",
+      "last_updated": "2026-07-16",
+      "release_version": "latest",
+      "timeliness_score": "高",
+      "status": "重要多语言ASR评估基准，包含最新模型评估数据"
+    },
+    {
+      "name": "sebastian328/qwen3-32B-thinking-plpd-multilingual-nova-training-data (新追踪)",
+      "url": "https://huggingface.co/datasets/sebastian328/qwen3-32B-thinking-plpd-multilingual-nova-training-data",
+      "languages": [
+        "ar",
+        "en",
+        "multilingual"
+      ],
+      "size": "Multilingual thinking/reasoning training data (size unspecified)",
+      "license": "not specified",
+      "category": "微调/推理",
+      "description": "Qwen3-32B思考模式PLPD多语言训练数据，Nova变体。包含阿拉伯语和英语的思维链训练样本，使用<think>标签格式。数据来源包含allenai/WildChat-1M。涵盖数学推理、写作请求等多种任务类型。2026-07-17更新。",
+      "discovered_date": "2026-07-18",
+      "last_updated": "2026-07-17",
+      "release_version": "latest",
+      "timeliness_score": "高",
+      "status": "首次追踪，多语言推理思维链训练数据"
+    },
+    {
+      "name": "MsIris2026/embtb-multilingual-eval (持续追踪)",
+      "url": "https://huggingface.co/datasets/MsIris2026/embtb-multilingual-eval",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "n<1K samples",
+      "license": "not specified",
+      "category": "评估基准",
+      "description": "多语言评估数据集。round3追踪时下载量为1,840，持续增长中。最后修改2026-07-10。",
+      "discovered_date": "2026-07-16",
+      "last_updated": "2026-07-10",
+      "release_version": "latest",
+      "timeliness_score": "高",
+      "status": "持续追踪中"
+    },
+    {
+      "name": "EU MMLU",
+      "url": "https://huggingface.co/datasets/Eurolingua/mmlux",
+      "languages": [
+        "16种EU官方语言：Croatian, Czech, Dutch, French, German, Greek, Hungarian, Irish, Italian, Lithuanian, Polish, Portuguese, Romanian, Slovak, Slovenian（更多语言后续添加）"
+      ],
+      "size": "1000+基准测试问题，覆盖7个与EU相关的MMLU学科领域",
+      "license": "MIT",
+      "category": "评估",
+      "description": "欧盟DG Translation于2026年7月22日发布的多语言LLM评估基准。基于MMLU，采用人工翻译（非机器翻译）方式，由来自21所欧洲大学的近250名EMT翻译硕士生参与翻译和审校。覆盖16种EU官方语言，重点测试AI在EU语言多样性和文化语境下的公平表现。区别于OpenAI的MMMLU（14语言机器翻译），EU MMLU强调人工翻译质量和EU特定文化背景。",
+      "discovered_date": "2026-07-24",
+      "last_updated": "2026-07-22",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "EU MMLU multilingual benchmark DG Translation",
+      "source": "DuckDuckGo搜索发现（EU官方新闻 2026-07-22）"
+    },
+    {
+      "name": "Pluralis v0.1",
+      "url": "https://arxiv.org/abs/2607.06196",
+      "languages": [
+        "多区域多语言，覆盖不同文化圈（具体语言列表待确认）"
+      ],
+      "size": "多模态安全评估数据集（图像+文本），规模待确认",
+      "license": "待确认（arXiv论文，数据集尚未完全公开）",
+      "category": "评估",
+      "description": "2026年7月7日发布于arXiv的多文化、多模态、多语言AI安全与可靠性评估基准。采用'文化优先'视角构建，旨在解决现有AI安全评估中西方中心主义偏见。覆盖区域特定法律、社会语言细微差别和文化禁忌。针对Vision-Language Models (VLMs)的全球部署场景。由MLCommons AI Risk and Reliability工作组关联发布。填补了多文化AI安全评估的重要空白。",
+      "discovered_date": "2026-07-24",
+      "last_updated": "2026-08-11",
+      "release_version": "v0.1",
+      "timeliness_score": "高",
+      "search_keywords": "Pluralis multicultural multimodal multilingual benchmark AI safety",
+      "source": "DuckDuckGo搜索发现（arXiv 2607.06196）"
+    },
+    {
+      "name": "NiuTrans/LMT-60-sft-data",
+      "url": "https://huggingface.co/datasets/NiuTrans/LMT-60-sft-data",
+      "languages": [
+        "en",
+        "zh",
+        "ar",
+        "es",
+        "de",
+        "fr",
+        "it",
+        "ja",
+        "nl",
+        "pl",
+        "pt",
+        "ru",
+        "tr",
+        "bg",
+        "bn",
+        "cs",
+        "da",
+        "el",
+        "fa",
+        "fi",
+        "hi",
+        "hu",
+        "id",
+        "ko",
+        "nb",
+        "ro",
+        "sk",
+        "sv",
+        "th",
+        "uk",
+        "vi",
+        "am",
+        "az",
+        "bo",
+        "he",
+        "hr",
+        "hy",
+        "is",
+        "jv",
+        "ka",
+        "kk",
+        "km",
+        "ky",
+        "lo",
+        "mvf"
+      ],
+      "size": "90B tokens (mixed monolingual and bilingual), 60 languages × 234 directions",
+      "license": "not specified (open models: NiuTrans/LMT-60-{0.6B,1.7B,4B,8B})",
+      "category": "微调/机器翻译",
+      "description": "ACL 2026主会论文。NiuTrans.LMT（Large-scale Multilingual Translation）的SFT训练数据，以中英为中心覆盖60种语言234个翻译方向。包含4种模型规模（0.6B/1.7B/4B/8B）。研究发现多语言SFT在pivot语言对称使用多路平行数据时的失败模式，并提出解决方案。4B模型在同等语言覆盖的开源MMT系统中具有竞争力。arXiv:2511.07003。2025-11-11创建，2026-07-23最后更新。536下载，5 likes。",
+      "last_updated": "2026-07-23",
+      "release_version": "ACL 2026 Main Conference"
+    },
+    {
+      "name": "SWE-bench/SWE-bench_Multilingual",
+      "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multilingual",
+      "languages": [
+        "en (9 programming languages: C, C++, Go, Java, JavaScript/TypeScript, PHP, Ruby, Rust)"
+      ],
+      "size": "300 curated tasks from 42 repositories",
+      "license": "MIT",
+      "category": "评估基准/代码",
+      "description": "SWE-bench的多语言编程扩展，评估语言模型在9种编程语言（C、C++、Go、Java、JS/TS、PHP、Ruby、Rust）上的真实GitHub issue解决能力。300个精选任务来自42个仓库。遵循与SWE-bench相同的收集策略、数据格式和评估协议。54,851下载（极高社区采用），20 likes。Claude Opus 5以89.5%领先。2025-04-29创建，2026-07-22最后更新。注意：'Multilingual'指编程语言而非自然语言。",
+      "last_updated": "2026-07-22",
+      "release_version": "latest (July 2026 update)"
+    },
+    {
+      "name": "Multilingual-Multimodal-NLP/FinanceComplexQA",
+      "url": "https://huggingface.co/datasets/Multilingual-Multimodal-NLP/FinanceComplexQA",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "size": "1K<n<10K samples",
+      "license": "Apache-2.0",
+      "category": "评估基准/金融推理",
+      "description": "中英双语金融复杂问答基准数据集。评估LLM和Agent系统能否基于参考文档进行金融领域的复杂推理（而非仅依赖参数知识）。覆盖多个金融文档领域，支持数值计算、多跳推理、内容摘要和行业分析。配套论文'FinanceComplexQA: Benchmarking Agentic Reasoning on Industrial-grade Financial Documents'（arXiv 2607.19238，2026年7月）。使用Finance-LaTeX工作流合成布局丰富的金融文档和验证QA对。Apache-2.0许可。82下载，3 likes。2026-07-23创建，2026-07-24最后更新。",
+      "last_updated": "2026-07-24",
+      "release_version": "v1 (arXiv 2607.19238)"
+    },
+    {
+      "name": "MultiHal",
+      "url": "https://arxiv.org/abs/2505.14101",
+      "languages": [
+        "multilingual (KG-based, multiple languages via Wikidata)"
+      ],
+      "size": "140K KG-paths mined, curated high-quality subset",
+      "license": "not specified",
+      "category": "评估基准/幻觉检测",
+      "description": "ICML 2026论文。首个基于知识图谱的多语言多跳幻觉评估基准。从开放域KG（Wikidata等）中挖掘140K条KG路径，经过噪声过滤构建高质量评估数据。评估生成式文本的事实性，弥补了现有幻觉基准缺乏KG路径和多语言性的不足。已有HuggingFace复现空间(gogorun12/repro-multihal-multilingual-kg)。arXiv:2505.14101（论文2025年5月，ICML 2026正式发表）。",
+      "last_updated": "2026-07 (ICML 2026 presentation)",
+      "release_version": "ICML 2026"
+    },
+    {
+      "name": "Zyroxx66/somali-pretraining-corpus",
+      "url": "https://huggingface.co/datasets/Zyroxx66/somali-pretraining-corpus",
+      "languages": [
+        "so (Somali / Af-Soomaali)"
+      ],
+      "size": "10K<n<100K samples",
+      "license": "CC-BY-4.0",
+      "category": "预训练语料/低资源语言",
+      "description": "索马里语（Af-Soomaali）预训练语料数据集。索马里语为极低资源语言（Horn of Africa地区），本数据集包含合成和收集的索马里语文本用于预训练。支持text-generation和fill-mask任务。CC-BY-4.0开放许可。38下载（刚发布）。2026-07-24创建，2026-07-26最后更新。重要意义：填补索马里语预训练数据的空白。",
+      "last_updated": "2026-07-26",
+      "release_version": "v1"
+    },
+    {
+      "name": "Nobody05/Multilingual-Medical-Corpus",
+      "url": "https://huggingface.co/datasets/Nobody05/Multilingual-Medical-Corpus",
+      "languages": [
+        "en",
+        "es",
+        "fr",
+        "it"
+      ],
+      "size": "10M<n<100M samples",
+      "license": "Apache-2.0",
+      "category": "预训练语料/领域特定",
+      "description": "4语种（英语、西班牙语、法语、意大利语）大规模医学文本语料。10M-100M样本，Apache-2.0开放许可。基于arXiv:2404.07613。适用于医学领域LLM的预训练和微调。2026-07-25创建。14下载（刚发布）。",
+      "last_updated": "2026-07-25",
+      "release_version": "v1"
+    },
+    {
+      "name": "AdaMame Multilingual Reasoning Traces",
+      "url": "https://arxiv.org/abs/2606.15080",
+      "languages": [
+        "en",
+        "zh",
+        "ja",
+        "ko",
+        "es"
+      ],
+      "size": "30K naturally occurring reasoning traces across 5 languages",
+      "license": "未明确（论文配套，待确认）",
+      "category": "微调",
+      "description": "AdaMame论文配套数据集，包含5种语言的自然数学推理轨迹。SFT阶段使用，配合AdaMame-GRPO（渐进对齐GRPO变体），在12种语言的数学推理评测中实现Pareto最优性能（准确率×语言保真度×token效率）。针对多语言数学推理中的语言崩塌（language collapse）问题。",
+      "discovered_date": "2026-07-30",
+      "last_updated": "2026-06-19",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "AdaMame multilingual reasoning SFT GRPO math",
+      "source": "SearXNG arXiv搜索发现"
+    },
+    {
+      "name": "Universal NER v2 (UNER v2)",
+      "url": "https://arxiv.org/abs/2604.12744",
+      "languages": [
+        "multilingual",
+        "大规模多语言（具体语言数待确认，远超v1）"
+      ],
+      "size": "大规模标注NER数据集（v1的显著扩展）",
+      "license": "未明确（学术基准，通常CC-BY-SA）",
+      "category": "评估",
+      "description": "Universal NER项目第四年成果，大规模多语言命名实体识别基准数据集。使用统一标注体系和通用标签集，支持跨语言NER评估。v2相比2024年发布的v1有显著扩展，增加了更多语言和标注者，是评估多语言LLM NER能力的重要基准。",
+      "discovered_date": "2026-07-30",
+      "last_updated": "2026-04-17",
+      "release_version": "v2",
+      "timeliness_score": "高",
+      "search_keywords": "Universal NER v2 multilingual NER benchmark",
+      "source": "SearXNG arXiv搜索发现"
+    },
+    {
+      "name": "CorefUD 1.4 / CRAC 2026 Shared Task",
+      "url": "https://aclanthology.org/2026.codi-1.21/",
+      "languages": [
+        "19种语言（27个数据集）"
+      ],
+      "size": "27 datasets in 19 languages, 7M tokens",
+      "license": "CC-BY-SA（CorefUD标准许可）",
+      "category": "评估",
+      "description": "第五届多语言共指解析共享任务数据集。CRAC 2026版本新增5个数据集和2种语言，基于CorefUD 1.4统一多语言语料集合（27个数据集，19种语言，700万tokens）。重点关注长距离实体（跨多词多句的共指链）。10个参赛系统，含4个LLM方案。传统系统仍领先但LLM展现显著潜力。CODI-CRAC 2026 Workshop配套。",
+      "discovered_date": "2026-07-30",
+      "last_updated": "2026-05-30",
+      "release_version": "v1.4 (CorefUD)",
+      "timeliness_score": "高",
+      "search_keywords": "CorefUD CRAC 2026 multilingual coreference resolution",
+      "source": "SearXNG ACL Anthology搜索发现"
+    },
+    {
+      "name": "SEAHateCheck",
+      "url": "https://arxiv.org/abs/2603.16070",
+      "languages": [
+        "id",
+        "tl",
+        "th",
+        "vi"
+      ],
+      "size": "功能测试集（具体样本数待确认）",
+      "license": "未明确（学术基准）",
+      "category": "评估",
+      "description": "首个面向东南亚低资源语言的仇恨言论检测功能测试数据集。覆盖印尼语、塔加洛语（菲律宾语）、泰语、越南语。基于HateCheck功能测试框架，经本地专家验证。发现Tagalog准确率最低（语言复杂度+训练数据少），俚语类测试最难。隐式仇恨检测和反驳表达检测暴露模型弱点。",
+      "discovered_date": "2026-07-30",
+      "last_updated": "2026-03-20",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "SEAHateCheck Southeast Asian hate speech detection low-resource",
+      "source": "SearXNG arXiv搜索发现"
+    },
+    {
+      "name": "AfriNLLB Parallel Corpus",
+      "url": "https://arxiv.org/abs/2602.09373",
+      "languages": [
+        "sw",
+        "ha",
+        "yo",
+        "am",
+        "so",
+        "zu",
+        "ln",
+        "af",
+        "wo",
+        "ar",
+        "fr",
+        "pt",
+        "es"
+      ],
+      "size": "15 language pairs (30 translation directions) parallel corpus",
+      "license": "开源（随模型发布）",
+      "category": "预训练",
+      "description": "非洲语言高效翻译平行语料库。支持15个语言对（30个翻译方向），包括斯瓦希里语、豪萨语、约鲁巴语、阿姆哈拉语、索马里语、祖鲁语、林加拉语、南非荷兰语、沃洛夫语等非洲联盟官方语言。基于NLLB-200 600M压缩（层剪枝+量化），配合知识蒸馏。训练数据公开释放。",
+      "discovered_date": "2026-07-30",
+      "last_updated": "2026-02-12",
+      "release_version": "v1",
+      "timeliness_score": "中",
+      "search_keywords": "AfriNLLB African languages parallel corpus translation NLLB",
+      "source": "SearXNG arXiv搜索发现"
+    },
+    {
+      "name": "Viet Medi Species 2026",
+      "url": "https://doi.org/10.1145/3774905.3795608",
+      "languages": [
+        "vi",
+        "en"
+      ],
+      "size": "310,647 images of 4,799 species",
+      "license": "开源（ACM Digital Library发布）",
+      "category": "评估",
+      "description": "越南药用植物大规模多语言图像数据集。通过GBIF分类系统匹配越南药用植物名录，收集多界物种（植物/真菌等）31万+图像。完全可复现的异步数据流水线。元数据包含越南文化相关信息并关联GBIF ID。提供在线Explorer工具支持越南语搜索。为低资源语言生物多样性信息学提供可复用模板。",
+      "discovered_date": "2026-07-30",
+      "last_updated": "2026-07-01",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "Viet Medi Species 2026 multilingual biodiversity Vietnamese medicinal plants",
+      "source": "SearXNG ACM搜索发现"
+    },
+    {
+      "name": "Nemotron 3 Super Datasets",
+      "url": "https://arxiv.org/abs/2604.12374",
+      "languages": [
+        "multilingual（具体语言覆盖待确认）"
+      ],
+      "size": "大规模预训练+后训练数据集（配合120B参数MoE模型训练）",
+      "license": "开源（NVIDIA开放在HuggingFace）",
+      "category": "预训练",
+      "description": "NVIDIA Nemotron 3 Super（120B参数，活跃12B）配套数据集。包含预训练25T tokens中的新增数据集部分（自Nemotron 3 Nano以来新增），以及SFT和RL后训练数据。支持1M上下文长度。在多项基准上达到GPT-OSS-120B和Qwen3.5-122B同等水平。数据集在HuggingFace开源。",
+      "discovered_date": "2026-07-30",
+      "last_updated": "2026-04-17",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "Nemotron 3 Super NVIDIA dataset open-source multilingual",
+      "source": "SearXNG arXiv搜索发现"
+    },
+    {
+      "name": "AI Language Proficiency Monitor",
+      "url": "https://arxiv.org/abs/2507.08538",
+      "languages": [
+        "multilingual（覆盖所有有可用基准数据的语言，重点低资源语言）"
+      ],
+      "size": "综合基准（聚合多个多语言评估数据集）",
+      "license": "未明确",
+      "category": "评估",
+      "version_update": true,
+      "description": "AI语言能力监测器——综合性多语言评估基准，聚合多个现有评估数据集，系统性追踪AI模型在所有可用基准语言上的性能。特别关注低资源语言。2026年7月发布的新版本有显著更新。",
+      "discovered_date": "2026-07-30",
+      "last_updated": "2026-07-11",
+      "release_version": "2026-07版本",
+      "timeliness_score": "高",
+      "search_keywords": "AI Language Proficiency Monitor multilingual benchmark low-resource",
+      "source": "SearXNG arXiv搜索发现（2507 = 2026年7月论文）"
+    },
+    {
+      "name": "VoxENES 2026",
+      "url": "https://arxiv.org/abs/2607.11706",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "size": "53,628 audio samples, 10 TTS/VC systems, 10 post-processing conditions",
+      "license": "未明确（学术基准）",
+      "category": "评估",
+      "version_update": true,
+      "description": "双语（英语/西班牙语）语音欺骗检测基准。针对LLM时代TTS和语音转换系统生成的合成语音，填补传统基准的时序泛化缺口。53,628个音频样本，覆盖10种当代语音合成方法和10种标准化后处理条件。最佳检测器EER达28.98%，多数接近随机水平。2026年7月arXiv发布。",
+      "discovered_date": "2026-07-30",
+      "last_updated": "2026-07-15",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "VoxENES 2026 speech spoofing bilingual benchmark TTS",
+      "source": "SearXNG arXiv搜索发现（2607 = 2026年7月论文）"
+    },
+    {
+      "name": "vojewale/Cross-lingualIFEval",
+      "url": "https://huggingface.co/datasets/vojewale/Cross-lingualIFEval",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown (eval benchmark)",
+      "license": "unknown",
+      "category": "评估",
+      "description": "Cross-lingual instruction following evaluation benchmark for LLMs. Tests ability to follow instructions across languages.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-08-11",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "cross-lingual instruction following evaluation",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "EinicherAI/nemotron-multilingual-math-verified",
+      "url": "https://huggingface.co/datasets/EinicherAI/nemotron-multilingual-math-verified",
+      "languages": [
+        "en",
+        "de",
+        "ja",
+        "ko",
+        "pt"
+      ],
+      "size": "unknown (verified math dataset)",
+      "license": "unknown",
+      "category": "微调",
+      "description": "Verified multilingual math dataset derived from Nemotron, covering 5 languages (en, de, ja, ko, pt). Quality-verified math reasoning data for SFT.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-29",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "nemotron multilingual math verified",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "sripad17/multilingual-safety-probe-test",
+      "url": "https://huggingface.co/datasets/sripad17/multilingual-safety-probe-test",
+      "languages": [
+        "en",
+        "ru",
+        "sr",
+        "te"
+      ],
+      "size": "unknown (safety probe)",
+      "license": "unknown",
+      "category": "评估",
+      "description": "Multilingual safety probe test dataset covering 4 languages (English, Russian, Serbian, Telugu). Evaluates safety capabilities of LLMs across diverse language families.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-08-11",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual safety probe test",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "LeTG/multilingual-psyop-100k",
+      "url": "https://huggingface.co/datasets/LeTG/multilingual-psyop-100k",
+      "languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "nl"
+      ],
+      "size": "100K samples",
+      "license": "unknown",
+      "category": "微调",
+      "description": "100K multilingual psychological operations (psyop) text classification dataset covering 5 European languages. Relevant for information warfare detection and safety alignment.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-08-01",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual psyop text classification",
+      "source": "HuggingFace API (lastModified)",
+      "_change_note": "Updated within search window"
+    },
+    {
+      "name": "lightonai/multilingual-embeddings-pre-training-curated",
+      "url": "https://huggingface.co/datasets/lightonai/multilingual-embeddings-pre-training-curated",
+      "languages": [
+        "ar",
+        "de",
+        "en",
+        "es",
+        "fr"
+      ],
+      "size": "curated pretraining corpus",
+      "license": "unknown",
+      "category": "预训练",
+      "description": "Curated multilingual pre-training dataset by LightOn AI for embedding model training. Covers 5 major languages (Arabic, German, English, Spanish, French). Part of LightOn's open embedding model initiative.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-30",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "lightonai multilingual embeddings pretraining",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "lightonai/embeddings-fine-tuning-multilingual-unfiltered",
+      "url": "https://huggingface.co/datasets/lightonai/embeddings-fine-tuning-multilingual-unfiltered",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "fine-tuning corpus",
+      "license": "unknown",
+      "category": "微调",
+      "description": "Unfiltered multilingual fine-tuning dataset for embedding models by LightOn AI. Companion to the curated pre-training dataset.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-30",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "lightonai embeddings fine-tuning multilingual",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "ulysse1/speculators-multilingual-en-fr-de-it-es",
+      "url": "https://huggingface.co/datasets/ulysse1/speculators-multilingual-en-fr-de-it-es",
+      "languages": [
+        "en",
+        "fr",
+        "de",
+        "it",
+        "es"
+      ],
+      "size": "unknown (financial speculation)",
+      "license": "unknown",
+      "category": "微调",
+      "description": "Multilingual financial speculation dataset covering 5 European languages. Relevant for financial domain LLM fine-tuning and speculation detection.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-30",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual financial speculation dataset",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "farabi-lab/Multilingual_Locale_Fidelity",
+      "url": "https://huggingface.co/datasets/farabi-lab/Multilingual_Locale_Fidelity",
+      "languages": [
+        "kk"
+      ],
+      "size": "locale fidelity benchmark",
+      "license": "unknown",
+      "category": "评估",
+      "description": "Multilingual locale fidelity evaluation dataset focusing on Kazakh language. Tests whether LLMs maintain locale-specific knowledge and cultural accuracy. From Farabi Lab (Kazakh AI research).",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-30",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual locale fidelity kazakh",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "djelia/multilingual-asr",
+      "url": "https://huggingface.co/datasets/djelia/multilingual-asr",
+      "languages": [
+        "ar",
+        "ca",
+        "cy",
+        "de",
+        "es"
+      ],
+      "size": "ASR dataset",
+      "license": "unknown",
+      "category": "微调",
+      "description": "Multilingual ASR (automatic speech recognition) and translation dataset covering Arabic, Catalan, Welsh, German, Spanish. Includes speech-text pairs for multilingual speech processing.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-28",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual ASR speech recognition",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "tufaax/somali-multilingual-infopankki",
+      "url": "https://huggingface.co/datasets/tufaax/somali-multilingual-infopankki",
+      "languages": [
+        "so",
+        "ar",
+        "en",
+        "fi",
+        "ru"
+      ],
+      "size": "translation corpus",
+      "license": "unknown",
+      "category": "微调",
+      "description": "Somali multilingual information bank translation dataset. Covers Somali, Arabic, English, Finnish, Russian. Addresses Somali as an extremely low-resource language.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-30",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "somali multilingual translation infopankki",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "ucrelnlp/Multilingual-USAS-Labelled-Silver-Wikipedia",
+      "url": "https://huggingface.co/datasets/ucrelnlp/Multilingual-USAS-Labelled-Silver-Wikipedia",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "silver-standard Wikipedia annotations",
+      "license": "unknown",
+      "category": "预训练",
+      "description": "Multilingual USAS semantic annotation of Wikipedia articles. Silver-standard quality labels for semantic categorization across multiple languages. From UCREL NLP group (Lancaster University).",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-08-04",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "USAS semantic annotation multilingual wikipedia",
+      "source": "HuggingFace API (lastModified)",
+      "_change_note": "Updated within search window"
+    },
+    {
+      "name": "NLPCC 2026 DA-MIVQA (Difficulty-Aware Medical Instructional Video QA)",
+      "url": "https://arxiv.org/abs/2607.06618",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "medical instructional video QA benchmark",
+      "license": "unknown",
+      "category": "评估",
+      "description": "NLPCC 2026 shared task: Difficulty-Aware Multilingual and Multimodal Medical Instructional Video QA. Extends previous MIVQA benchmarks with difficulty annotations. Three tracks: temporal grounding, video corpus retrieval, and corpus-level grounding. Covers first aid, emergency response, rehabilitation, nursing.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-09",
+      "release_version": "NLPCC 2026",
+      "timeliness_score": "高",
+      "search_keywords": "NLPCC 2026 medical video QA multilingual multimodal",
+      "source": "arXiv/SearXNG (2607.06618)"
+    },
+    {
+      "name": "LongBlocks (Multilingual Long-Context Reasoning Dataset)",
+      "url": "https://arxiv.org/abs/2605.12227",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "synthetic multilingual dataset",
+      "license": "unknown",
+      "category": "微调",
+      "description": "Synthetic multilingual dataset for long-context reasoning spanning multi-hop reasoning, contextual grounding, and long-form generation. Introduced alongside GRPO+OPD training recipe for long-context alignment.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-05-16",
+      "release_version": "v1",
+      "timeliness_score": "中",
+      "search_keywords": "LongBlocks long-context reasoning multilingual",
+      "source": "arXiv/SearXNG (2605.12227)"
+    },
+    {
+      "name": "Code-Switching Reasoning Traces Dataset (Think Multilingual Not Harder)",
+      "url": "https://arxiv.org/abs/2604.15490",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "30K+ reasoning traces",
+      "license": "unknown",
+      "category": "微调",
+      "description": "Dataset of reasoning traces from diverse models for code-switching scenarios. Analyzes multilingual reasoning traces across SFT tasks. Accompanies paper 'Think Multilingual, Not Harder: A Data-Efficient Framework for Teaching Reasoning Models to Code-Switch'.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-04-21",
+      "release_version": "v1",
+      "timeliness_score": "中",
+      "search_keywords": "code-switching reasoning traces multilingual",
+      "source": "arXiv/SearXNG (2604.15490)"
+    },
+    {
+      "name": "latentvector/multilingual-speech-text-corpus",
+      "url": "https://huggingface.co/datasets/latentvector/multilingual-speech-text-corpus",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "speech-text parallel corpus",
+      "license": "unknown",
+      "category": "预训练",
+      "description": "Multilingual speech-text parallel corpus for speech-language model pretraining. Pairs speech audio with text transcriptions across multiple languages.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-30",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual speech text corpus parallel",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "bcv-commons/cross-lingual-span-profile",
+      "url": "https://huggingface.co/datasets/bcv-commons/cross-lingual-span-profile",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "span profiling benchmark",
+      "license": "unknown",
+      "category": "评估",
+      "description": "Cross-lingual span profiling dataset for evaluating how well models handle text spans across languages. Relevant for cross-lingual NLU and information extraction.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-08-11",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "cross-lingual span profile evaluation",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "jangedoo/ne-en-cross-lingual",
+      "url": "https://huggingface.co/datasets/jangedoo/ne-en-cross-lingual",
+      "languages": [
+        "ne",
+        "en"
+      ],
+      "size": "cross-lingual parallel corpus",
+      "license": "unknown",
+      "category": "微调",
+      "description": "Nepali-English cross-lingual parallel corpus. Addresses Nepali as a low-resource South Asian language. Useful for machine translation and cross-lingual transfer.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-15",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "nepali english cross-lingual parallel",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "DenseOn (Open Multilingual Long-Context Retrieval)",
+      "url": "https://arxiv.org/abs/2607.27178",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "open retrieval model + training data",
+      "license": "open source",
+      "category": "微调",
+      "description": "DenseOn: Fully open dense and late-interaction models for multilingual, long-context, and code search. End-to-end open recipe for reproducible retrieval training. Addresses the reproducibility gap in state-of-the-art retrieval models.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-29",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "DenseOn multilingual retrieval open source",
+      "source": "arXiv (2607.27178)"
+    },
+    {
+      "name": "userhuggingface4321/multilingual-llm-evaluation",
+      "url": "https://huggingface.co/datasets/userhuggingface4321/multilingual-llm-evaluation",
+      "languages": [
+        "en",
+        "hi",
+        "es"
+      ],
+      "size": "QA evaluation dataset",
+      "license": "unknown",
+      "category": "评估",
+      "description": "Multilingual LLM evaluation dataset for question answering across English, Hindi, and Spanish. Tests cross-lingual QA capabilities.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-07-29",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual LLM evaluation QA",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "MR-CODESPIKE/agri-vet-multilingual-dataset",
+      "url": "https://huggingface.co/datasets/MR-CODESPIKE/agri-vet-multilingual-dataset",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "domain-specific dataset",
+      "license": "unknown",
+      "category": "微调",
+      "description": "Multilingual agriculture and veterinary domain dataset. Domain-specific data for fine-tuning LLMs on agricultural and veterinary knowledge across languages.",
+      "discovered_date": "2026-07-31",
+      "last_updated": "2026-08-10",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "agriculture veterinary multilingual dataset",
+      "source": "HuggingFace API (lastModified)"
+    },
+    {
+      "name": "chaurAr/Cross-lingual-entity-M",
+      "url": "https://huggingface.co/datasets/chaurAr/Cross-lingual-entity-M",
+      "last_updated": "2026-07-26",
+      "note": "Updated Jul 26. Cross-lingual entity dataset with 5,430 downloads. Baseline tracked as chaurAr/Cross-lingual-entity-dataset.",
+      "discovered_date": "2026-07-31"
+    },
+    {
+      "name": "HuggingFaceCode/stack-v3-train",
+      "url": "https://huggingface.co/datasets/HuggingFaceCode/stack-v3-train",
+      "languages": [
+        "code (770 programming languages)"
+      ],
+      "size": "~5T deduplicated tokens / 15.9 TB train split / 114 TB full corpus / 224M repositories",
+      "license": "Permissive focus (restrictive licenses excluded from train split)",
+      "category": "预训练",
+      "description": "The Stack v3 — 由 Hugging Face 和 BigCode 联合发布的最大开源代码数据集。覆盖 770 种编程语言，224M GitHub 仓库，约 5 万亿去重过滤后的训练 token。相比 v2 增长约 10 倍（v2 约 550B tokens）。v3 关键改进：代码内容直接内联（无需通过 SWH ID 获取），支持完整仓库级别预训练。train split 经过去重、启发式过滤、PII 脱敏。crawl 截止到 2025 年 8 月。",
+      "discovered_date": "2026-08-02",
+      "last_updated": "2026-07-31",
+      "release_version": "v3",
+      "timeliness_score": "高",
+      "search_keywords": "The Stack v3, BigCode, code pretraining, HuggingFaceCode",
+      "source": "HuggingFace API + DuckDuckGo web search"
+    },
+    {
+      "name": "EC-DGT-AI/EU-MMLU",
+      "url": "https://huggingface.co/datasets/EC-DGT-AI/EU-MMLU",
+      "languages": [
+        "hr",
+        "cs",
+        "nl",
+        "fr",
+        "de",
+        "el",
+        "hu",
+        "ga",
+        "it",
+        "lt",
+        "pl",
+        "pt",
+        "ro",
+        "sk",
+        "sl",
+        "es"
+      ],
+      "size": "1000+ 多选问题 × 16 种欧盟官方语言 × 7 个学科领域",
+      "license": "EUPL (European Union Public License)",
+      "category": "评估",
+      "description": "EU MMLU — 欧盟委员会翻译总司 (DG Translation) 发布的多语言 AI 基准测试数据集。基于 MMLU 构建，采用人工翻译（非机器翻译），由来自 21 所欧洲大学的近 250 名翻译硕士 (EMT) 学生参与翻译和审校。覆盖 7 个与欧盟相关的学科领域，旨在评估 LLM 在欧盟 16 种官方语言中的公平性和有效性。目标是建立多语言 AI 评估的新标准。",
+      "discovered_date": "2026-08-02",
+      "last_updated": "2026-07-29",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "EU MMLU, DG Translation, European Commission, multilingual benchmark",
+      "source": "HuggingFace API + DuckDuckGo web search"
+    },
+    {
+      "name": "tojpaj/marketnews-multilingual-indic",
+      "url": "https://huggingface.co/datasets/tojpaj/marketnews-multilingual-indic",
+      "languages": [
+        "hi",
+        "pa"
+      ],
+      "size": "市场新闻语料（具体规模待确认）",
+      "license": "待确认",
+      "category": "微调",
+      "description": "多语言印度语系市场新闻数据集，覆盖印地语 (Hindi) 和旁遮普语 (Punjabi)。包含带情感标签（positive/negative/neutral）和主题分类（policy_regulatory, agri_commodity, other）的新闻文本，适用于金融 NLP 和情感分析任务。",
+      "discovered_date": "2026-08-02",
+      "last_updated": "2026-08-01",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "marketnews multilingual indic, Hindi Punjabi financial news",
+      "source": "HuggingFace API search (multilingual, lastModified)"
+    },
+    {
+      "name": "tojpaj/chart-qa-multilingual-indic",
+      "url": "https://huggingface.co/datasets/tojpaj/chart-qa-multilingual-indic",
+      "languages": [
+        "hi",
+        "pa"
+      ],
+      "size": "图表问答语料（具体规模待确认）",
+      "license": "待确认",
+      "category": "评估",
+      "description": "多语言印度语系图表问答数据集，覆盖印地语和旁遮普语。用于评估模型在印度语言环境下的图表理解和问答能力。与 marketnews-multilingual-indic 同属一个作者的 Indic NLP 资源系列。",
+      "discovered_date": "2026-08-02",
+      "last_updated": "2026-08-01",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "chart QA multilingual indic, Hindi Punjabi visual question answering",
+      "source": "HuggingFace API search (multilingual, lastModified)"
+    },
+    {
+      "name": "shangzx/Chinese-English-Parallel-Translation-Corpus-Chinese-Source-Text-English-Translat",
+      "url": "https://huggingface.co/datasets/shangzx/Chinese-English-Parallel-Translation-Corpus-Chinese-Source-Text-English-Translat",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "size": "平行语料（具体规模待确认）",
+      "license": "待确认",
+      "category": "微调",
+      "description": "中英平行翻译语料库，以中文为源文本、英文为翻译文本。适用于机器翻译、跨语言 NLP 任务训练。最近有更新。",
+      "discovered_date": "2026-08-02",
+      "last_updated": "2026-07-27",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "Chinese English parallel translation corpus",
+      "source": "HuggingFace API search (parallel corpus translation, lastModified)",
+      "_change_note": "Updated within search window"
+    },
+    {
+      "name": "Helmcode/stack-v3-devops",
+      "url": "https://huggingface.co/datasets/Helmcode/stack-v3-devops",
+      "languages": [
+        "code (DevOps 相关编程语言)"
+      ],
+      "size": "Stack v3 的 DevOps 子集（具体规模待确认）, 3 likes",
+      "license": "继承自 The Stack v3",
+      "category": "预训练",
+      "description": "基于 The Stack v3 的 DevOps 代码数据集子集。专注于 DevOps 领域的编程语言和配置文件，适用于训练 DevOps 领域代码 LLM 或 agent。在 Stack v3 发布后仅 6 天即推出，体现了社区的快速衍生能力。",
+      "discovered_date": "2026-08-02",
+      "last_updated": "2026-07-29",
+      "release_version": "v1.0",
+      "timeliness_score": "高",
+      "search_keywords": "Stack v3 DevOps code dataset, Helmcode",
+      "source": "HuggingFace API search (stack-v3, lastModified)"
+    },
+    {
+      "name": "buumba641/Zambia-MultiLingual-ASR-Dataset",
+      "url": "https://huggingface.co/datasets/buumba641/Zambia-MultiLingual-ASR-Dataset",
+      "languages": [
+        "bem",
+        "nya",
+        "toi"
+      ],
+      "size": "28 audio samples (growing)",
+      "license": "Unknown",
+      "category": "ASR / Speech",
+      "description": "Multilingual ASR dataset for 3 Zambian languages: Bemba, Nyanja, and Tonga. Contains audio recordings with transcripts, corrections, and quality ratings. Collected July-August 2026.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-08-04",
+      "release_version": null,
+      "timeliness_score": "高"
+    },
+    {
+      "name": "artindnr/Multilingual-Thinking",
+      "url": "https://huggingface.co/datasets/artindnr/Multilingual-Thinking",
+      "languages": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "fa"
+      ],
+      "size": "Unknown (large, includes thinking traces)",
+      "license": "Unknown",
+      "category": "SFT / Reasoning",
+      "description": "Multilingual thinking/reasoning dataset with system prompts, user queries, chain-of-thought thinking traces in multiple languages (English, German, French, Spanish, Italian, Persian), and final responses. Structured for SFT with thinking/non-thinking modes.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-08-04",
+      "release_version": null,
+      "timeliness_score": "高"
+    },
+    {
+      "name": "artindnr/Multilingual-Thinking-200",
+      "url": "https://huggingface.co/datasets/artindnr/Multilingual-Thinking-200",
+      "languages": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "it"
+      ],
+      "size": "200 samples (curated subset)",
+      "license": "Unknown",
+      "category": "SFT / Reasoning",
+      "description": "Curated 200-sample subset of Multilingual-Thinking dataset. Contains structured thinking traces in 5 European languages for instruction-following and reasoning SFT.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-08-04",
+      "release_version": null,
+      "timeliness_score": "高"
+    },
+    {
+      "name": "Sakonii/Multilingual-Refusal-Extended",
+      "url": "https://huggingface.co/datasets/Sakonii/Multilingual-Refusal-Extended",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "Extended (large, harmful + benign prompts)",
+      "license": "Unknown",
+      "category": "Safety / Alignment",
+      "description": "Extended multilingual safety/refusal dataset containing harmful and benign prompts with language family tags (Latin, Germanic, etc.) and severity ratings. Designed for training and evaluating multilingual safety classifiers and refusal behaviors.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-08-04",
+      "release_version": null,
+      "timeliness_score": "高"
+    },
+    {
+      "name": "wujoe132/ponys-ai-multilingual-companion-evaluation",
+      "url": "https://huggingface.co/datasets/wujoe132/ponys-ai-multilingual-companion-evaluation",
+      "languages": [
+        "ja",
+        "ko",
+        "es",
+        "pt",
+        "zh",
+        "en"
+      ],
+      "size": "20 evaluation protocols with CSV worksheets",
+      "license": "CC BY 4.0",
+      "category": "Evaluation / Benchmark",
+      "description": "20 reusable evaluation protocols for multilingual AI companion and character experiences. Covers conversation memory, persona consistency, consent recovery, visual continuity, code-switching, and regional language behavior across Japanese, Korean, Latin American Spanish, Brazilian Portuguese, Chinese, and English.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-08-03",
+      "release_version": "v1.0.0",
+      "timeliness_score": "高"
+    },
+    {
+      "name": "tojpaj/kisan-advisory-multilingual-indic",
+      "url": "https://huggingface.co/datasets/tojpaj/kisan-advisory-multilingual-indic",
+      "languages": [
+        "en",
+        "hi",
+        "pa"
+      ],
+      "size": "15 downloads",
+      "license": "Unknown",
+      "category": "QA / Agriculture",
+      "description": "Multilingual Indic agricultural advisory QA dataset covering English, Hindi, and Punjabi. Farmer-focused question-answering for agricultural guidance.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-08-03",
+      "release_version": null,
+      "timeliness_score": "高"
+    },
+    {
+      "name": "tojpaj/personal-finance-multilingual-indic",
+      "url": "https://huggingface.co/datasets/tojpaj/personal-finance-multilingual-indic",
+      "languages": [
+        "hi",
+        "pa"
+      ],
+      "size": "17 downloads",
+      "license": "Unknown",
+      "category": "Domain-Specific / Finance",
+      "description": "Multilingual Indic personal finance dataset in Hindi and Punjabi. Covers financial literacy and advisory content.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-08-02",
+      "release_version": null,
+      "timeliness_score": "高"
+    },
+    {
+      "name": "tojpaj/science-misinfo-multilingual-indic",
+      "url": "https://huggingface.co/datasets/tojpaj/science-misinfo-multilingual-indic",
+      "languages": [
+        "hi",
+        "pa"
+      ],
+      "size": "21 downloads",
+      "license": "Unknown",
+      "category": "Classification / Misinformation",
+      "description": "Multilingual Indic science misinformation detection dataset in Hindi and Punjabi. Designed for identifying scientific misinformation in Indic languages.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-08-02",
+      "release_version": null,
+      "timeliness_score": "高"
+    },
+    {
+      "name": "dayomtechnologies/English_Nuer_parallel_translation_open_corpus",
+      "url": "https://huggingface.co/datasets/dayomtechnologies/English_Nuer_parallel_translation_open_corpus",
+      "languages": [
+        "en",
+        "nus"
+      ],
+      "size": "63 downloads",
+      "license": "Unknown",
+      "category": "Translation / Parallel Corpus",
+      "description": "English-Nuer parallel translation corpus. Nuer is a Nilotic language spoken in South Sudan and Ethiopia — an extremely low-resource language. Contains sentence-aligned bilingual pairs from diverse sources including religious texts, educational content, and general web content.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-07-24",
+      "release_version": null,
+      "timeliness_score": "高"
+    },
+    {
+      "name": "Crownelius/Hyper-UltraData-Grok-V1",
+      "url": "https://huggingface.co/datasets/Crownelius/Hyper-UltraData-Grok-V1",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "81 downloads",
+      "license": "Unknown",
+      "category": "SFT / General",
+      "description": "Community-created variant of OpenBMB UltraData, processed/enhanced with Grok-style augmentation. Part of the UltraData ecosystem derivatives.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-07-16",
+      "release_version": "V1",
+      "timeliness_score": "中"
+    },
+    {
+      "name": "majentik/ultradata-sft-calib",
+      "url": "https://huggingface.co/datasets/majentik/ultradata-sft-calib",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "42 downloads",
+      "license": "Unknown",
+      "category": "SFT / Calibration",
+      "description": "UltraData SFT calibration dataset — a processed subset of OpenBMB UltraData-SFT-2605 for model calibration and confidence tuning.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-07-18",
+      "release_version": null,
+      "timeliness_score": "中"
+    },
+    {
+      "name": "majentik/ultradata-math-calib",
+      "url": "https://huggingface.co/datasets/majentik/ultradata-math-calib",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "size": "40 downloads",
+      "license": "Unknown",
+      "category": "SFT / Math Calibration",
+      "description": "UltraData Math calibration dataset — processed subset of OpenBMB UltraData-Math for model calibration and confidence estimation in mathematical reasoning.",
+      "discovered_date": "2026-08-05",
+      "last_updated": "2026-07-18",
+      "release_version": null,
+      "timeliness_score": "中"
+    },
+    {
+      "name": "Fujitsu-FRE/MAPS",
+      "url": "https://huggingface.co/datasets/Fujitsu-FRE/MAPS",
+      "languages": [
+        "en",
+        "ja",
+        "zh",
+        "ko",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "pt",
+        "ru",
+        "ar"
+      ],
+      "size": "11 languages agent benchmark",
+      "license": "未明确",
+      "category": "评估基准/Agent",
+      "description": "Fujitsu发布的11语言多语言Agent能力评估基准",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "GaoYao",
+      "url": "https://arxiv.org/abs/2607.xxxxx",
+      "languages": [
+        "26 languages"
+      ],
+      "size": "26-language multicultural benchmark",
+      "license": "未明确",
+      "category": "评估基准/文化理解",
+      "description": "ACL 2026论文, 26种语言的多文化理解评估基准",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "iNLP-Lab/GlobeAudio",
+      "url": "https://huggingface.co/datasets/iNLP-Lab/GlobeAudio",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "audio-language eval",
+      "license": "未明确",
+      "category": "评估基准/音频",
+      "description": "多语言音频语言评估数据集",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "nvidia/Nemotron-SFT-Agentic-v2",
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-SFT-Agentic-v2",
+      "languages": [
+        "en"
+      ],
+      "size": "6,834 downloads, 66 likes",
+      "license": "NVIDIA Open",
+      "category": "微调/Agent SFT",
+      "description": "NVIDIA Nemotron Agent SFT v2数据集，用于Agent能力微调",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-10",
+      "release_version": "v2",
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "fxmeng/UltraData-SFT-2605-no-think-8k-32k",
+      "url": "https://huggingface.co/datasets/fxmeng/UltraData-SFT-2605-no-think-8k-32k",
+      "languages": [
+        "en",
+        "zh",
+        "multilingual"
+      ],
+      "size": "8K-32K context, 574 downloads",
+      "license": "未明确",
+      "category": "微调/SFT (no-think mode)",
+      "description": "UltraData SFT 2605的no-think变体，8K-32K上下文长度",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-07-14",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "fxmeng/UltraData-SFT-2605-no-think-32k-200k",
+      "url": "https://huggingface.co/datasets/fxmeng/UltraData-SFT-2605-no-think-32k-200k",
+      "languages": [
+        "en",
+        "zh",
+        "multilingual"
+      ],
+      "size": "32K-200K context, 438 downloads",
+      "license": "未明确",
+      "category": "微调/SFT (no-think mode)",
+      "description": "UltraData SFT 2605的no-think变体，32K-200K上下文长度",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-07-14",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "masterofaudio2077/filtered-multilingual-pii",
+      "url": "https://huggingface.co/datasets/masterofaudio2077/filtered-multilingual-pii",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "945K rows",
+      "license": "未明确",
+      "category": "微调/PII数据",
+      "description": "945K行多语言PII过滤数据集",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-07",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "mast-benchmark/multilingual-queries-2026",
+      "url": "https://huggingface.co/datasets/mast-benchmark/multilingual-queries-2026",
+      "languages": [
+        "ar",
+        "bn",
+        "cy",
+        "de",
+        "en"
+      ],
+      "size": "62 downloads",
+      "license": "未明确",
+      "category": "评估基准/信息检索",
+      "description": "MAST基准多语言查询集2026版",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-06",
+      "release_version": "2026",
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "crosslingual-rule-following/rule-following-eval",
+      "url": "https://huggingface.co/datasets/crosslingual-rule-following/rule-following-eval",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "未明确",
+      "license": "未明确",
+      "category": "评估基准/规则遵循",
+      "description": "跨语言规则遵循评估数据集",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "crosslingual-rule-following/model-inference-responses",
+      "url": "https://huggingface.co/datasets/crosslingual-rule-following/model-inference-responses",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "未明确",
+      "license": "未明确",
+      "category": "评估基准/规则遵循",
+      "description": "跨语言规则遵循模型推理响应数据",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "michsethowusu/melo-tts-ghana-multilingual",
+      "url": "https://huggingface.co/datasets/michsethowusu/melo-tts-ghana-multilingual",
+      "languages": [
+        "Ghanaian languages"
+      ],
+      "size": "34 downloads",
+      "license": "未明确",
+      "category": "微调/TTS",
+      "description": "加纳多语言TTS数据集（MeloTTS适配）",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-08",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "issdandavis/UltraData-Math",
+      "url": "https://huggingface.co/datasets/issdandavis/UltraData-Math",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "size": "368 downloads",
+      "license": "未明确",
+      "category": "微调/数学推理",
+      "description": "UltraData数学数据子集（社区重发布）",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-07-29",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "alrazz-n/HPLT3-PerRef",
+      "url": "https://huggingface.co/datasets/alrazz-n/HPLT3-PerRef",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "未明确",
+      "license": "未明确",
+      "category": "预训练/波斯语参考",
+      "description": "HPLT 3.0波斯语参考数据集",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "nvidia/Nemotron-RL-Ultra-Training-Blends",
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-RL-Ultra-Training-Blends",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "未明确",
+      "license": "NVIDIA Open",
+      "category": "微调/RL",
+      "description": "NVIDIA Nemotron RL超训练混合数据集",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "pinkachu/harmless_multilingual",
+      "url": "https://huggingface.co/datasets/pinkachu/harmless_multilingual",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "3 downloads",
+      "license": "未明确",
+      "category": "微调/安全对齐",
+      "description": "多语言无害数据集（安全对齐用）",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-10",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "uludagur/crosslingual-clinical-rag-study",
+      "url": "https://huggingface.co/datasets/uludagur/crosslingual-clinical-rag-study",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "未明确",
+      "license": "未明确",
+      "category": "微调/医学RAG",
+      "description": "跨语言临床RAG研究数据集",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "15juneee/agriculture-advisor-adapted-multilingual-v1",
+      "url": "https://huggingface.co/datasets/15juneee/agriculture-advisor-adapted-multilingual-v1",
+      "languages": [
+        "en"
+      ],
+      "size": "0 downloads (very new)",
+      "license": "未明确",
+      "category": "微调/农业顾问",
+      "description": "多语言农业顾问适配数据集v1",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-10",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "lingamvamshikrishnareddy/ramanv-indic-multilingual",
+      "url": "https://huggingface.co/datasets/lingamvamshikrishnareddy/ramanv-indic-multilingual",
+      "languages": [
+        "Indic languages"
+      ],
+      "size": "427 downloads",
+      "license": "未明确",
+      "category": "微调/印度语言",
+      "description": "印度多语言数据集",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-10",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "Tonic/multilingual-EMIR-reporting-csv",
+      "url": "https://huggingface.co/datasets/Tonic/multilingual-EMIR-reporting-csv",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "20 downloads",
+      "license": "未明确",
+      "category": "微调/金融合规",
+      "description": "多语言EMIR金融报告数据集（CSV格式）",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-08",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "CultSportQA",
+      "url": "https://arxiv.org/abs/xxxxx",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "未明确",
+      "license": "未明确",
+      "category": "评估基准/文化体育问答",
+      "description": "文化体育问答多语言评估数据集",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "Multilingual News Ukraine Dataset",
+      "url": "未确认",
+      "languages": [
+        "uk",
+        "multilingual"
+      ],
+      "size": "未明确",
+      "license": "未明确",
+      "category": "预训练/新闻语料",
+      "description": "乌克兰多语言新闻数据集",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Previous round (Round 18)"
+    },
+    {
+      "name": "96kevinli29/DAPO-Math-Multilingual-6Lang",
+      "url": "https://huggingface.co/datasets/96kevinli29/DAPO-Math-Multilingual-6Lang",
+      "languages": [
+        "en",
+        "zh",
+        "es",
+        "fr",
+        "ar"
+      ],
+      "size": "33 downloads",
+      "license": "未明确",
+      "category": "推理/数学RL训练",
+      "description": "基于DAPO方法的多语言数学训练数据集，覆盖6种语言，用于数学推理能力的强化学习训练。",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-07-01",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Round 19 - HuggingFace API"
+    },
+    {
+      "name": "MultiNRC",
+      "url": "https://arxiv.org/abs/2507.17476",
+      "languages": [
+        "fr",
+        "es",
+        "zh"
+      ],
+      "size": "1,000+ native reasoning questions",
+      "license": "未明确（论文公开）",
+      "category": "评估基准/推理",
+      "description": "原生多语言推理评估基准。法/西/中1000+道母语者编写的推理题，含语言推理、文字游戏、文化推理、数学推理4类。14个LLM评估均<50%。",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2025-07-25",
+      "release_version": null,
+      "timeliness_score": "中",
+      "source": "Round 19 - arXiv + SearXNG"
+    },
+    {
+      "name": "MATH-IDN",
+      "url": "https://aclanthology.org/2026.findings-eacl.231/",
+      "languages": [
+        "id",
+        "jv",
+        "su",
+        "en"
+      ],
+      "size": "未明确",
+      "license": "未明确",
+      "category": "评估基准/数学推理",
+      "description": "印度尼西亚本地语言多语言数学求解基准。EACL 2026 Findings，覆盖印尼语及爪哇语、巽他语。",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Round 19 - ACL Anthology (EACL 2026)"
+    },
+    {
+      "name": "wannaphong/HelpSteer3-good_edited_response",
+      "url": "https://huggingface.co/datasets/wannaphong/HelpSteer3-good_edited_response",
+      "languages": [
+        "th"
+      ],
+      "size": "11 downloads",
+      "license": "未明确",
+      "category": "微调/偏好数据",
+      "description": "NVIDIA HelpSteer3泰语本地化版本，高质量编辑响应偏好数据。",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-05",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Round 19 - HuggingFace API"
+    },
+    {
+      "name": "nvidia/HelpSteer3",
+      "url": "https://huggingface.co/datasets/nvidia/HelpSteer3",
+      "languages": [
+        "en",
+        "zh",
+        "ko",
+        "fr",
+        "es"
+      ],
+      "size": "5,886 downloads, 115 likes",
+      "license": "NVIDIA Open",
+      "category": "微调/偏好对齐",
+      "description": "NVIDIA开放人类标注偏好数据集，5种语言，支持RLHF/DPO。NeurIPS 2025配套。基线未收录的重要偏好数据。",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2025-11-16",
+      "release_version": null,
+      "timeliness_score": "低",
+      "source": "Round 19 - HuggingFace API + SearXNG"
+    },
+    {
+      "name": "ShahiEmotion",
+      "url": "https://pdfs.semanticscholar.org/306e/f943cb8b1bea1a4443bbf543bd0a70205763.pdf",
+      "languages": [
+        "pa"
+      ],
+      "size": "30,379 sentences, 7 emotion categories",
+      "license": "未明确",
+      "category": "评估基准/情感分析",
+      "description": "旁遮普语Shahmukhi文字情感检测基准。30,379句子，7种情感。XLM-RoBERTa最佳77.95%准确率。低资源语言重要补充。",
+      "discovered_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "release_version": null,
+      "timeliness_score": "高",
+      "source": "Round 19 - SearXNG (Semantic Scholar)"
     }
   ],
-  "total_datasets": 276,
-  "last_merge": "2026-07-14",
-  "total_sources": 307,
-  "last_update_note": "Merged 7/14 incremental: 1 new. Baseline: 307 datasets."
+  "total_datasets": 410,
+  "last_merge": "2026-08-11",
+  "total_sources": 371,
+  "last_update_note": "Round 12 incremental: +6 new datasets"
 }
