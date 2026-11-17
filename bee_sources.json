@@ -1,6 +1,6 @@
 {
-  "search_date": "2026-11-16",
-  "search_summary": "Round 83: 0 incremental datasets discovered",
+  "search_date": "2026-11-18",
+  "search_summary": "Round 85: 11 new datasets (4 skipped as duplicate)",
   "sources": [
     {
       "name": "FineWeb-2",
@@ -17475,11 +17475,189 @@
       "timeliness_score": "高",
       "search_keywords": "Multilingual_OCR_Annotation_Dataset, OCR, multilingual",
       "source": "HuggingFace API (multilingual dataset query)"
+    },
+    {
+      "name": "masterofaudio2077/medical-pii-multilingual",
+      "url": "https://huggingface.co/datasets/masterofaudio2077/medical-pii-multilingual",
+      "languages": [
+        "en",
+        "nl",
+        "es",
+        "fr",
+        "de"
+      ],
+      "size": "7K+ rows (10K<n<100K)",
+      "license": "other (research-only upstream terms)",
+      "category": "Medical",
+      "description": "Multilingual medical PII (Personally Identifiable Information) NER dataset with 7K+ annotated medical documents across 5 European languages. Covers 164 document types and 35 medical specialties with entity labels for NAME, DATE, DIAGNOSIS, PHONE, EMAIL, etc."
+    },
+    {
+      "name": "aswath86/neural-sparse-encoding-splare-multilingual-v1-training-data",
+      "url": "https://huggingface.co/datasets/aswath86/neural-sparse-encoding-splare-multilingual-v1-training-data",
+      "languages": [
+        "ar",
+        "bn",
+        "en",
+        "es",
+        "fa",
+        "fi",
+        "fr",
+        "hi",
+        "id",
+        "ja",
+        "ko",
+        "ru",
+        "sw",
+        "te",
+        "th",
+        "zh"
+      ],
+      "size": "88.2K rows (100K<n<1M)",
+      "license": "CC-BY-SA-4.0",
+      "category": "其他",
+      "description": "SPLARE multilingual v1 training data for neural sparse encoding in information retrieval. 88.2K query-document pairs across 16 languages with positive/negative examples and relevance scores for document retrieval training."
+    },
+    {
+      "name": "linda23153/ViSeLA-Multilingual-Benchmarks",
+      "url": "https://huggingface.co/datasets/linda23153/ViSeLA-Multilingual-Benchmarks",
+      "languages": [
+        "en",
+        "zh",
+        "fr",
+        "de"
+      ],
+      "size": "560K+ rows (100K<n<1M)",
+      "license": "research-only",
+      "category": "Eval",
+      "description": "Vision-grounded Semantic Learning and Alignment (ViSeLA) multilingual benchmark for text-based person retrieval. 560K+ rows across 5 subsets including code-switching data. Accompanied by arXiv paper 2611.15328 (ACM MM 2026)."
+    },
+    {
+      "name": "SuryanshHere/ayawarden-multilingual-injection",
+      "url": "https://huggingface.co/datasets/SuryanshHere/ayawarden-multilingual-injection",
+      "languages": [
+        "en",
+        "hi",
+        "es",
+        "fr",
+        "ar",
+        "sw",
+        "bn"
+      ],
+      "size": "1K<n<10K rows",
+      "license": "CC-BY-4.0",
+      "category": "Safety",
+      "description": "AyaWarden: Multilingual injection attack dataset for LLM safety evaluation. Contains enterprise scenarios with prompt injection attacks across 7 languages (en, hi, es, fr, ar, sw, bn). Tests model ability to distinguish data from instructions."
+    },
+    {
+      "name": "uzainahmed/tiny-aya-multilingual-safety-bench",
+      "url": "https://huggingface.co/datasets/uzainahmed/tiny-aya-multilingual-safety-bench",
+      "languages": [
+        "en",
+        "hi",
+        "ar",
+        "zh",
+        "es",
+        "fr",
+        "ru",
+        "ja",
+        "th",
+        "bn",
+        "sw",
+        "vi",
+        "ko",
+        "ur"
+      ],
+      "size": "1K<n<10K rows",
+      "license": "CC-BY-NC-4.0",
+      "category": "Safety",
+      "description": "Multilingual safety benchmark based on Tiny-Aya framework. Covers 14 languages with back-translation and contrastive evaluation for LLM safety testing. Includes jailbreak and harmful content detection."
+    },
+    {
+      "name": "kamikaze-san/tiny-aya-multilingual-jailbreaks",
+      "url": "https://huggingface.co/datasets/kamikaze-san/tiny-aya-multilingual-jailbreaks",
+      "languages": [
+        "en",
+        "hi",
+        "te",
+        "ja"
+      ],
+      "size": "n<1K rows",
+      "license": "CC-BY-NC-4.0",
+      "category": "Safety",
+      "description": "Multilingual jailbreak red-teaming dataset for safety evaluation. Includes attack strategies across 4 languages (en, hi, te, ja) with heldout evaluation sets. Part of Tiny-Aya safety research."
+    },
+    {
+      "name": "kamikaze-san/tiny-aya-multilingual-safety-eval",
+      "url": "https://huggingface.co/datasets/kamikaze-san/tiny-aya-multilingual-safety-eval",
+      "languages": [
+        "en",
+        "hi",
+        "te",
+        "ja"
+      ],
+      "size": "10K<n<100K rows",
+      "license": "CC-BY-NC-4.0",
+      "category": "Safety",
+      "description": "Multilingual safety evaluation dataset covering 4 languages (en, hi, te, ja). Includes attack index, benign baseline, and joint evaluation pairs for comprehensive safety benchmarking."
+    },
+    {
+      "name": "Fill-My-Cup/multilingual-ticket-triage-evaluation",
+      "url": "https://huggingface.co/datasets/Fill-My-Cup/multilingual-ticket-triage-evaluation",
+      "languages": [
+        "yo",
+        "sw",
+        "en"
+      ],
+      "size": "unknown",
+      "license": "other",
+      "category": "Eval",
+      "description": "Multilingual ticket triage evaluation benchmark covering text classification, NER, and text generation. Part of a 3-dataset suite (evaluation + redteam + curated) for African language support ticket systems."
+    },
+    {
+      "name": "Fill-My-Cup/multilingual-ticket-triage-redteam",
+      "url": "https://huggingface.co/datasets/Fill-My-Cup/multilingual-ticket-triage-redteam",
+      "languages": [
+        "yo",
+        "sw",
+        "en"
+      ],
+      "size": "unknown",
+      "license": "other",
+      "category": "Safety",
+      "description": "Red-teaming adversarial dataset for multilingual ticket triage systems. Includes 1000 adversarial test cases targeting Yoruba, Swahili, and English support ticket classification."
+    },
+    {
+      "name": "SoumiaDermouche/multilingual-emergency-calls",
+      "url": "https://huggingface.co/datasets/SoumiaDermouche/multilingual-emergency-calls",
+      "languages": [
+        "fr",
+        "en",
+        "it",
+        "ar",
+        "es"
+      ],
+      "size": "n<1K audio files",
+      "license": "Etalab-2.0",
+      "category": "ASR",
+      "description": "Multilingual emergency call audio dataset for ASR and translation. Covers 5 languages (fr, en, it, ar, es) with audio recordings in audiofolder format. Etalab 2.0 license."
+    },
+    {
+      "name": "aneeshadas02/lexsi-multilingual-benchmark",
+      "url": "https://huggingface.co/datasets/aneeshadas02/lexsi-multilingual-benchmark",
+      "languages": [
+        "hi",
+        "mr",
+        "ta"
+      ],
+      "size": "n<1K rows",
+      "license": "unknown",
+      "category": "Safety",
+      "description": "Multilingual safety benchmark focused on Hindi, Marathi, and Tamil. Includes harmful/harmless eval and train splits for LLM safety classification evaluation in Indic languages."
     }
   ],
-  "total_datasets": 883,
-  "last_merge": "2026-11-16",
-  "total_sources": 883,
-  "last_update_note": "Round 83: added 0 new datasets (2026-11-16)",
-  "last_updated": "2026-11-16"
+  "total_datasets": 894,
+  "last_merge": "2026-11-18",
+  "total_sources": 894,
+  "last_update_note": "Round 85 incremental merge",
+  "last_updated": "2026-11-18"
 }
