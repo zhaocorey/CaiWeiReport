@@ -1,6 +1,6 @@
 {
-  "search_date": "2026-11-20",
-  "search_summary": "Round 88: 19 new datasets from incremental sourcing",
+  "search_date": "2026-11-21",
+  "search_summary": "Round 87: 18 new datasets from incremental sourcing",
   "sources": [
     {
       "name": "FineWeb-2",
@@ -18006,10 +18006,329 @@
       "last_updated": "2026-11-03",
       "release_version": null,
       "timeliness_score": "高"
+    },
+    {
+      "name": "nassimjp/turkish-pashto-parallel-corpus",
+      "url": "https://huggingface.co/datasets/nassimjp/turkish-pashto-parallel-corpus",
+      "languages": [
+        "tr",
+        "ps"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "parallel corpus",
+      "description": "Turkish-Pashto parallel corpus for translation. Part of nassimjp's extensive Pashto language resource collection.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-20",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "parallel corpus",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "Sywllakbar/quran-parallel-corpus",
+      "url": "https://huggingface.co/datasets/Sywllakbar/quran-parallel-corpus",
+      "languages": [
+        "ar",
+        "en",
+        "id"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "parallel corpus",
+      "description": "Trilingual Quran parallel corpus (Arabic-English-Indonesian) for translation and text generation tasks.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-19",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "parallel corpus",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "VillanovaAI/Multi-RAG-Multilingual",
+      "url": "https://huggingface.co/datasets/VillanovaAI/Multi-RAG-Multilingual",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "RAG",
+      "description": "Multilingual RAG (Retrieval-Augmented Generation) dataset from VillanovaAI. Languages and task details not specified.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-19",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "DeusHorizon/eu-allergens-multilingual",
+      "url": "https://huggingface.co/datasets/DeusHorizon/eu-allergens-multilingual",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "domain-specific",
+      "description": "EU allergens multilingual dataset. Domain-specific resource for food allergen information across EU languages.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-18",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "Qdrant/esci-products-multilingual-e5-small-embeddings",
+      "url": "https://huggingface.co/datasets/Qdrant/esci-products-multilingual-e5-small-embeddings",
+      "languages": [
+        "en"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "embeddings",
+      "description": "Pre-computed e5-small embeddings for ESCI product data. Multilingual product search/retrieval resource.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-17",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "Qdrant/qdrant-docs-multilingual-e5-small-embeddings",
+      "url": "https://huggingface.co/datasets/Qdrant/qdrant-docs-multilingual-e5-small-embeddings",
+      "languages": [
+        "en"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "embeddings",
+      "description": "Pre-computed e5-small embeddings for Qdrant documentation. Multilingual documentation search resource.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-17",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "Perfect7613/weightpatch-run-multilingual-safety-1",
+      "url": "https://huggingface.co/datasets/Perfect7613/weightpatch-run-multilingual-safety-1",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "safety",
+      "description": "Weightpatch multilingual safety dataset (run 1 of 3). Part of a series for multilingual safety training/evaluation.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-16",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "safety multilingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "Perfect7613/weightpatch-run-multilingual-safety-2",
+      "url": "https://huggingface.co/datasets/Perfect7613/weightpatch-run-multilingual-safety-2",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "safety",
+      "description": "Weightpatch multilingual safety dataset (run 2 of 3). Part of a series for multilingual safety training/evaluation.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-16",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "safety multilingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "Perfect7613/weightpatch-run-multilingual-safety-3",
+      "url": "https://huggingface.co/datasets/Perfect7613/weightpatch-run-multilingual-safety-3",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "safety",
+      "description": "Weightpatch multilingual safety dataset (run 3 of 3). Part of a series for multilingual safety training/evaluation.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-16",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "safety multilingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "aneeshadas02/multilingual-safety-prompts",
+      "url": "https://huggingface.co/datasets/aneeshadas02/multilingual-safety-prompts",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "safety",
+      "description": "Multilingual safety prompts dataset. Companion resource to the LEXSI multilingual benchmark from the same author.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-15",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "safety multilingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "racetracklexsi/lift-multilingual-safety-prompts",
+      "url": "https://huggingface.co/datasets/racetracklexsi/lift-multilingual-safety-prompts",
+      "languages": [
+        "ar",
+        "es",
+        "hi",
+        "th",
+        "zh"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "safety",
+      "description": "LIFT multilingual safety prompts covering 5 languages (Arabic, Spanish, Hindi, Thai, Chinese). Part of LEXSI safety benchmark ecosystem.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-14",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "safety multilingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "TheGlasses-2005/multilingual-ai-safety-dataset",
+      "url": "https://huggingface.co/datasets/TheGlasses-2005/multilingual-ai-safety-dataset",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "safety",
+      "description": "Multilingual AI safety dataset. Languages and specific task details not specified.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-14",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "safety multilingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "kadirnar/codecbench-multilingual-v1",
+      "url": "https://huggingface.co/datasets/kadirnar/codecbench-multilingual-v1",
+      "languages": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "it"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "evaluation/speech",
+      "description": "CodecBench multilingual v1 — speech codec evaluation benchmark covering 5 European languages (en, de, fr, es, it).",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-14",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "multilingual code",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "dhairyapandya/cross-lingual-tamper-resistance",
+      "url": "https://huggingface.co/datasets/dhairyapandya/cross-lingual-tamper-resistance",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "safety",
+      "description": "Cross-lingual tamper resistance dataset. Evaluates model resistance to tampering attacks across languages.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-13",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "cross-lingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "dhairyapandya/cross-lingual-tamper-assets",
+      "url": "https://huggingface.co/datasets/dhairyapandya/cross-lingual-tamper-assets",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "safety",
+      "description": "Cross-lingual tamper assets. Supporting resource for cross-lingual tamper resistance evaluation.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-13",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "cross-lingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "selmalav/Turkic-Latin-Script-Zero-Shot-Cross-Lingual-Transfer",
+      "url": "https://huggingface.co/datasets/selmalav/Turkic-Latin-Script-Zero-Shot-Cross-Lingual-Transfer",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "cross-lingual transfer",
+      "description": "Zero-shot cross-lingual transfer dataset for Turkic languages with Latin script. Focuses on low-resource Turkic language evaluation.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-13",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "cross-lingual",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "yaachay/rakhine-english-parallel-corpus",
+      "url": "https://huggingface.co/datasets/yaachay/rakhine-english-parallel-corpus",
+      "languages": [
+        "en",
+        "rki",
+        "my"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "parallel corpus",
+      "description": "Rakhine-English parallel corpus. Trilingual (English, Rakhine/Arakanese, Myanmar) translation resource for the low-resource Rakhine language.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-10",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "parallel corpus",
+      "source": "HuggingFace API search"
+    },
+    {
+      "name": "mteb/CrossLingualSemanticDiscriminationWMT21",
+      "url": "https://huggingface.co/datasets/mteb/CrossLingualSemanticDiscriminationWMT21",
+      "languages": [
+        "multilingual"
+      ],
+      "size": "unknown",
+      "license": "unknown",
+      "category": "evaluation/retrieval",
+      "description": "Cross-lingual semantic discrimination benchmark based on WMT21 data. Part of MTEB evaluation suite for multilingual retrieval.",
+      "discovered_date": "2026-11-21",
+      "last_updated": "2026-11-20",
+      "release_version": "v1",
+      "timeliness_score": "高",
+      "search_keywords": "cross-lingual",
+      "source": "HuggingFace API search"
     }
   ],
-  "total_datasets": 894,
-  "last_merge": "2026-11-18",
+  "total_datasets": 931,
+  "last_merge": "2026-11-21T10:00:00+08:00",
   "total_sources": 894,
   "last_update_note": "Round 85 incremental merge",
   "last_updated": "2026-11-18"
