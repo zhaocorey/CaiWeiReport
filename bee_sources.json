@@ -18328,7 +18328,7 @@
     }
   ],
   "total_datasets": 931,
-  "last_merge": "2026-11-21T10:00:00+08:00",
+  "last_merge": "2026-11-21",
   "total_sources": 894,
   "last_update_note": "Round 85 incremental merge",
   "last_updated": "2026-11-18"
